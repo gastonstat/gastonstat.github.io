@@ -1,0 +1,31 @@
+---
+layout: default
+title: Home
+---
+
+<div id="home">
+
+  <a href="https://plus.google.com/photos/117265732281156472530/albums/5923141177468349217" target="_blank">
+  <img src="http://farm4.staticflickr.com/3692/11407179736_b29e401d66_c.jpg" title="Picnic""/></a>
+
+  <p>
+  I'm an applied statistician who loves to analyze data, visualize it and develop 
+  computational tools for doing so. &nbsp;&nbsp; <a href="/about">Read more ...</a>
+  </p>
+
+  <div style="border-bottom: 1px solid #eee; padding: 2px 0;">
+  </div>
+
+  <h2>Blog</h2>
+  <ul class="listing">
+    {% for post in site.posts limit:3%}
+      <li class="listing-item">
+        <time datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date: "%m-%d-%Y" }}</time>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+     &nbsp;&nbsp; <a href="/blog">See more ...</a>
+  </ul>
+  
+
+</div>

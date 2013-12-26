@@ -1,0 +1,26 @@
+---
+layout: default
+title: Home
+---
+
+<h2>404, Ooops!</h2>
+
+For some unknown/awkward/pathetic reasons the page you are looking for does not exist.
+
+
+<div id="posts" style="margin-top: 20px;">
+
+    However, you might be interested in these recent posts:
+
+    <br />
+
+    {% for post in site.posts offset: 0 limit: 5 %}
+
+        <small>
+            <a href="{{ post.url}}">{{ post.title }}</a>
+        </small>
+        <br />
+
+    {% endfor %}
+
+</div>

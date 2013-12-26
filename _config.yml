@@ -1,0 +1,7 @@
+author: Gaston Sanchez
+description: My personal website and blog about data analysis, applied statistics, R
+pygments: true
+permalink: /blog/:categories/:year/:month/:day/:title.html
+markdown: redcarpet
+exclude: ["Rmd", ".DS_Store", "README.md"]
+excerpt_separator: <!--more-->

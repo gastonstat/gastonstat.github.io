@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<div class="post">
+	<h1> {{ page.title }} </h1>
+	<span class="date">Posted on {{ page.date | date_to_string }}</span>
+
+	{{ content }}
+
+</div>
+
+<div class="meta">
+	<span class="author">
+		Author <a href="http://www.gastonsanchez.com">{{ site.author }}</a>
+	</span>
+	<br/>
+	
+	{% if page.categories %}
+	<span class="categories">
+		Published in categories
+		{% for cat in page.categories %}
+		<a href="{{ site.url }}/blog/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+		{% endfor %}
+	</span>
+	{% endif %}
+	
+	{% if page.tags %}
+	<span class="tags">
+		tagged with 
+		{% for tag in page.tags %}
+		<a href="{{ site.url }}/blog/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
+		{% endfor %}
+	</span>
+	{% endif %}
+</div>
+
+
+<div class="previous_next">
+	{% if page.previous %}
+	  <a href="{{ page.previous.url }}" title="Previous post">&larr; previous</a>
+	{% endif %}
+	&nbsp;&nbsp;
+	{% if page.next %}
+	  <a href="{{ page.next.url }}" title="Next post">next &rarr;</a>
+	{% endif %}
+	<br>
+	<small><a href="/blog/archive/" title="an archive of all posts">See all posts</a></small>	
+</div>
