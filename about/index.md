@@ -102,7 +102,7 @@ projects in order. This is easier said than done.
 
 This site is designed and developed using [Jekyll](https://github.com/mojombo/jekyll). 
 Hosting by [github pages](https://pages.github.com). Source available on 
-[github](https://github.com/gastonstat)
+[github](https://github.com/gastonstat/gastonstat.github.io).
 
 
 Unless specified otherwise, content on this site is licensed under a 
