@@ -44,6 +44,16 @@ Occasionally, I like to talk about data analysis, visualization, statistics, R a
 related stuff in my blog [Data Analysis Visually EnfoRced](/blog).
 
 
+## Photos
+
+Besides data visualization, I also like to visualize the world through the lens of my camera
+
+- <a href="https://plus.google.com/photos/117265732281156472530/albums/5850583855206261729" target="_blank">Nielsen Lab</a><br>
+- <a href="https://plus.google.com/photos/117265732281156472530/albums/5855398230533809713" target="_blank">Lab Stuff</a><br>
+- <a href="https://plus.google.com/photos/117265732281156472530/albums/5684951439367440929" target="_blank">Outdoors BW</a><br>
+- <a href="https://plus.google.com/photos/117265732281156472530/albums/5846352754687836433" target="_blank">Street Poles</a><br>
+
+
 ## Trifecta
 
 What I like about my "job" is that:
