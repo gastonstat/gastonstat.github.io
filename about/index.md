@@ -8,6 +8,7 @@ layout: default
 I'm an applied statistician who loves to analyze data, visualize it
 and develop computational tools for doing so.
 
+<a href="https://docs.google.com/presentation/d/1SgaTJpjoL4YCklgB_CMgaQldoxv8rIJFvuTPilDPKGs/pub?start=false&loop=false&delayms=3000" target="_blank">intro</a>&nbsp;&nbsp;&nbsp;
 <a href="/about/GastonSanchez_resumecode.pdf">resume</a>&nbsp;&nbsp;&nbsp;
 <a href="http://www.linkedin.com/in/sanchezgaston" target="_blank">linkedin</a>&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/gastonstat" target="_blank">github</a>
@@ -28,7 +29,7 @@ multivariate data analysis.
 
 ## Interests
 
-There are three major topics that I'm hooked to:
+There are 3 major topics that I'm hooked to:
  
 - I really like [working](/work) with analytical tools 
 and methods, especially those designed for very practical applications.
