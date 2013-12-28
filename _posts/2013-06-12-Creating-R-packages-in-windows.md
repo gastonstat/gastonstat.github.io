@@ -10,9 +10,9 @@ tags: [build, create, develop, packages, R, windows, workshop]
 
 This post is dedicated for those **useRs** interested in becoming *creatoRs*, especially 
 those working under windows. Here are the slides of my workshop 
-<a href="http://www.gastonsanchez.com/teaching/rpackaging" target="_blank">"Create your first R package (in windows)"</a>.
+<a href="http://www.gastonsanchez.com/teaching" target="_blank">"Create your first R package (in windows)"</a>.
 
-<!--more>
+<!--more-->
 
 ### Becoming a creatoR
 
