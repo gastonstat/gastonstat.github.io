@@ -8,8 +8,8 @@ tags: [jekyll, blog, github]
 
 ![](http://jekyllrb.com/img/logo-2x.png)
 
-After two weeks of hacking and consulting forums, I'm launching my new jekyll-powered 
-website. 
+After two weeks of hacking and consulting forums, tutorials and posts, I'm launching my 
+new jekyll-powered website. 
 
 <!--more-->
 
