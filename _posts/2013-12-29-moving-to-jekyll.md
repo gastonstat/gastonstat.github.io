@@ -13,7 +13,7 @@ website.
 
 <!--more-->
 
-### Google sites and wordpress
+### Goodbye Google sites and wordpress
 
 So far I had been using [google sites](http://www.google.com/sites/help/intl/en/overview.html) 
 to host my personal website, and [wordpress](http://en.wordpress.com/) for blogging. 
