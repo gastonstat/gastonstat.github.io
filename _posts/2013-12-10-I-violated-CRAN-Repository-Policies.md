@@ -10,12 +10,12 @@ I'm embarrassed to publicly admit that I violated the
 <a href="http://cran.r-project.org/web/packages/policies.html" title="cran policies" target="_blank">CRAN policies</a> 
 for R packages... Yes, I know, shame on me :(
 
+![](/images/pathmox_violations.png)
+
 <!--more-->
 
 I must confess I'm guilty for not keeping up to date the maintainer's email address of my 
 beloved package **pathmox**. 
-
-<img class="centered" src="/images/pathmox_violations.png" title="pathmox_removed" width="551" height="243" />
 
 As a result of my violation, my package was removed from the CRAN repository (see 
 screenshot above) not without being 

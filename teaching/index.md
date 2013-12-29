@@ -45,4 +45,6 @@ My [R pubs](http://rpubs.com/gaston)
 - [Visualizing hurricane trajectories](http://rpubs.com/gaston/hurricanes)
 
 
+## Other
 
+[Tips for presentations](https://docs.google.com/presentation/d/1XZj_vU9LMCYZYjAuDQI1QecXLl004wz32OpXB3uzl04/pub?start=false&amp;loop=false&amp;delayms=3000)

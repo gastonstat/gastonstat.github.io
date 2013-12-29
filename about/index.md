@@ -49,6 +49,7 @@ related stuff in my blog [Data Analysis Visually EnfoRced](/blog).
 
 Besides data visualization, I also like to visualize the world through the lens of my camera
 
+- <a href="https://plus.google.com/photos/117265732281156472530/albums/5923141177468349217" target="_blank">Long Format</a><br>
 - <a href="https://plus.google.com/photos/117265732281156472530/albums/5850583855206261729" target="_blank">Nielsen Lab</a><br>
 - <a href="https://plus.google.com/photos/117265732281156472530/albums/5855398230533809713" target="_blank">Lab Stuff</a><br>
 - <a href="https://plus.google.com/photos/117265732281156472530/albums/5684951439367440929" target="_blank">Outdoors BW</a><br>

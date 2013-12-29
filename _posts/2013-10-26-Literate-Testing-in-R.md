@@ -6,6 +6,8 @@ categories: opinion resources
 tags: [literate, objects, package, programming, tester, testing, validation]
 ---
 
+![](/images/literate_testing_really.png)
+
 This past summer I attended the French R meeting in Lyon. But that's secondary for this 
 story. The important part happened while I was on the train on my way to Lyon.
 
@@ -37,7 +39,7 @@ Isn't this much better and simpler, not to mention more understandable? Hell yes
 not to have more functions like ```is_positive_integer(x)``` to test specific features 
 of some common R objects? 
 
-![](/images/literate_testing_really.png)
+![](/images/literate_testing.png)
 
 I spent the rest of my ride to Lyon, and the next couple of days creating 
 <a href="http://cran.r-project.org/web/packages/tester/index.html" target="_blank">tester</a>, 

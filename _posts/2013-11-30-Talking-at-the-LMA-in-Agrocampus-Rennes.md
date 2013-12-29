@@ -6,6 +6,8 @@ categories: opinion
 tags: [agrocampus, talk, presentation, rennes, slides]
 ---
 
+![](/images/start_small.png)
+
 On November 29 (2013) I had the nice opportunity to visit my French colleagues at the 
 <a href="http://math.agrocampus-ouest.fr/infoglueDeliverLive/" target="_blank">LMA2: Laboratoire de Mathématiques Appliquées</a> 
 (Applied Mathematic Lab) in Agrocampus, Rennes. 
@@ -51,10 +53,4 @@ take-home question is very simple: What it is that we achieve with a
 computational-analytical-tool? Personally, when I develop a package, I would like it to 
 help me address at least one of the following principles:
 
-- reduce friction
-- save time
-- make things prettier
-- make things easier
-- make things more interesting
-
-<img src="/images/implications.png" alt="implications" />
+![](/images/implications.png)
