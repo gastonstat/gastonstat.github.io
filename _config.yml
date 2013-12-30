@@ -5,7 +5,3 @@ permalink: /blog/:categories/:year/:month/:day/:title.html
 markdown: redcarpet
 exclude: ["Rmd", ".DS_Store", "README.md"]
 excerpt_separator: <!--more-->
-analytics: 
-  provider: google
-  google:
-      tracking_id: 'UA-26873867-1'
