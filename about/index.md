@@ -47,6 +47,10 @@ related stuff in my blog [Data Analysis Visually EnfoRced](/blog).
 
 ## Photos
 
+<p>
+<img src="/images/website/water_drop.jpg" width="700" alt="water_drop"/> 
+</p>
+
 Besides data visualization, I also like to visualize the world through the lens of my camera
 
 - <a href="https://plus.google.com/photos/117265732281156472530/albums/5923141177468349217" target="_blank">Long Format</a><br>
@@ -97,7 +101,7 @@ projects in order. This is easier said than done.
 - Sometimes listening to music, sometimes in silence
 
 <p>
-<img src="http://farm4.staticflickr.com/3765/11406802826_fdc132d7d4.jpg" width="700" alt="colophon"/> 
+<img src="http://farm4.staticflickr.com/3765/11406802826_77d023acc1_o.jpg" width="700" alt="colophon"/> 
 </p>
 
 ## Colophon

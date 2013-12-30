@@ -11,14 +11,14 @@
 html, body { height: 100%; }
 
 body {
-  font-family: 16px Times New Roman, Times, serif;
+  font: 16px "Times New Roman", Times, serif;
   font-size: 1.2em;
   color: #444;
   text-align: center;
 }
 
 h1 {
-  font: 24px Helvetica, Arial, sans-serif;
+  font: 24px Arial, Helvetica, sans-serif;
   font-size: 1.6em; 
   color: #aaa;
   margin-top: 1em;
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-  font: 18px Times New Roman, Times, serif;
+  font: 18px "Times New Roman", Times, serif;
   font-size: 1.3em; 
   color: #444;
   margin-top: 1.4em;
@@ -123,6 +123,9 @@ img {
   margin-right: auto;
   padding: 5px;
   max-width: 700px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 
 iframe {
@@ -152,7 +155,7 @@ ul.posts li {
 
 ul.posts span {
   color: #bbb;
-  font-family: Times New Roman, Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 80%;
 }
 
