@@ -62,9 +62,9 @@ Besides data visualization, I also like to visualize the world through the lens 
 
 What I like about my "job" is that:
 
-- It can be applied to practically all sciences and disciplines;
-- Consequently, it has allowed me to open the doors of many different fields;
-- But most important, it has given me the fortune to work with very smart and talented 
+1. It can be applied to practically all sciences and disciplines;
+2. Consequently, it has allowed me to open the doors of many different fields;
+3. But most important, it has given me the fortune to work with very smart and talented 
 people from all over the world (from whom I've learned so much).
 
 
@@ -104,7 +104,7 @@ projects in order. This is easier said than done.
 
 ## Colophon
 
-This site is designed and developed using [Jekyll](https://github.com/mojombo/jekyll). 
+I design and develop this site using [Jekyll](https://github.com/mojombo/jekyll). 
 Hosting by [github pages](https://pages.github.com). Source available on 
 [github](https://github.com/gastonstat/gastonstat.github.io).
 
