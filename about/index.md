@@ -17,7 +17,7 @@ and develop computational tools for doing so.
 ## Currently
 
 I'm a research engineer in the <em>Unité de Sensométrie et Chimiométrie</em> (USC) at
-<a href="http://www.oniris-nantes.fr/en/research-units/research-unit-sensometrics-chemometrics/unit-presentation" 
+<a href="http://www.oniris-nantes.fr/en/research/research-units/research-unit-sensometrics-chemometrics/unit-presentation/" 
 target="_blank">Oniris-Nantes</a>.
 
 

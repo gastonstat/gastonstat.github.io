@@ -28,7 +28,7 @@ What I liked the most about *google sites* is that all my google products (prese
 docs, tables, drive, plus, picasa, youtube, etc) could be integrated in a painless way. 
 In addition, the learning curve was very mellow and I gained enough confidence to start 
 playing with *html* format and other less basic options. However, as I started to learn 
-more about html and css, I felt very limited with the provided options of google sites. 
+more about html and css, I felt very limited with the provided options of *google sites*. 
 That was the main reason why I started to look for other more flexible alternatives.
 
 On the *wordpress* side, I think it is as good as *google sites* if you want to have a basic 
