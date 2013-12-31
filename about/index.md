@@ -47,7 +47,7 @@ related stuff in my blog [Data Analysis Visually EnfoRced](/blog).
 
 ## Photos
 
-![](/images/website/water_drop.jpg)
+![](/images/website/water_drop.JPG)
 
 Besides data visualization, I also like to visualize the world through the lens of my camera
 
