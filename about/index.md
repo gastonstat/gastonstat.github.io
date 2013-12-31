@@ -47,9 +47,7 @@ related stuff in my blog [Data Analysis Visually EnfoRced](/blog).
 
 ## Photos
 
-<p>
-<img src="/images/website/water_drop.jpg" width="700" alt="water_drop"/> 
-</p>
+![](/images/website/water_drop.jpg)
 
 Besides data visualization, I also like to visualize the world through the lens of my camera
 
