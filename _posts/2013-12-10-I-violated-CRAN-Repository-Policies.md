@@ -4,15 +4,16 @@ title: I violated CRAN Repository Policies
 date: 2013-12-10
 categories: opinion
 tags: [CRAN, pathmox, policies, R, ripleyed, violation]
+image: pathmox_violations.png
 ---
 
 I'm embarrassed to publicly admit that I violated the 
 <a href="http://cran.r-project.org/web/packages/policies.html" title="cran policies" target="_blank">CRAN policies</a> 
 for R packages... Yes, I know, shame on me :(
 
-![](/images/pathmox_violations.png)
-
 <!--more-->
+
+<img class="centered" src="/images/pathmox_violations.png">
 
 I must confess I'm guilty for not keeping up to date the maintainer's email address of my 
 beloved package **pathmox**. 

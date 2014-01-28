@@ -11,7 +11,7 @@ index = "/Users/Gaston/Documents/gastonstat.github.io/work/rtist/index.md"
 
 # fill file
 cat(file = index, "---", "\n")
-cat(file = index, "layout: default", "\n", append = TRUE)
+cat(file = index, "layout: page", "\n", append = TRUE)
 cat(file = index, "title: R-tist", "\n", append = TRUE)
 cat(file = index, "---", "\n\n", append = TRUE)
 cat(file = index, "# R-tist", "\n\n", append = TRUE)

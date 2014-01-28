@@ -22,7 +22,7 @@ have some free time to post again in this blog. For me this feels like a fresh r
 and a good opportunity to thank Mike, Dave, and Fabian for their inspiring manifesto. 
 So here it is, a humble plot with part of the Holstee Manifesto.
 
-![](/images/holstee.png)
+<img class="centered" src="/images/holstee.png">
 
 {% highlight r %}
 # holstee manifesto

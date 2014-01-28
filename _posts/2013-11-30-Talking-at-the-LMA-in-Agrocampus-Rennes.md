@@ -4,9 +4,8 @@ title: Talking at LMA in Agrocampus Rennes
 date: 2013-11-30
 categories: opinion
 tags: [agrocampus, talk, presentation, rennes, slides]
+image: start_small.png
 ---
-
-![](/images/start_small.png)
 
 On November 29 (2013) I had the nice opportunity to visit my French colleagues at the 
 <a href="http://math.agrocampus-ouest.fr/infoglueDeliverLive/" target="_blank">LMA2: Laboratoire de Mathématiques Appliquées</a> 
@@ -53,4 +52,4 @@ take-home question is very simple: What it is that we achieve with a
 computational-analytical-tool? Personally, when I develop a package, I would like it to 
 help me address at least one of the following principles:
 
-![](/images/implications.png)
+<img class="centered" src="/images/implications.png">

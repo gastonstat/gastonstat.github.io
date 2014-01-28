@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: page
 title: Teaching
-is_page: true
 ---
 
 # Teaching

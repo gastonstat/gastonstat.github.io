@@ -1,6 +1,6 @@
 ---
 title: About
-layout: default
+layout: page
 ---
 
 # About Me
@@ -47,7 +47,7 @@ related stuff in my blog [Data Analysis Visually EnfoRced](/blog).
 
 ## Photos
 
-![](/images/website/water_drop.JPG)
+<img class="centered" src="/images/website/water_drop.JPG">
 
 Besides data visualization, I also like to visualize the world through the lens of my camera
 
@@ -85,8 +85,14 @@ If you have something else in mind please consider the following options
 - Invited Speaker
 - Consulting
 
-<div style="border-bottom: 1px solid #eee; padding: 5px 0;">
-</div>
+
+## Wishlist
+
+This site remains ad-free and its content takes hundreds of hours a month to research and write. 
+If you find any joy and value in it, please consider supporting me. You can help me get 
+useful resources from my <a href="http://amzn.com/w/247IGP8DY2ER5" target="_blank">wishlist</a>.
+
+<hr>
 
 # About this website
 
@@ -99,7 +105,7 @@ projects in order. This is easier said than done.
 - Sometimes listening to music, sometimes in silence
 
 <p>
-<img src="http://farm4.staticflickr.com/3765/11406802826_77d023acc1_o.jpg" width="700" alt="colophon"/> 
+<img class="centered" src="http://farm4.staticflickr.com/3765/11406802826_77d023acc1_o.jpg" alt="colophon"/> 
 </p>
 
 ## Colophon

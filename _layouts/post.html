@@ -1,19 +1,19 @@
 ---
-layout: default
+layout: page
 ---
 <div class="post">
 	<h1> {{ page.title }} </h1>
-	<span class="date">Posted on {{ page.date | date_to_string }}</span>
-
+	<!-- <span class="date">Posted on {{ page.date | date_to_string }}</span> -->
+	<h5>Posted on {{ page.date | date_to_string }}</h5>
+	
 	{{ content }}
 
 </div>
 
+<hr>
+<p></p>
+
 <div class="meta">
-	<span class="author">
-		Author <a href="http://www.gastonsanchez.com">{{ site.author }}</a>
-	</span>
-	<br/>
 	
 	{% if page.categories %}
 	<span class="categories">
@@ -26,7 +26,7 @@ layout: default
 	
 	{% if page.tags %}
 	<span class="tags">
-		tagged with 
+		Tagged with 
 		{% for tag in page.tags %}
 		<a href="{{ site.url }}/blog/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
 		{% endfor %}

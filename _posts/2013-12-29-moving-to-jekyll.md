@@ -4,14 +4,15 @@ title: "Moving to Jekyll"
 date: 2013-12-29
 categories: opinion
 tags: [jekyll, blog, github]
+image: jekyll_logo.png
 ---
-
-![](http://jekyllrb.com/img/logo-2x.png)
 
 After two weeks of hacking and consulting forums, tutorials and posts, I'm launching my 
 new jekyll-powered website. 
 
 <!--more-->
+
+<img class="centered" src="http://jekyllrb.com/img/logo-2x.png">
 
 ### Goodbye Google sites and wordpress
 

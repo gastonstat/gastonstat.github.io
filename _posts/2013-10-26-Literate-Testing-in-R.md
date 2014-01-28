@@ -4,14 +4,15 @@ title: "Literate Testing in R"
 date: 2013-10-26
 categories: opinion resources
 tags: [literate, objects, package, programming, tester, testing, validation]
+image: literate_testing_really.png
 ---
-
-![](/images/literate_testing_really.png)
 
 This past summer I attended the French R meeting in Lyon. But that's secondary for this 
 story. The important part happened while I was on the train on my way to Lyon.
 
 <!--more-->
+
+<img class="centered" src="/images/literate_testing.png">
 
 As I was reviewing a couple of my functions, I noticed that I was getting sick. Not from 
 motion sickness but from the way I was validating the arguments of the functions. One of 
@@ -20,7 +21,7 @@ the functions required a positive integer as an input.
 R has the function ```is.integer(x)``` to check if ```x``` is an integer. The problem is 
 that if you type ```is.integer(1)``` you would get ```FALSE``` as an answer. The reason 
 is because 1 is not stored as an integer in R, but as a double. If you want an integer 
-then you should use 1L. So, if you type ```is.integer(1L)``` the answer is ```TRUE```. 
+then you should use 1L. Now, if you type ```is.integer(1L)``` the answer is ```TRUE```. 
 So, what does this have to do with my story? Well, if I want to validate whether a given 
 object ```x``` is a positive integer, I could write the following line:
 
@@ -39,7 +40,7 @@ Isn't this much better and simpler, not to mention more understandable? Hell yes
 not to have more functions like ```is_positive_integer(x)``` to test specific features 
 of some common R objects? 
 
-![](/images/literate_testing.png)
+<img class="centered" src="/images/literate_testing_really.png">
 
 I spent the rest of my ride to Lyon, and the next couple of days creating 
 <a href="http://cran.r-project.org/web/packages/tester/index.html" target="_blank">tester</a>, 

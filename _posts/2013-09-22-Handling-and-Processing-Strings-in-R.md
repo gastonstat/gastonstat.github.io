@@ -6,7 +6,7 @@ categories: resources how-to
 tags: [book, characters, expressions, handling, strings, regex, regular, text, stringr]
 ---
 
-<img src="http://farm8.staticflickr.com/7428/11440428013_dd9e6f064d_c.jpg" alt="string_blue">
+<img class="centered" src="http://farm8.staticflickr.com/7428/11440428013_dd9e6f064d_c.jpg" alt="string_blue">
 
 **Handling and Processing Strings in R** is an ebook dedicated to show you some 
 introductory material to manipulate character strings in R.
