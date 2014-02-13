@@ -9,9 +9,10 @@ KnitPost <- function(input, base.url = "/") {
   knit(input, envir = parent.frame())
 }
 
-setwd("/Users/Gaston/Desktop/myjekyll/blog/Rmd")
+setwd("/Users/Gaston/Documents/gastonstat.github.io/Rmd")
 
-KnitPost("2012-06-17-PCA-in-R.Rmd")
+KnitPost("2014-01-15-Center-data-in-R.Rmd")
+# KnitPost("2012-06-17-PCA-in-R.Rmd")
 # KnitPost("2012-07-19-Correspondence-Analysis.Rmd")
 # KnitPost("2012-10-03-Dendrograms.Rmd")
 # KnitPost("2012-05-31-Google-line-chart.Rmd")
