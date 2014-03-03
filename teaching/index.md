@@ -8,6 +8,13 @@ title: Teaching
 Some of my teaching materials, tutorials, docs, etc
 
 
+## <a name="matrix"></a>Matrix Algebra for Data Analysis
+
+- [Matrix Basics 1](/teaching/matrix_basics1.pdf)
+- [Matrix Basics 2](/teaching/matrix_basics2.pdf)
+- [Decompositions](/teaching/matrix_decompositions.pdf)
+
+
 ## <a name="pls"></a>Partial Least Squares
 
 - [PLS Path Modeling with R](/PLS_Path_Modeling_with_R.pdf)

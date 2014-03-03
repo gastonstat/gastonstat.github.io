@@ -15,7 +15,7 @@ One of the most frequent operations in multivariate data analysis is the so-call
 
 ## Mean-centering
 
-Prior to the application of many multivariate methods, data are often pre-processed. This pre-processing involves transforming the data into a suitable form for the analysis. Among the different pre-treatment procedures, one of the the most common operations is the well known *mean-centering*. 
+Prior to the application of many multivariate methods, data are often pre-processed. This pre-processing involves transforming the data into a suitable form for the analysis. Among the different pre-treatment procedures, one of the most common operations is the well known *mean-centering*. 
 
 Mean-centering involves the subtraction of the variable averages from the data. Since multivariate data is typically handled in table format (i.e. matrix) with columns as variables, mean-centering is often referred to as *column centering*.
 
