@@ -36,7 +36,7 @@ and methods, especially those designed for very practical applications.
 - I'm fascinated with the use of graphical displays to understand data with 
 visualization.
 - I'm a passionate R user as well as a 
-[developer](/software.html) of statistical software in R.
+[developer](/software) of statistical software in R.
 
 
 ## Blog
