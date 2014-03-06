@@ -165,8 +165,9 @@
   height: auto;
   margin-top: 0px;
   text-align: center;
-/*  background-color: rgba(30, 30, 30, 0.5); */
-  color: #fff;
+/*  background-color: rgba(90, 90, 90, 0.3); */
+  color: #555;
+/*  color: #fff; */
 }
 
 .header-home h1 {
@@ -177,7 +178,7 @@
 
 .header-home h1 a {
   text-decoration: none;
-  color: #fff;
+  color: #555;
 }
 
 .header-home nav {
@@ -202,6 +203,7 @@
 .header-home nav ul li {
   display: inline;
   list-style: none;
+  font-size: 1em;
   margin: 0;
   padding: 0;
   position: relative;
@@ -214,7 +216,7 @@
   margin: 0 0 0 0px;
   padding: 0px 30px;
   text-decoration: none;
-  color: #fff;
+  color: #555;
   line-height: 1.3em;
 }
 

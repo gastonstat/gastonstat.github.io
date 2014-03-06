@@ -8,6 +8,18 @@ title: Work
 Some of my projects, works, and featured creations
 
 
+<h2>Handling and Processing Strings in R</h2>
+<p>
+ This book aims to help you get started with manipulating strings in R. It provides an 
+ overview of several resources for string manipulation, general topics, 
+ common operations, and other tricks. &nbsp;&nbsp;
+ <a href="/Handling_and_Processing_Strings_in_R.pdf">Download</a>
+</p>
+<a href="/Handling_and_Processing_Strings_in_R.pdf">
+<img class="centered" src="/images/website/strings_book_cover.png"/></a>
+<hr>
+
+
 <h2>PLS Path Modeling with R</h2>
 <p>
  This book provides a hands-on introduction to Partial Least Squares Path Modeling (PLS-PM) 
@@ -19,15 +31,13 @@ Some of my projects, works, and featured creations
 <hr>
 
 
-<h2>Handling and Processing Strings in R</h2>
+<h2>PLS Modeling (site)</h2>
 <p>
- This book aims to help you get started with manipulating strings in R. It provides an 
- overview of several resources for string manipulation, general topics, 
- common operations, and other tricks. &nbsp;&nbsp;
- <a href="/Handling_and_Processing_Strings_in_R.pdf">Download</a>
+ This site a space dedicated to Partial Least Squares Data Analysis Methods. Its content 
+ is basically my opinionated interpretation of how I understand the PLS universe. &nbsp;&nbsp;
 </p>
-<a href="/Handling_and_Processing_Strings_in_R.pdf">
-<img class="centered" src="/images/website/strings_book_cover.png"/></a>
+<a href="http://www.plsmodeling.com/">
+<img class="centered" src="/images/website/plsmodeling.png"/></a>
 <hr>
 
 

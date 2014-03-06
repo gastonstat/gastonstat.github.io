@@ -211,7 +211,7 @@ center_operator(Data)
 
 ### Using mean subtraction
 
-Finally, we can write a function that implements the algraic alternative in which the mean-vector is used to create the mean-matrix that is subtracted from the data:
+Finally, we can write a function that implements the algebraic alternative in which the mean-vector is used to create the mean-matrix that is subtracted from the data:
 
 {% highlight r %}
 # mean subtraction
