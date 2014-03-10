@@ -14,15 +14,32 @@ and develop computational tools for doing so.
 <a href="https://github.com/gastonstat" target="_blank">github</a>
 
 
+## Summary
+
+I’ve spent the last 10 years working on a number of projects, most of them with the 
+central theme of exploring, analyzing and visualizing data in a context of multiple 
+variables and high dimensionality. Great part of my work has been focused on the 
+development of software for statistical computations, graphics and data analysis. 
+Behind all the stuff that I’ve done there is a single idea and goal: 
+**to build a succinct summary of the data I'm analyzing**.
+
+
 ## Currently
 
-I'm a research engineer in the <em>Unit of Sensometrics and Chemometrics</em> at Oniris-Nantes.
+I'm a research engineer in the <em>Unit of Sensometrics and Chemometrics</em> at Oniris-Nantes. 
+Doing R&D in statistical programming, and working on multiblock methods for multivariate 
+data analysis.
 
 
 ## Research
 
-Doing R&D in statistical programming, and working on multiblock methods for 
-multivariate data analysis.
+My current work revisits the core concepts behind methods for association-relationship 
+between multiple sets of variables (multiblock data) using different approaches from a 
+broad range of disciplines (e.g. psychometrics, chemometrics, sensometrics, 
+econometrics, ecology and biometrics). Broadly speaking, my research focuses on how to 
+study the relationships between multiple variables, how to graphically represent such 
+relationships, and how to quantify latent factors.  
+
 
 
 ## Interests

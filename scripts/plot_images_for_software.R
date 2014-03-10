@@ -166,10 +166,10 @@ cover_edges = get.edgelist(covergraph)
 # plot
 png("/Users/Gaston/Desktop/software_plot_arcdiagram.png",width=700,height=400)
 op = par(mar = c(1,0,1,0))
-set.seed(325)
-arcplot(cover_edges, lwd.arcs=runif(28,1,8), col.arcs=ggcols(10, 0.5)[7:10], 
+set.seed(324)
+arcplot(cover_edges, lwd.arcs=runif(28,3,12), col.arcs=ggcols(10, 0.5)[7:10], 
         show.nodes=TRUE, cex.nodes=2, col.nodes="gray90", las=1, line=-0.3,
-        cex.labels=2)
+        cex.labels=1.5)
 par(op)
 dev.off()
 
