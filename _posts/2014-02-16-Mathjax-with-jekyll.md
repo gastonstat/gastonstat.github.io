@@ -20,7 +20,7 @@ this one \\( x^2 + y^2 = r^2 \\).
 
 If you check MathJax website [(www.mathjax.org)](http://www.mathjax.org/) you'll see 
 that it *is an open source JavaScript display engine for mathematics that works in all 
-browsers*. like this one: \\( x^2 + y^2 = 1\\).
+browsers*. 
 
 
 ### How to implement MathJax with Jekyll
@@ -32,7 +32,7 @@ Here are some important details. I had to modify the Ruby library for Markdown i
 my ```_config.yml``` file. Now I'm using redcarpet so the corresponding line in the 
 configuration file is: ```markdown: redcarpet```
 
-To load the MathJax javascript I added the following lines in my layout ```page.html``` 
+To load the MathJax javascript, I added the following lines in my layout ```page.html``` 
 (located in my folder ```_layouts```)
 
 {% highlight r %}
@@ -47,7 +47,7 @@ Of course you can choose a different file location in your jekyll layouts.
 ### A Couple of Examples
 
 Here's a short list of examples. To know more about the details behind MathJax, you can 
-always the provided documentation available at 
+always checked the provided documentation available at 
 [http://docs.mathjax.org/en/latest/](http://docs.mathjax.org/en/latest/)
 
 I'm assuming you are familiar with LaTeX. However, you should know that MathJax does not 
