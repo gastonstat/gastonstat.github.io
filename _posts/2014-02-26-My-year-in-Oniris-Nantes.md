@@ -79,7 +79,7 @@ colleagues at USC: ```multigroup``` and ```ClustVarLV```. The package
 [multigroup](http://cran.r-project.org/web/packages/multigroup/index.html) (by Aida Eslami *et al*) 
 provides methods for multigroup data analysis, and it is one of the derived outputs 
 from Aida Eslami's phd project. In turn, the package [ClustVarLV](http://cran.r-project.org/web/packages/ClustVarLV/index.html) 
-(by by Evelyn Vigneau and Mingkun Chen) provides methods for clustering 
+(by Evelyn Vigneau and Mingkun Chen) provides methods for clustering 
 of variables around latent variables.
 
 

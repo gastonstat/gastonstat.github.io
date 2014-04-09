@@ -107,4 +107,4 @@ victims in several war conflicts around the world.
 
 If you're curious about Megan and HRDAG, you can also check 
 [this video](https://www.youtube.com/watch?v=Rtcj3uPg8U0&list=PL055Epbe6d5YX_cD2IDr4dK9Da0Vh6YgI&feature=share&index=14) 
-of her presentation at Strata last february (2104).
+of her presentation at Strata last february (2014).
