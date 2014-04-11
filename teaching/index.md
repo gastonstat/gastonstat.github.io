@@ -40,6 +40,14 @@ Slides of the workshop about Creating an R package in windows
 - [Develop smarter, NOT harder](https://docs.google.com/presentation/d/1C085WTEjKd7oA0LyxuaQC8ESNsEMXFdOR7ditl3qeZM/pub?start=false&loop=false&delayms=3000) (part 5)
 
 
+## Association Analysis in Statistical Genetics
+
+- [Single Locus Tests](https://docs.google.com/presentation/d/1a31SELGS6JXivQAY0jy3G3BtuUJHxiELWGl-gk-N5Nw/pub?start=false&loop=false&delayms=3000)
+- [Multiple Locus Methods I](https://docs.google.com/presentation/d/1PIwawKmn_lDJp5W28xzxpVtzK0hVVEYr7caL85oCFpQ/pub?start=false&loop=false&delayms=3000)
+- [Multiple Locus Methods II](https://docs.google.com/presentation/d/1d-rrAheiWtCnPxEOgGFOhO9wSKjYVKtrW8reukwPSUs/pub?start=false&loop=false&delayms=3000)
+- [Collapsing Methods for Rare Variants](https://docs.google.com/presentation/d/1aj7QJP5MJ2XceeZMReVgQLlBQXMpVJAnfmKnCKOoFSc/pub?start=false&loop=false&delayms=3000)
+
+
 ## R pubs
 
 My [R pubs](http://rpubs.com/gaston)
