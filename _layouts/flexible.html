@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- include mathjax -->
 <script type="text/javascript"
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
@@ -10,22 +11,17 @@ layout: default
 {% include header.html %}
 </div>
 
-
 <div class="clear"></div>
 
-<div id="block">
-	<div class="prose"> 
-	{{content}}
-	</div>
-</div>
+{{content}}
 
 
 <div id="footer">
 	&copy; <a href="/">Gaston Sanchez</a>. All contents under 
 	<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">(CC) BY-NC-SA license</a>, 
 	unless otherwise noted.
-	<br/><br/>
-	Did you find this site useful? If yes, consider helping me with my  
+	</br></br>
+	Did you find this site useful? If yes, then help me with my  
 	<a href="http://amzn.com/w/247IGP8DY2ER5" target="_blank">wishlist</a>.
 </div>
 

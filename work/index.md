@@ -5,30 +5,32 @@ title: Work
 
 # Works, Projects and Experiments
 
-Some of my projects, works, and featured creations
+#### Some of my projects, works, and featured creations
 
+<hr/>
 
-<h2>Handling and Processing Strings in R</h2>
+<a href="/Handling_and_Processing_Strings_in_R.pdf"><img class="centered" src="/images/website/strings_book_cover.png"/></a>
 <p>
  This book aims to help you get started with manipulating strings in R. It provides an 
  overview of several resources for string manipulation, general topics, 
  common operations, and other tricks. &nbsp;&nbsp;
- <a href="/Handling_and_Processing_Strings_in_R.pdf">Download</a>
 </p>
-<a href="/Handling_and_Processing_Strings_in_R.pdf">
-<img class="centered" src="/images/website/strings_book_cover.png"/></a>
-<hr>
+<p>
+ <a class="redbutton" href="/Handling_and_Processing_Strings_in_R.pdf">Download</a>
+</p>
+<hr/>
 
 
-<h2>PLS Path Modeling with R</h2>
+<a href="/PLS_Path_Modeling_with_R.pdf">
+<img class="centered" src="/images/website/plspm_book_cover.png"/></a>
 <p>
  This book provides a hands-on introduction to Partial Least Squares Path Modeling (PLS-PM) 
  using the R package <code>"plspm"</code>. &nbsp;&nbsp;
- <a href="/PLS_Path_Modeling_with_R.pdf">Download</a>
 </p>
-<a href="/PLS_Path_Modeling_with_R.pdf">
-<img class="centered" src="/images/website/plspm_book_cover.png"/></a>
-<hr>
+<p>
+ <a class="redbutton" href="/PLS_Path_Modeling_with_R.pdf">Download</a>
+</p>
+<hr/>
 
 
 <h2>PLS Modeling (site)</h2>
@@ -68,3 +70,4 @@ Some of my projects, works, and featured creations
  Some of <a href="/work/rtist">my weird</a> and abstract plots in R
 </p>
 <a href="/work/rtist/"><img src="/images/rtist/green_bolts.png"/></a>
+

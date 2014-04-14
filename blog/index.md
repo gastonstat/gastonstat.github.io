@@ -16,11 +16,14 @@ layout: page
     	</p>
     	{% endif %}
         <p>{{ post.excerpt }} </p>
-        <p><a href="{{ post.url }}"><em>Continue reading</em></a></p>
-        <hr>
+        <p>	<a class="graybutton" href="{{ post.url }}">Continue reading</a></p>
+        <br/>
+        <hr/>
     {% endfor %}
 
-    <h6><a href="/blog/archive/" title="an archive of all posts">See all posts &rarr;</a></h6>
+	<p>
+	<a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts &rarr;</a>
+	</p>
 	
 </div>
 

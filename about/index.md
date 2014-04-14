@@ -5,13 +5,18 @@ layout: page
 
 # About Me
 
-I'm an applied statistician who loves to analyze data, visualize it
-and develop computational tools for doing so.
+#### I'm an applied statistician who loves to analyze data, visualize it and develop computational tools for doing so.
 
-<a href="https://docs.google.com/presentation/d/1SgaTJpjoL4YCklgB_CMgaQldoxv8rIJFvuTPilDPKGs/pub?start=false&loop=false&delayms=3000" target="_blank">intro</a>&nbsp;&nbsp;&nbsp;
-<a href="/about/GastonSanchez_resumecode.pdf">resume</a>&nbsp;&nbsp;&nbsp;
-<a href="http://www.linkedin.com/in/sanchezgaston" target="_blank">linkedin</a>&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/gastonstat" target="_blank">github</a>
+
+<a class="graybutton" href="https://docs.google.com/presentation/d/1SgaTJpjoL4YCklgB_CMgaQldoxv8rIJFvuTPilDPKGs/pub?start=false&loop=false&delayms=3000" target="_blank">intro</a>
+&nbsp;&nbsp;
+<a class="graybutton" href="/about/GastonSanchez_resumecode.pdf">resume</a>
+&nbsp;&nbsp;
+<a class="graybutton" href="http://www.linkedin.com/in/sanchezgaston" target="_blank">linkedin</a>
+&nbsp;&nbsp;
+<a class="graybutton" href="https://github.com/gastonstat" target="_blank">github</a>
+
+<hr/>
 
 
 ## Summary
@@ -42,7 +47,6 @@ study the relationships between multiple variables, how to graphically represent
 relationships, and how to quantify latent factors.  
 
 
-
 ## Interests
 
 There are 3 major topics that I'm hooked to:
@@ -61,6 +65,16 @@ Occasionally, I like to talk about data analysis, visualization, statistics, R a
 related stuff in my blog [Data Analysis Visually EnfoRced](/blog).
 
 
+## Trifecta
+
+What I like about my "job" is that:
+
+1. It can be applied to practically all sciences and disciplines;
+2. Consequently, it has allowed me to open the doors of many different fields;
+3. But most important, it has given me the fortune to work with very smart and talented 
+people from all over the world (from whom I've learned so much).
+
+
 ## Photos
 
 <img class="centered" src="/images/website/water_drop.JPG">
@@ -72,16 +86,6 @@ Besides data visualization, I also like to visualize the world through the lens 
 - <a href="https://plus.google.com/photos/117265732281156472530/albums/5855398230533809713" target="_blank">Lab Stuff</a><br>
 - <a href="https://plus.google.com/photos/117265732281156472530/albums/5684951439367440929" target="_blank">Outdoors BW</a><br>
 - <a href="https://plus.google.com/photos/117265732281156472530/albums/5846352754687836433" target="_blank">Street Poles</a><br>
-
-
-## Trifecta
-
-What I like about my "job" is that:
-
-1. It can be applied to practically all sciences and disciplines;
-2. Consequently, it has allowed me to open the doors of many different fields;
-3. But most important, it has given me the fortune to work with very smart and talented 
-people from all over the world (from whom I've learned so much).
 
 
 ## Contact
@@ -126,9 +130,10 @@ projects in order. This is easier said than done.
 
 ## Colophon
 
-I design and develop this site using [Jekyll](https://github.com/mojombo/jekyll). 
+I design and develop this site using [Jekyll](https://github.com/mojombo/jekyll), following 
+this [styleguide](/styleguide). 
 Hosting by [github pages](https://pages.github.com). Source available on 
-[github](https://github.com/gastonstat/gastonstat.github.io).
+[github](https://github.com/gastonstat/gastonstat.github.io). 
 
 
 Unless specified otherwise, content on this site is licensed under a 
