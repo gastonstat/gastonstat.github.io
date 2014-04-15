@@ -47,10 +47,9 @@ title: Work
 <p>
  Inspired by the <a href="http://similardiversity.net" target="_blank" title="similar diversity">Similar Diversity</a> 
  project of Philipp Steinweber and Andreas Koller, I spent some time to produce 
- <a href="https://github.com/gastonstat/StarWars">my own version</a> of an arc diagram... based on the Star Wars movie scripts.
+ <a href="starwars">my own version</a> of an arc diagram... based on the Star Wars movie scripts.
 </p>
-<a href="https://docs.google.com/presentation/d/1bWM7RxihSBzrcp07g026Lu5Ey10OACujj727vAIE7wo/pub?start=false&loop=false&delayms=3000">
-<img class="centered" src="/images/website/starwars_arcdiagram.png"/></a>
+<a href="starwars"><img class="centered" src="/images/website/starwars_arcdiagram.png"/></a>
 <hr>
 
 

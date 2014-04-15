@@ -121,14 +121,14 @@ form of filtering</blockquote>
 
 <div id="block">
 	<div class="wide-image">
-		<img class="full" src="/images/wide_arcdiagram.png" alt="full-wide" />
+		<img class="full" src="/images/website/fullwidth_arcdiagram.png" alt="full-wide" />
 	</div>
 	<div class="prose">
 		<p><code>centered</code> images occupy just a partial space of the screen width. 
-		They are used to highlight importance of visual elements.
+		They are used to show a visual element like a photo, screenshot, chart, or plot.
 		</p>
 		<p>
-		<img class="centered" src="/images/wide_arcdiagram.png" alt="centered" />
+		<img class="centered" src="/images/website/fullwidth_arcdiagram.png" alt="centered" />
 		</p>
 	</div>
 </div>
