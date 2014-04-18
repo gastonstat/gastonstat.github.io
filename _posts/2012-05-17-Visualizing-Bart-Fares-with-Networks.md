@@ -6,7 +6,7 @@ categories: crunching-data how-to visualization
 tags: [bart, fares, graph, network, ridership]
 ---
 
-<img class="centered" title="Bart_fares_network" src="/images/bart_fares_network.png" alt="Bart Fares" 
+<img class="centered" title="Bart_fares_network" src="/images/blog/bart_fares_network.png" alt="Bart Fares" 
 width="580" height="552"/>
 
 In one of my visualization projects, I felt curiosity to visualize the fares between 

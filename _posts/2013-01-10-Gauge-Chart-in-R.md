@@ -17,7 +17,7 @@ programming.
 For instance, take the <a title="google gauge chart" href="https://developers.google.com/chart/interactive/docs/gallery/gauge" target="_blank">google gauge charts</a>
 which I really like:
 
-![](/images/google_gauge_charts.png)
+<img class="centered" src="/images/blog/google_gauge_charts.png" />
 
 A gauge is a very common chart used in information dashboards; you can use a gauge when 
 you want to show a single value within a given scale. These charts typically show a key 
@@ -31,7 +31,7 @@ type of colors we should use. We're just going to see how we can create gauges i
 
 Look at the following gauge from google charts:
 
-![](/images/google_gauge.png)
+<img class="centered" src="/images/blog/google_gauge.png" />
 
 We can distinguish the following elements:
 
@@ -207,4 +207,4 @@ text(z0x, z0y, labels = "0", col = "gray50")
 text(z100x, z100y, labels = "100", col = "gray50")
 {% endhighlight %}
 
-![](/images/gauge_chart_with_r.png)
+<img class="centered" src="/images/blog/gauge_chart_with_r.png" />

@@ -4,10 +4,11 @@ title:  Bart Ridership
 date:   2012-05-25
 categories: [crunching-data, how-to, visualization]
 tags: [bart, fares, graph, ridership, ggmap, openstreetmap]
+image: bart_ggmap_openstreetmap.png
 ---
 
 <img class="centered" title="Bart_ggmap_openstreetmap" 
-src="/images/bart_ggmap_openstreetmap.png" alt="Bart ggmap openstreetmap" width="580" height="520" />
+src="/images/blog/bart_ggmap_openstreetmap.png" alt="Bart ggmap openstreetmap" width="580" height="520" />
 
 Ever wonder how many people exit at BART stations on a typical weekday? You can check 
 the numbers in the <a title="bart reports" href="http://www.bart.gov/about/reports/index.aspx" 

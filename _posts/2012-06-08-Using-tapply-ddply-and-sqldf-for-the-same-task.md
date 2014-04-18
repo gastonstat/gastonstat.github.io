@@ -13,7 +13,7 @@ and brands (qualitative) of different products, and you want to get the average 
 those products by brand. To make things clearer let's generate some imaginary data of 
 commercial products:
 
-{% highlight ruby %}
+{% highlight r %}
 # here's the data
 item = toupper(letters[1:15])
 
@@ -26,7 +26,7 @@ some_data = data.frame(item, brand, price, units)
 
 You should get a table like this one
 
-{% highlight ruby %}
+{% highlight r %}
      item   brand   price   units
 1       A    Beta    2.02       1
 2       B    Beta    6.33       3
@@ -57,7 +57,7 @@ use. Here are some options:
 
 ### Option 1: using a *for loop*
 
-{% highlight ruby %}
+{% highlight r %}
 # Naive option: don't do this!!!
 n_alpha = 0
 n_beta = 0
@@ -76,7 +76,7 @@ cat("Average Alpha:", avg_alpha / n_alpha,
 "\nAverage Beta:", avg_beta / n_beta)
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight r %}
 Average Alpha: 6.105556
 Average Beta: 5.31
 {% endhighlight %}
@@ -84,13 +84,13 @@ Average Beta: 5.31
 
 ### Option 2: using *boolean selection*
 
-{% highlight ruby %}
+{% highlight r %}
 # using boolean selection
 with(some_data, mean(price[brand=="Alpha"]))
 with(some_data, mean(price[brand=="Beta"]))
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight r %}
 6.105556
 5.31
 {% endhighlight %}
@@ -98,12 +98,12 @@ with(some_data, mean(price[brand=="Beta"]))
 
 ### Option 3: using ```tapply()```
 
-{% highlight ruby %}
+{% highlight r %}
 # using tapply
 with(some_data, tapply(price, brand, mean))
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight r %}
   Alpha Beta
 6.105556 5.310000
 {% endhighlight %}
@@ -111,13 +111,13 @@ with(some_data, tapply(price, brand, mean))
 
 ### Option 4: using <em>ddply</em></strong>
 
-{% highlight ruby %}
+{% highlight r %}
 # using ddply
 require(plyr)
 ddply(some_data, .(brand), summarise, mean_price=mean(price))
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight r %}
   brand mean_price
 1 Alpha 6.105556
 2 Beta 5.310000
@@ -126,13 +126,13 @@ ddply(some_data, .(brand), summarise, mean_price=mean(price))
 
 ### Option 5: using an *SQL query*
 
-{% highlight ruby %}
+{% highlight r %}
 # Using an SQL query
 require(sqldf)
 sqldf("SELECT brand, AVG(price) AS mean_price FROM some_data GROUP BY brand")
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight r %}
   brand mean_price
 1 Alpha 6.105556
 2 Beta 5.310000

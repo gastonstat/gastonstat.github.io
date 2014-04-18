@@ -52,4 +52,4 @@ take-home question is very simple: What it is that we achieve with a
 computational-analytical-tool? Personally, when I develop a package, I would like it to 
 help me address at least one of the following principles:
 
-<img class="centered" src="/images/implications.png">
+<img class="centered" src="/images/blog/implications.png" />

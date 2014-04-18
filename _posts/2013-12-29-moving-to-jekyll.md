@@ -12,7 +12,7 @@ new jekyll-powered website.
 
 <!--more-->
 
-<img class="centered" src="http://jekyllrb.com/img/logo-2x.png">
+<img class="centered" src="http://jekyllrb.com/img/logo-2x.png" />
 
 ### Goodbye Google sites and wordpress
 

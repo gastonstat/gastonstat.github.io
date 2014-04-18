@@ -18,7 +18,9 @@ I don't know for sure when was the first time I saw the
 arc diagram by Philipp Steinweber and Andreas Koller (it must have been somewhere at the 
 end of 2009 or at the beginning of 2010).
 
-<a href="http://similardiversity.net/" target="_blank"><img title="Similar Diversity" src="/images/dataflow_page.jpg" /></a> 
+<a href="http://similardiversity.net/" target="_blank">
+<img class="centered" title="Similar Diversity" src="/images/blog/dataflow_page.jpg" />
+</a> 
 
 Anyway, the important thing is that I was immediately amazed by all the different 
 features beautifully displayed in such a diagram. My obvious reaction was quite simple: 

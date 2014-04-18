@@ -13,7 +13,7 @@ covered a variety of uses, applications, examples, and news from active useRs.
 
 <!--more-->
 
-<img class="centered" src="/images/BARUG.png">
+<img class="centered" src="/images/blog/BARUG.png" />
 
 As usual, the meeting was nicely organized by [Joseph Rickert](http://www.linkedin.com/pub/joseph-rickert/0/a96/a45) 
 (from Revolution Analytics), and this time it was hosted by Predictive Analytics World, 
@@ -44,7 +44,7 @@ activity around R and their very interesting material makes it always worth bein
 night. He's the creator of the R package [caret](http://caret.r-forge.r-project.org/), 
 and co-author of a recently published book [Applied Predictive Modeling](http://appliedpredictivemodeling.com/).
 
-<img class="centered" src="/images/max_kuhn.jpg">
+<img class="centered" src="/images/blog/max_kuhn.jpg" />
 
 Kuhn's talk was basically about how to make a [network diagram](http://caret.r-forge.r-project.org/similarity.html) 
 of all the models that can be accessed by ```caret```'s train function. For those of you who 
@@ -63,7 +63,7 @@ that contains more detailed information about the resulting network.
 The second speaker of the meetup was [Antonio Piccolboni](http://piccolboni.info/). He's 
 one the lead developers behind the [RHadoop project](https://github.com/RevolutionAnalytics/RHadoop/wiki).
 
-<img class="centered" src="/images/antonio_piccolboni.jpg">
+<img class="centered" src="/images/blog/antonio_piccolboni.jpg" />
 
 Antonio gave a presentation about the R package [plyrmr](https://github.com/RevolutionAnalytics/RHadoop/wiki/plyrmr). 
 (short for plyr mapreduce). Broadly speaking, this package allows users to perform data 
@@ -83,12 +83,12 @@ She's the co-founder and director of research of [Human Rights Data Analysis Gro
 Simply put HRDAG is a non-profit, non-partisan organization that applies rigorous science 
 to the analysis of human rights violations around the world.
 
-<img class="centered" src="/images/megan_price.jpg">
+<img class="centered" src="/images/blog/megan_price.jpg" />
 
 I loved the extremely interesting and captivating title of her talk 
 *How a Small Non-Profit Human Rights Group Uses R* (see picture below). 
 
-<img class="centered" src="/images/hrdag_slide.jpg">
+<img class="centered" src="/images/blog/hrdag_slide.jpg" />
 
 Megan talked about the overall analysis pipeline at HRDAG and the role R plays within 
 their workflow. Among the various reasons for choosing and using R over other programs, 

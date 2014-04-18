@@ -13,7 +13,7 @@ for R packages... Yes, I know, shame on me :(
 
 <!--more-->
 
-<img class="centered" src="/images/pathmox_violations.png">
+<img class="centered" src="/images/blog/pathmox_violations.png" />
 
 I must confess I'm guilty for not keeping up to date the maintainer's email address of my 
 beloved package **pathmox**. 
@@ -24,7 +24,7 @@ screenshot above) not without being
 during the process, and been threatened that all my other packages were going to receive 
 the same treatment.
 
-<img class="centered" src="/images/pathmox_removed.png" title="removed pathmox" width="551" height="227" />
+<img class="centered" src="/images/blog/pathmox_removed.png" title="removed pathmox" width="551" height="227" />
 
 What happened was that my previous email account was hacked and so I abandoned it... 
 without informing the CRAN team of the new address. Such a 
@@ -68,4 +68,4 @@ At the end I was able to get in contact with Kurt Hornik who helped me finding o
 solution and get my package reestablished in CRAN. Anyway, one more lesson I've 
 learned the hard way. The take home message is simple: please don't violate CRAN policies. 
 
-<img class="centered" src="/images/dolores.png" alt="dolores" width="300" height="300" />
+<img class="centered" src="/images/blog/dolores.png" alt="dolores" width="300" height="300" />

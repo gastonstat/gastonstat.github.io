@@ -12,7 +12,7 @@ Oniris-Nantes. So I feel it's time to look back in retrospect and do a quick rev
 
 <!--more-->
 
-<img class="centered" src="/images/elephant.jpg">
+<img class="centered" src="/images/blog/elephant.jpg" />
 
 *What's this photo?* Glad you asked. It's the famous **great elephant** from 
 [Les Machines de l'ile]("http://www.lesmachines-nantes.fr/‎") de Nantes. A colosal machine of
@@ -35,7 +35,7 @@ of some of the stuff I've done in the last 12 months.
 ### Oniris-Nantes
 
 <a href="http://www.oniris-nantes.fr/recherche/departements-et-unites-de-recherche/unite-sensometrie-et-chimiometrie/">
-<img class="centered" src="http://www.oniris-nantes.fr/fileadmin/templates/Oniris/v1/img/logo.jpg">
+<img class="centered" src="http://www.oniris-nantes.fr/fileadmin/templates/Oniris/v1/img/logo.jpg" />
 </a>
 
 I won't blame you if you know nothing about Oniris. Before coming here, I didn't know 
@@ -108,4 +108,4 @@ Nantes has been a very enriching experience and I feel very lucky of having bein
 to Oniris. What's next? I have no idea, but I'm looking forward for my next journey. 
 As the Nantes' motto says: **Favet Neptunus Eunti** (Neptune favours the traveller). 
 
-<img class="centered" src="http://www.comboutique.com/shop/products/inprint_small/USR7928/20101024005750_blason_naoned.jpg">
+<img class="centered" src="http://www.comboutique.com/shop/products/inprint_small/USR7928/20101024005750_blason_naoned.jpg" />

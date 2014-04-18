@@ -22,7 +22,7 @@ The impression you may get in your courses about a data analysis project is that
 straight forward process in which you just have to run some script and you will get a 
 beautiful result.
 
-![](/images/ideal_process.png)
+<img class="centered" src="/images/blog/ideal_process.png" />
 
 (I really wished all my projects were like this... but that only happens in my dreams)
 
@@ -34,7 +34,7 @@ your living as a data analyst, it's only a matter of time before you hit the wal
 Eventually, you will realize that most of your teachers gave you a very biased view of 
 how the data analysis world works. My cartoon version goes more or less like this:
 
-![](/images/real_data_analysis.png)
+<img class="centered" src="/images/blog/real_data_analysis.png" />
 
 As most of my colleagues, I learned my lessons the hard way. I wished my professors 
 had talked to me about all the dirtiness involved with data collection, data processing, 

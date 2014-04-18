@@ -17,7 +17,9 @@ dish was in charge of Karthik who spoke about R's role in facilitating
 [open science](http://en.wikipedia.org/wiki/Open_science). You can check his slides 
 about [R and Open Science](http://inundata.org/R_talks/BARUG/#intro).
 
-<a href="http://inundata.org/R_talks/BARUG/#intro"><img src="/images/ropen_science.png"></a> 
+<a href="http://inundata.org/R_talks/BARUG/#intro">
+<img class="centered" src="/images/blog/ropen_science.png">
+</a> 
 
 From all the very interesting stuff mentioned by Karthik, the two main key ideas that 
 resonated in my head after his talk were **sharing** and **collaboration**.

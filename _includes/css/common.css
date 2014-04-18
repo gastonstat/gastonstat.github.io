@@ -348,6 +348,7 @@ figure img {
   border-radius: 3px; 
 }
 
+
 @media screen and (max-width: 770px) {
   .centered {
     max-width: 100%;

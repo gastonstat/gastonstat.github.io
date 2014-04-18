@@ -32,7 +32,9 @@ latitude 37.423021 and longitude -122.083739.
 An interesting &mdash;but not the only&mdash; option is to use the Geocoding Google API from 
 <a title="google maps api" href="https://developers.google.com/maps/documentation/webservices/" target="_blank">Google Maps API Web Services</a>.
 
-<a title="google maps api" href="https://developers.google.com/maps/documentation/webservices/" target="_blank"><img title="API_Geocoding" src="/images/api_geocoding.png" /></a>
+<a title="google maps api" href="https://developers.google.com/maps/documentation/webservices/" target="_blank">
+<img class="centered" title="API_Geocoding" src="/images/blog/api_geocoding.png" />
+</a>
 
 If you check the <a href="https://developers.google.com/maps/documentation/geocoding/" target="_blank">geocoding documentation</a>, 
 you'll see that we can do requests and obtain the answers in XML format. The required url 

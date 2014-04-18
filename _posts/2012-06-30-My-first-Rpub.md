@@ -6,7 +6,9 @@ category: how-to
 tags: [Rpub, rstudio, markdown]
 ---
 
-<a href="http://rpubs.com/gaston/hurricanes" target="_blank"><img title="hurricanes_RPub" src="/images/hurricanes_rpub.png"/></a>
+<a href="http://rpubs.com/gaston/hurricanes" target="_blank">
+<img class=centered" title="hurricanes_RPub" src="/images/blog/hurricanes_rpub.png"/>
+</a>
 
 I'm quite impressed with [Rstudio](http://rstudio.org/), an integrated development 
 environment (IDE) for R. If you haven't tried it yet, I strongly recommend you to do so, 

@@ -12,7 +12,7 @@ story. The important part happened while I was on the train on my way to Lyon.
 
 <!--more-->
 
-<img class="centered" src="/images/literate_testing.png">
+<img class="centered" src="/images/blog/literate_testing.png">
 
 As I was reviewing a couple of my functions, I noticed that I was getting sick. Not from 
 motion sickness but from the way I was validating the arguments of the functions. One of 
@@ -40,7 +40,7 @@ Isn't this much better and simpler, not to mention more understandable? Hell yes
 not to have more functions like ```is_positive_integer(x)``` to test specific features 
 of some common R objects? 
 
-<img class="centered" src="/images/literate_testing_really.png">
+<img class="centered" src="/images/blog/literate_testing_really.png">
 
 I spent the rest of my ride to Lyon, and the next couple of days creating 
 <a href="http://cran.r-project.org/web/packages/tester/index.html" target="_blank">tester</a>, 

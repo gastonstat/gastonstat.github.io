@@ -12,7 +12,7 @@ layout: page
 	    <h5>{{ post.date | date_to_string }}</h5>
 	    {% if post.image %}
 	    <p>
-	    	<a href="{{ post.url }}"><img class="centered" src="/images/{{post.image}}" alt=""></a>
+	    	<a href="{{ post.url }}"><img class="centered" src="/images/blog/{{post.image}}" alt=""></a>
     	</p>
     	{% endif %}
         <p>{{ post.excerpt }} </p>

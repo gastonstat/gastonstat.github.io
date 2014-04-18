@@ -4,9 +4,10 @@ title: "Column-wise operations with colwise"
 date: 2013-02-19
 categories: how-to
 tags: [column, colwise, operations, ddply, groups]
+image: colwise_groups.png
 ---
 
-<img src="/images/colwise_groups.png" title="colwise_groups" />
+<img src="/images/blog/colwise_groups.png" title="colwise_groups" />
 
 In a [previous post]({% post_url 2012-06-08-Using-tapply-ddply-and-sqldf-for-the-same-task %}) 
 I described different options in R to do some calculations using ```tapply()```, 
@@ -88,4 +89,4 @@ ggplot(group_means_melt, aes(x = aux, y = value, fill = variable)) +
         axis.ticks.x = element_blank())
 {% endhighlight %}
 
-![](/images/barplot_colwise.png)
+![](/images/blog/barplot_colwise.png)

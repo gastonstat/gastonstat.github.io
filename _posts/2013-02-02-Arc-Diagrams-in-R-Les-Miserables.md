@@ -9,7 +9,7 @@ tags: [arc diagram, arcplot, igraph, les miserables, network]
 In this post we will talk about the R package ```"arcdiagram"``` for plotting pretty arc 
 diagrams like the one below:
 
-![](/images/pretty_arcdiagram.png)
+<img class="centered" src="/images/blog/pretty_arcdiagram.png" />
 
 <!--more-->
 
@@ -40,7 +40,9 @@ Another really cool example of an arc diagram can be found in the
 <a title="protovis arc diagram" href="http://mbostock.github.com/protovis/ex/arc.html" target="_blank">examples' gallery</a> 
 of Protovis (by Mike Bostock):
 
-<a href="http://mbostock.github.com/protovis/ex/arc-full.html" target="_blank"><img title="protovis" src="/images/protovis.png" /></a>
+<a href="http://mbostock.github.com/protovis/ex/arc-full.html" target="_blank">
+<img class="centered" src="/images/protovis.png" title="protovis" />
+</a>
 
 The diagram above is based on a network representation of character co-occurrence in the 
 chapters of Victor Hugo's classic novel 
@@ -178,6 +180,6 @@ arcplot(edgelist, ordering = new_ord, labels = vlabels, cex.labels = 0.8,
         col.arcs = hsv(0, 0, 0.2, 0.25), lwd.arcs = 1.5 * values)
 {% endhighlight %}
 
-![](/images/miserables_arcplot.png)
+<img class="centered" src="/images/blog/miserables_arcplot.png" />
 
 Happy plotting!

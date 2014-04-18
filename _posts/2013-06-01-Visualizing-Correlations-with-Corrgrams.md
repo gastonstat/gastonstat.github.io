@@ -9,7 +9,9 @@ tags: [correlations, corrgram, ellipse, matrix, plot]
 In this post we'll talk about **corrgrams**: a graphical tool for visualizing a matrix 
 of correlations.
 
-<a title="Rpub corrgrams" href="http://rpubs.com/gaston/corrgrams" target="_blank"><img src="/images/corrgrams.png" /></a>
+<a title="Rpub corrgrams" href="http://rpubs.com/gaston/corrgrams" target="_blank">
+<img class="centered" src="/images/blog/corrgrams.png" />
+</a>
 
 
 #### Corrgrams
@@ -50,7 +52,7 @@ corrgram(R, order=TRUE, lower.panel = panel.shade, upper.panel = panel.pie,
 {% endhighlight %}
 
 
-<img src="/images/corrgram2.png" /></a>
+<img class="centered" src="/images/blog/corrgram2.png" /></a>
 
 Here's the link to the <a title="Rpub corrgrams" href="http://rpubs.com/gaston/corrgrams" target="_blank">Rpub</a> 
 with the complete code in R.

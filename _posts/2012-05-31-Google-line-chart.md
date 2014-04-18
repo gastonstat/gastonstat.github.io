@@ -10,7 +10,7 @@ R is great for graphics although sometimes it can be really tricky to replicate 
 
 <!--more-->
 
-![](/images/google_line_chart.png)
+<img class="centered" src="/images/blog/google_line_chart.png" />
 
 This google chart took me a dozen of clicks and a couple of minutes to create it. Honestly, it's not that bad at all. I bet we could also create something similar in excel. However, if we want to produce the same graphic in R we're going to need a good amount of patience and some guide to get the right color palette (I used the following website to get some colors [color hex](http://www.color-hex.com"). So, let me show you how to mimic the google line chart with R. I guarantee you it is possible.
 

@@ -21,7 +21,8 @@ May 26th-28th, 2014 in Paris (France).
 <h3><a title="plsas14" href="http://plsas.net/" target="_blank">plsas.net</a></h3>
 2014 PLS Applications Symposium to take place in Montreal, Canada from 30 May - 1 June 2014 (Friday - Sunday). 
 
-![](http://scriptwarp.com/mtgs/2014_PLSA_May_Montreal/PLSA_Logo4.png)
+<img class="centered" src="http://scriptwarp.com/mtgs/2014_PLSA_May_Montreal/PLSA_Logo4.png" />
+
 
 #### PLS 2014 meetings
 

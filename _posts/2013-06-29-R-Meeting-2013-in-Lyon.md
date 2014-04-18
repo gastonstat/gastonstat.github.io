@@ -6,7 +6,7 @@ categories: opinion
 tags: [meeting, talks, conference, lyon]
 ---
 
-![](http://farm4.staticflickr.com/3768/11464124943_c3cee2c2ea_c.jpg)
+<img class="centered" src="http://farm4.staticflickr.com/3768/11464124943_c3cee2c2ea_c.jpg" />
 
 I just came back from beautiful Lyon (France) after attending the 
 <a href="http://r2013-lyon.sciencesconf.org/" target="_target">Deuxième Rencontres R</a> 
@@ -19,7 +19,7 @@ The meeting was kindly organized by
 <a href="http://r2013-lyon.sciencesconf.org/resource/page/id/4" target="_blank">company</a>, 
 and hosted by l'Université Claude Bernard Lyon 1.
 
-![](http://farm4.staticflickr.com/3729/11464114433_b71149f9e4.jpg)
+<img class="centered" src="http://farm4.staticflickr.com/3729/11464114433_b71149f9e4.jpg" />
 
 The main goal of this type of R meeting is to get together *la cRéme de la cRéme* in 
 France working with R. Among some of the popular names you may have heard of: Romain 
@@ -29,7 +29,7 @@ François, Christophe Genolini, Karim Chine, Francois Husson, and Jérôme Sueur
 
 ### Visualising big data in R (by Hadley Wickham)
 
-![](http://farm4.staticflickr.com/3775/11464002044_4afdf36de5.jpg)
+<img class="centered" src="http://farm4.staticflickr.com/3775/11464002044_4afdf36de5.jpg" />
 
 <a href="http://had.co.nz/" target="_blank">Hadley Wickham</a>, now chief scientist 
 at Rstudio, was the keynote speaker and he delighted us with his presentation on 
@@ -40,7 +40,7 @@ very big large datasets (10-100 million observations).
 
 ### L'analyse des données avec FactoMineR (by François Husson)
 
-![](http://farm3.staticflickr.com/2810/11464077156_75c6c6dd60.jpg)
+<img class="centered" src="http://farm3.staticflickr.com/2810/11464077156_75c6c6dd60.jpg" />
 
 For those of us interested in data analysis tools, 
 <a href="http://math.agrocampus-ouest.fr/infoglueDeliverLive/membres/Francois.Husson" target="_blank">François Husson</a> 
@@ -52,7 +52,7 @@ in Rennes.
 
 ### KmL3D: K-means pour données longitudinales jointes (by Christophe Genolini)
 
-![](http://farm6.staticflickr.com/5546/11464002464_de90984561_o.jpg)
+<img class="centered" src="http://farm6.staticflickr.com/5546/11464002464_de90984561_o.jpg" />
 
 Among other speakers, we had the chance to listen to 
 <a href="http://christophe.genolini.free.fr/" target="_blank">Christophe Genolini</a> 
@@ -64,7 +64,7 @@ on creating R packages. Especially interesting for programming with S4 classes.
 
 ### Intégration R et C++ avec Rcpp (by Romain François)
 
-![](http://farm3.staticflickr.com/2885/11464115053_aa0195c75e_o.jpg)
+<img class="centered" src="http://farm3.staticflickr.com/2885/11464115053_aa0195c75e_o.jpg" />
 
 Romain François, the guy behind <a href="http://gallery.r-enthusiasts.com/" target="_blank">R Graph Gallery</a>, 
 gave a short presentation about the renowned package 
@@ -77,7 +77,7 @@ your mac and your iphone but then you have the freedom to move around the stage.
 
 ### R and the Cloud (by Karim Chine)
 
-![](/images/elasticr.png)
+<img class="centered" src="/images/blog/elasticr.png" />
 
 Another very interesting talk was given by Karim Chine about 
 <a href="http://www.elastic-r.net/" target="_blank">Elastic-R</a>. My main complain is 
@@ -88,7 +88,7 @@ or at least a couple of workshop sessions.
 
 ### R as a sound system (by Jérôme Sueur)
 
-![](/images/seewave.png)
+<img class="centered" src="/images/blog/seewave.png" />
 
 Although I didn't take a picture of 
 <a href="http://sueur.jerome.perso.neuf.fr/" target="_blank">Jérôme Sueur</a> 

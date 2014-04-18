@@ -12,7 +12,7 @@ In this post I will show you how to create your own keyboard shortcut to open RS
 
 <!--more-->
 
-<img class="centered" src="/images/rstudio_keyshortcut.png">
+<img class="centered" src="/images/blog/rstudio_keyshortcut.png">
 
 I use RStudio for my daily work with R so I constantly find myself clicking on the small 
 RStudio icon on the dock of my macbook every time I want to open it. The problem is that 
@@ -51,37 +51,37 @@ a keyboard shortcut to the launching application service.
 
 Go to **Applications** and open **Automator** which is the white little cyclopean robot 
 
-<img class="centered" src="/images/screenshot_applications_automator.png">
+<img class="centered" src="/images/blog/screenshot_applications_automator.png">
 
 
 After clicking **Automator**, a window will be prompted asking you to choose a type for 
 your document. Just choose **Service** (i.e. the gear icon)
 
-<img class="centered" src="/images/screenshot_automator_service_small.png">
+<img class="centered" src="/images/blog/screenshot_automator_service_small.png">
 
 
 Once inside the **Service** menu, you'll see a bunch of icons in the sidebar menu on the left. 
 Scroll down until you find the icon **Launch Application** which you need to open.
 
-<img class="centered" src="/images/screenshot_automator_service_launch_application.png">
+<img class="centered" src="/images/blog/screenshot_automator_service_launch_application.png">
 
 
 As you can tell, you need to specify the application you want to launch: **RStudio** in this case.
 
-<img class="centered" src="/images/screenshot_launch_application_Rstudio_large.png">
+<img class="centered" src="/images/blog/screenshot_launch_application_Rstudio_large.png">
 
 
 Change the default value ```text``` associated to **Service receives selected** into 
 ```no input```.
 
-<img class="centered" src="/images/screenshot_launch_application_Rstudio.png">
+<img class="centered" src="/images/blog/screenshot_launch_application_Rstudio.png">
 
 
 The next step is to save the service which requires you to give it a name. In my case 
 I'm saving the service under the name **Launch Rstudio** but you can use whatever name 
 you want.
 
-<img class="centered" src="/images/screenshot_launch_Rstudio_small.png">
+<img class="centered" src="/images/blog/screenshot_launch_Rstudio_small.png">
 
 
 ### Associating a Keyboard Shortcut to the Launching App Service
@@ -90,19 +90,19 @@ We're done with specifying a launching service for RStudio. Now we need to creat
 keyboard shortcut that we can use to launch RStudio. To do this, you need to go to 
 **System Preferences** and open the **Keyboard** icon.
 
-<img class="centered" src="/images/screenshot_system_preferences.png">
+<img class="centered" src="/images/blog/screenshot_system_preferences.png">
 
 
 Once inside the **Keyboard** menu you have to select the tab **Keyboard Shortcuts**. 
 Click on the ```+``` symbol at the bottom to add an application shortcut.
 
-<img class="centered" src="/images/screenshot_keyboard_shortcuts.png">
+<img class="centered" src="/images/blog/screenshot_keyboard_shortcuts.png">
 
 
 Click on the **Services** icon (i.e. the gear) and look for the name you gave it to 
 the launching service (eg in my case is *Launch Rstudio*).
 
-<img class="centered" src="/images/screenshot_keyboard_shortcuts_service.png">
+<img class="centered" src="/images/blog/screenshot_keyboard_shortcuts_service.png">
 
 
 Finally, click on the **add shortcut** button and indicate what combination of 
@@ -111,6 +111,6 @@ keys you want to be associated as a shortcut.
 I decided to use the keys ```⌘ + ctl + R``` but you can select a different combination. 
 Just be careful not to use already existing keyboard shortcuts. 
 
-<img class="centered" src="/images/screenshot_keyboard_shortcuts_launch_Rstudio.png">
+<img class="centered" src="/images/blog/screenshot_keyboard_shortcuts_launch_Rstudio.png">
 
 That's it! Enjoy your keyboard shortcut.
