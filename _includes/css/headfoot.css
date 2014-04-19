@@ -212,6 +212,7 @@ img.bg {
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
+  clear: both;
 }
 
 #footer a {

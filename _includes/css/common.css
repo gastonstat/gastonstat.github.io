@@ -21,6 +21,13 @@ html, body {
   width: 100%;  
 }
 
+#gallery {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
 .prose {
   max-width: 700px;
   margin-top: 5px;
@@ -348,6 +355,14 @@ figure img {
   border-radius: 3px; 
 }
 
+.mosaic {
+  width: 30%;
+  display: block;
+  margin-left: 2.5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
 
 @media screen and (max-width: 770px) {
   .centered {
