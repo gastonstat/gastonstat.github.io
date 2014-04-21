@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Failing at reading tables in R"
+title: "Failing to read tables in R"
 date: 2014-04-20
 category: how-to
 tags: [file, read, data]
