@@ -31,8 +31,7 @@ Behind all the stuff that I’ve done there is a single idea and goal:
 
 ## Currently
 
-I'm a research engineer in the <i>Unit of Sensometrics and Chemometrics</i> at Oniris, 
-and a guest researcher in the <i>Nielsen Group</i> at UC Berkeley. 
+I'm a guest researcher in the <i>Nielsen Group</i> at UC Berkeley. 
 Doing R&D in statistical programming, and working on multiblock methods for multivariate 
 data analysis.
 

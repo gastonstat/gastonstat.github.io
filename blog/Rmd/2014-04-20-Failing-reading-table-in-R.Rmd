@@ -34,7 +34,7 @@ As you can tell, we only have 5 lines each one containing 4 fields: a number, a 
 
 Before we start solving the previous question, let me tell you a bit about how I discovered this challenging problem.
 
-It all started when I was reading the book **Python for Data Analysis** by [Wes McKinney](http://blog.wesmckinney.com/). Being an enthusiast *useR*, I felt naturally tempted to replicate in R some of the case studies described in Wes' book, in particular the introductory case studies described in chapter 2.
+It all started when I was reading the book **Python for Data Analysis** by [Wes McKinney](http://blog.wesmckinney.com/). Being an enthusiast *useR*, I naturally felt tempted to replicate in R some of the case studies described in Wes' book, in particular the introductory case studies described in chapter 2.
 
 One of the python examples required reading data from a text file that uses double colons (```::```) as a separator. For illustrating purposes I will use the made-up toy dataset already shown above: 
 
@@ -64,7 +64,7 @@ sep = "::")
 ```
 
 
-If you prefer, you can try reading the file ```fakedata.dat```, which has the exact same content as the previous example, like so: 
+If you prefer, you can try reading the file ```fakedata.dat```, which has exactly the same content as the previous example, like so: 
 
 ```{r eval=FALSE, tidy=FALSE}
 read.table(file = "http://gastonsanchez.com/data/fakedata.dat",
