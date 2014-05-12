@@ -9,6 +9,16 @@ title: Work
 
 <hr/>
 
+<a href="/work/webdata"><img class="centered" src="/images/website/webdata_cover.png"/></a>
+<p>
+ Slides for helping you get started with getting data from the Web with R. &nbsp;&nbsp;
+</p>
+<p>
+ <a class="redbutton" href="/work/webdata">Read More</a>
+</p>
+<hr/>
+
+
 <a href="/Handling_and_Processing_Strings_in_R.pdf"><img class="centered" src="/images/website/strings_book_cover.png"/></a>
 <p>
  This book aims to help you get started with manipulating strings in R. It provides an 

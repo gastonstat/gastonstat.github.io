@@ -22,7 +22,7 @@ y2 = tan(x2)
 
 ## png("blue_feathers.png", width = 700, height = 400)
 # set graphical parameters
-par(bg="black", mar=rep(.5,4))
+op = par(bg="black", mar=rep(.5,4))
 # plot
 plot(c(x1, x2), c(y1, y2), type = "n", ylim = c(-11, 11))
 for (i in seq(-10, 10, length = 100))
