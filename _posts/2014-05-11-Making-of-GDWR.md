@@ -40,7 +40,7 @@ ago. The more I got involved with analyzing data from the Web, the more I felt c
 about the tools in R for working with the so-called Web Technologies. Although I was able to 
 finish my consulting and research projects, I didn't understand very well the tools that 
 I was using. I knew they worked, and that I was able to figure out how to use them. 
-But that necessarily meant that I knew how and why they were working. Reading the scarce 
+But that necessarily didn't mean that I knew how and why they were working. Reading the scarce 
 available documentation wasn't helping me a lot. And this is where frustration stepped in. 
 
 A little bit more than a year and a half ago I formally started to write down some notes 
