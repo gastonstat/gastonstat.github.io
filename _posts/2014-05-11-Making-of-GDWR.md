@@ -220,9 +220,9 @@ but I'll talk about them in another occasion.
 ### How much time did it take me?
 
 This project took me about 2 months from beginning to end. Although I must say that it 
-was interrupt for about two weeks because of another short time project.
+was interrupted for about two weeks because of another short time project.
 
 There you go. Now you know a little bit more about what's in the backyard of my projects. 
 Of course, each project and experiment are different and they have their own particular 
-features. Each of them pose specific challenges and I don't use nay shortcuts to complete them. 
+features. Each of them pose specific challenges and I don't use any shortcuts to complete them. 
 Just plain hard work with a good dosis of creativity and imagination.
