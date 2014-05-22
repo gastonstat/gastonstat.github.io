@@ -371,4 +371,22 @@ figure img {
 }
 
 
+/* ================================ *\
+   D3js simple graph (May 20, 2014)
+\* ================================ */
+
+	path { 
+		stroke: steelblue;
+		stroke-width: 2;
+		fill: none;
+	}
+
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: grey;
+		stroke-width: 1;
+		shape-rendering: crispEdges;
+	}
+
 

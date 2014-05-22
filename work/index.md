@@ -70,7 +70,7 @@ title: Work
  might help you to get some inspiration and try your own analysis. 
 </p>
 <a href="https://sites.google.com/site/miningtwitter/" target="_blank">
-<img class="centered" src="/images/website/mining_twitter.png"/></a>
+<img class="centered" src="/images/website/twitter_mining.png"/></a>
 <hr>
 
 
