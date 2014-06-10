@@ -31,9 +31,8 @@ Behind all the stuff that I’ve done there is a single idea and goal:
 
 ## Currently
 
-I'm a guest researcher in the <i>Nielsen Group</i> at UC Berkeley. 
-Doing R&D in statistical programming, and working on multiblock methods for multivariate 
-data analysis.
+I'm a Data Science Fellow at [Insight Data Science](http://insightdatascience.com/) and 
+a guest researcher in the Nielsen Group at UC Berkeley. 
 
 
 ## Research
