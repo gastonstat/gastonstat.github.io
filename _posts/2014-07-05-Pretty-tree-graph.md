@@ -10,9 +10,9 @@ image: pretty_tree.png
 In this post I'm sharing the code snippet in R I used to get a pretty graph 
 to visualize dendrograms and clusters in an alternative way. 
 
-![](/images/blog/pretty_tree.png)
-
 <!--more-->
+
+![](/images/blog/pretty_tree.png)
 
 <hr/>
 
