@@ -31,13 +31,12 @@ Behind all the stuff that I’ve done there is a single idea and goal:
 
 ## Currently
 
-I'm a Data Science Fellow at [Insight Data Science](http://insightdatascience.com/) and 
-a guest researcher in the Nielsen Group at UC Berkeley. 
+I'm a Data Science Fellow at [Insight Data Science](http://insightdatascience.com/). 
 
 
-## Research
+## Research Interests
 
-My current work revisits the core concepts behind methods for association-relationship 
+My research work revisits the core concepts behind methods for association-relationship 
 between multiple sets of variables (multiblock data) using different approaches from a 
 broad range of disciplines (e.g. psychometrics, chemometrics, sensometrics, 
 econometrics, ecology and biometrics). Broadly speaking, my research focuses on how to 
@@ -45,7 +44,7 @@ study the relationships between multiple variables, how to graphically represent
 relationships, and how to quantify latent factors.  
 
 
-## Interests
+## Overall Interests
 
 There are 3 major topics that I'm hooked to:
  
