@@ -78,8 +78,8 @@ Once we have the edges we can build a graph using the function ```graph.edgelist
 from the package ```"igraph"```.
 
 {% highlight r %}
-# library igprah
-library(igprah)
+# library igraph
+library(igraph)
 
 # get graph from edge list
 graph_net = graph.edgelist(graph_edges)
