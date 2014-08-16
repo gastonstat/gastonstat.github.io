@@ -4,14 +4,14 @@ title: "Density Curves"
 date: 2014-08-16
 category: how-to
 tags: [density, plot]
-image: density-plot.png
+image: density-plot-post.png
 ---
 
 The default graphical display of most plotting functions in R is very limited (and usually not very pretty). But that doesn't mean that we should conform with those crude figures.
 
 <!--more-->
 
-![](/images/blog/density-plot.png)
+![](/images/blog/density-plot-post.png)
 
 
 ### Basic Plot Example
