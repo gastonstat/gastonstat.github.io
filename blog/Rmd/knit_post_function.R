@@ -17,6 +17,6 @@ KnitPost("2014-08-16-Density-Curves.Rmd")
 # KnitPost("2012-06-17-PCA-in-R.Rmd")
 # KnitPost("2012-07-19-Correspondence-Analysis.Rmd")
 # KnitPost("2012-10-03-Dendrograms.Rmd")
-# KnitPost("2012-05-31-Google-line-chart.Rmd")
+# KnitPost("2012-05-30-Google-line-chart.Rmd")
 # KnitPost("2012-10-13-MCA-in-R.Rmd")
 
