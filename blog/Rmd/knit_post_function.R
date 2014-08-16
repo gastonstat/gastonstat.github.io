@@ -11,7 +11,8 @@ KnitPost <- function(input, base.url = "/") {
 
 setwd("/Users/Gaston/Documents/gastonstat.github.io/blog/Rmd")
 
-KnitPost("2014-04-20-Failing-reading-table-in-R.Rmd")
+KnitPost("2014-08-16-Density-Curves.Rmd")
+# KnitPost("2014-04-20-Failing-reading-table-in-R.Rmd")
 # KnitPost("2014-01-15-Center-data-in-R.Rmd")
 # KnitPost("2012-06-17-PCA-in-R.Rmd")
 # KnitPost("2012-07-19-Correspondence-Analysis.Rmd")
