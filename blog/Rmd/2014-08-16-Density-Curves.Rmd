@@ -14,7 +14,7 @@ The default graphical display of most plotting functions in R is very limited (a
 ![](/images/blog/density-plot-post.png)
 
 
-### A Basic Plot Example
+### Basic Plot Example
 
 For this post I'll use a simple example by plotting density curves of some random generated variables. For instance, let's generate three normal distributions with different parameters, and their corresponding estimated densities:
 
