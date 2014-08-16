@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Replicating google line chart in R"
-date: 2012-05-31
+date: 2012-05-30
 category: how-to
 tags: [google charts, line chart, plot, R]
 ---
@@ -10,14 +10,15 @@ R is great for graphics although sometimes it can be really tricky to replicate 
 
 <!--more-->
 
-![](/images/google_line_chart.png)
+<img class="centered" src="/images/blog/google_line_chart.png" />
 
 This google chart took me a dozen of clicks and a couple of minutes to create it. Honestly, it's not that bad at all. I bet we could also create something similar in excel. However, if we want to produce the same graphic in R we're going to need a good amount of patience and some guide to get the right color palette (I used the following website to get some colors [color hex](http://www.color-hex.com"). So, let me show you how to mimic the google line chart with R. I guarantee you it is possible.
 
 
 ### Code in R
 
-```{r some_data, tidy=FALSE}
+
+{% highlight r %}
 # here's the data
 numbers = c(
   0.61, 0.644, 0.586, 0.598, 0.596, 0.584,
@@ -37,10 +38,12 @@ colnames(some_data) = paste("Time", 1:6)
 
 # define color palette
 cols = c("#1664d9", "red", "orange", "green4", "purple2", "#1f9eb3", "#d93572")
-```
+{% endhighlight %}
+
 
 Once we've defined the toy data, we just need to specify a layout and then the plot:
-```{r tidy=FALSE, fig1, fig.width=8, fig.height=6, echo=TRUE}
+
+{% highlight r %}
 # choose a graphic layout
 layout(rbind(c(1, 2), c(1, 2)), 
        height = c(lcm(11), 1),
@@ -72,6 +75,9 @@ points(rep(0.5, 7), seq(0.98, 0.6, length = 7), pch = 15,
 text(rep(0.6, 7), seq(0.98, 0.6, length = 7), rownames(some_data), cex = 1.2)
 # reset parameters
 par(op)
-```
+{% endhighlight %}
+
+![center](/figs/2012-05-31-Google-line-chart/fig1.png) 
+
 
 That's it!
