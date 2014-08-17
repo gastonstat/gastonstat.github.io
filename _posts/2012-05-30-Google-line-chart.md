@@ -77,7 +77,7 @@ text(rep(0.6, 7), seq(0.98, 0.6, length = 7), rownames(some_data), cex = 1.2)
 par(op)
 {% endhighlight %}
 
-![center](/figs/2012-05-31-Google-line-chart/fig1.png) 
+![center](/figs/2012-05-30-Google-line-chart/fig1.png) 
 
 
 That's it!

@@ -4,7 +4,7 @@ layout: page
 <div class="post">
 	<h1> {{ page.title }} </h1>
 	<!-- <span class="date">Posted on {{ page.date | date_to_string }}</span> -->
-	<h5>Posted on {{ page.date | date_to_string }}</h5>
+	<h5>Posted on {{ page.date | date: date_to_string }}</h5>
 	
 	{{ content }}
 
