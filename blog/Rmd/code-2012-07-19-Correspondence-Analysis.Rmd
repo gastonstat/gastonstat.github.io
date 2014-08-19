@@ -1,0 +1,187 @@
+#---
+#layout: post
+#title: "5 functions to do Correspondence Analysis in R"
+#date: 2012-07-19
+#category: how-to
+#tags: [correspondence analysis, ca, multivariate, plot, R]
+#---
+
+In a previous post, I talked about [five different ways to do Principal Components Analysis in R]({% post_url 2013-02-02-Arc-Diagrams-in-R-Les-Miserables %}) 
+
+<!--more-->
+
+PCA is very useful and is one of the most applied multivariate techniques. However, PCA is limited to quantitative information. But what if our data comes in the form of qualitative information such as categorical data? The solution: Correspondence Analysis.
+
+[Correspondence Analysis](http://en.wikipedia.org/wiki/Correspondence_analysis), briefly CA, is one of the cousins of Principal Component Analysis. Both CA and PCA are multivariate techniques that help us to summarize the systematic patterns of variations in the data. The difference between CA and PCA is that CA applies to categorical (i.e. qualitative) data instead of continuous (i.e. quantitative) data. More specifically, CA applies to  categorical data in the form of [contingency tables](http://en.wikipedia.org/wiki/Contingency_tables) (aka cross-tabulation). Since CA is conceptually similar to PCA, we can use it, among other things, for visualizing multidimensional data into a lower dimensional space.
+
+
+### CA in R
+
+In R, there are several functions from different packages that allow us to apply Correspondence Analysis. In this post I'll show you 5 different ways to perform CA using the following functions (with their corresponding packages in parentheses):
+
+- ```ca()``` (ca)
+- ```CA()``` (FactoMineR)
+- ```dudi.coa()``` (ade4)
+- ```afc()``` (amap)
+- ```corresp()``` (MASS)
+
+As in PCA, no matter what function you decide to use for CA, the typical results should consist of a set of eigenvalues, a table with the row coordinates, and a table with the column coordinates. The eigenvalues provide information of the variability in the data. The row coordinates provide information about the structure of the rows in the analyzed table. The column coordinates provide information about the structure of the columns in the analyzed table.
+
+
+### The Data
+
+We'll use the dataset ```author``` that already comes with the R package ```"ca"```. It's a data matrix containing the counts of the 26 letters of the alphabet (columns of matrix) for 12 different novels (rows of matrix). Each row contains letter counts in a sample of text from each work, excluding proper nouns.
+
+
+### Option 1: using ca
+
+The function ```ca()``` comes in the package of the same name [ca](http://www.carme-n.org/?sec=ca) by Michael Greenacre and Oleg Nenadic. I personally like this package because of Greenacre's work and books about CA. In addition, it has a very nice function to plot results in 3D (```plot3d.ca()```)
+
+```{r ca_ca, fig.width=8, fig.height=6, message=FALSE}
+# CA with function ca
+library(ca)
+
+# apply ca
+ca1 = ca(author)
+
+# sqrt of eigenvalues
+ca1$sv        
+
+# row coordinates
+head(ca1$rowcoord)
+
+# column coordinates
+head(ca1$colcoord)
+
+# plot
+plot(ca1)
+```
+
+
+### Option 2: using CA
+
+One of my favorite options is the ```CA()``` function from the package[FactoMineR](http://factominer.free.fr/). What I like is that this function provides many more detailed results and assessing tools. It also comes with a number of parameters that allow you to tweak the analysis in a very nice way.
+
+```{r ca_foctominer, fig.width=8, fig.height=6, message=FALSE}
+# CA with function CA
+library(FactoMineR)
+
+# apply CA
+ca2 = CA(author, graph = FALSE)
+
+# matrix with eigenvalues
+ca2$eig
+
+# row coordinates
+head(ca2$col$coord)
+
+# column coordinates
+head(ca2$row$coord)
+
+# plot
+plot(ca2)
+```
+
+
+### Option 3: using dudi.coa
+
+Another option to perform CA is by using the function ```dudi.coa()```> that comes with the package [ade4](http://pbil.univ-lyon1.fr/ade4/home.php?lang=eng) (remember to install the package first).
+
+```{r ca_ade4, fig.width=8, fig.height=6, message=FALSE}
+# CA with function dudi.coa
+library(ade4)
+
+# apply ca
+ca3 = dudi.coa(author, nf = 5, scannf = FALSE)
+
+# sqrt of eigenvalues
+ca3$eig
+
+# row coordinates
+head(ca3$li)
+
+# column coordinates
+head(ca3$co)
+```
+
+
+### Option 4: using afc
+
+Another option is to use the ```afc()``` function from the package [amap](http://mulcyber.toulouse.inra.fr/projects/amap/) (remember to install it first).
+
+```{r ca_amap, fig.width=8, fig.height=6, message=FALSE}
+# PCA with function afc
+library(amap)
+
+# apply CA
+ca4 = afc(author)
+
+# eigenvalues
+ca4$eig
+
+# row coordinates
+head(ca4$scores)
+
+# column coordinates
+head(ca4$loadings)
+
+# plot
+plot(ca4)
+```
+
+
+### Option 5: using corresp
+
+A fifth possibility is the ```corresp()``` function from the package [MASS](http://www.stats.ox.ac.uk/pub/MASS4/).
+
+```{r ca_mass, fig.width=7, fig.height=7, message=FALSE}
+# CA with function corresp
+library(MASS)
+
+# apply CA
+ca5 = corresp(author, nf = 5)
+
+# sqrt of eigenvalues
+ca5$cor
+
+# row coordinates
+head(ca5$rscore)
+
+# column coordinates
+head(ca5$cscore)
+
+# plot
+plot(ca5)
+```
+
+
+### CA plot
+
+The typical graphic in a CA analysis is to visualize the data in a two dimensional space using the first two extracted coordinates from both rows and columns. Although we could visualize the rows and the columns separately, the usual approach is to plot both in a single graphic to get an idea of the association between them. As you can tell from the displayed code chunks, most of the CA functions have their own plot command. However, we can also use the nice tools of ```"ggplot2"```. In the following example we will also use the package ```"stringr"```
+
+```{r ca_ggplot, fig.width=9, fig.height=6, tidy=FALSE, message=FALSE}
+# load ggplot2
+library(ggplot2)
+library(stringr)
+
+# extract only author names
+authors = rownames(author)
+authors = unlist(str_extract_all(authors, "\\(\\w+"))
+authors = gsub("\\(", "", authors)
+
+# create data frame with row and col coordinates
+# from both the authors and the letters
+aux = c(rep("authors", 12), rep("letters", 26))
+name = c(authors, colnames(author))
+auth_lets = data.frame(
+  name, aux, rbind(ca1$rowcoord[,1:2], ca1$colcoord[,1:2]))
+head(auth_lets)
+
+# plot of authors and letters
+ggplot(data = auth_lets, aes(x = X1, y = X2, label = name)) +
+  geom_hline(yintercept = 0, colour = "gray75") +
+  geom_vline(xintercept = 0, colour = "gray75") +
+  geom_text(aes(colour = aux), alpha = 0.8, size = 5) +
+  labs(x = "Dim 1", y = "Dim 2") +
+  ggtitle("CA plot of authors - letters")
+```

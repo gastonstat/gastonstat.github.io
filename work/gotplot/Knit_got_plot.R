@@ -26,7 +26,7 @@ KnitGotplot("Rmd/lines-chart.Rmd")
 
 
 KnitGotplot("Rmd/scatter-plot.Rmd")
-
+KnitGotplot("Rmd/stacked-chart.Rmd")
 KnitGotplot("Rmd/gauge.Rmd")
 
 KnitGotplot("Rmd/grouped-bar-chart.Rmd")

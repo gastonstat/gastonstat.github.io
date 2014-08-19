@@ -1,0 +1,203 @@
+#---
+#layout: post
+#title: "5 functions to do Principal Components Analysis in R"
+#date: 2012-06-17
+#category: how-to
+#tags: [principal components, analysis, pca, multivariate, plot, R]
+#---
+
+Principal Component Analysis ([PCA](http://en.wikipedia.org/wiki/Principal_component)) is a multivariate technique that allows us to summarize the systematic patterns of variations in the data. 
+
+<!--more-->
+
+From a data analysis standpoint, PCA is used for studying one table of observations and variables with the main idea of transforming the observed variables into a set of new variables, the principal components, which are uncorrelated and explain the variation in the data. For this reason, PCA allows to reduce a “complex” data set to a lower dimension in order to reveal the structures or the dominant types of variations in both the observations and the variables.
+
+
+### PCA in R
+
+In R, there are several functions from different packages that allow us to perform PCA. In this post I'll show you 5 different ways to do a PCA using the following functions (with their corresponding packages in parentheses):
+
+- ```prcomp()``` (stats)
+- ```princomp()``` (stats)
+- ```PCA()``` (FactoMineR)
+- ```dudi.pca()``` (ade4)
+- ```acp()``` (amap)
+
+Brief note: It is no coincidence that the three external packages (```"FactoMineR"```, ```"ade4"```, and ```"amap"```) have been developed by French data analysts, which have a long tradition and preference for PCA and other related exploratory techniques.
+
+No matter what function you decide to use, the typical PCA results should consist of a set of eigenvalues, a table with the scores or Principal Components (PCs), and a table of loadings (or correlations between variables and PCs). The eigenvalues provide information of the variability in the data. The scores provide information about the structure of the observations. The loadings (or correlations) allow you to get a sense of the relationships between variables, as well as their associations with the extracted PCs.
+
+
+### The Data
+
+To make things easier, we'll use the dataset ```USArrests``` that already comes with R. It's a data frame with 50 rows (USA states) and 4 columns containing information about violent crime rates by US State. Since most of the times the variables are measured in different scales, the PCA must be performed with standardized data (mean = 0, variance = 1). The good news is that all of the functions that perform PCA come with parameters to specify that the analysis must be applied on standardized data.
+
+
+### Option 1: using prcomp()
+
+The function ```prcomp()``` comes with the default ```"stats"``` package, which means that you don't have to install anything. It is perhaps the quickest way to do a PCA if you don't want to install other packages.
+
+```{r pca_prcomp}
+# PCA with function prcomp
+pca1 = prcomp(USArrests, scale. = TRUE)
+
+# sqrt of eigenvalues
+pca1$sdev
+
+# loadings
+head(pca1$rotation)
+
+# PCs (aka scores)
+head(pca1$x)
+```
+
+
+### Option 2: using princomp()
+
+The function ```princomp()``` also comes with the default ```"stats"``` package, and it is very similar to her cousin ```prcomp()```. What I don't like of ```princomp()``` is that sometimes it won't display all the values for the loadings, but this is a minor detail.
+
+```{r pca_princomp}
+# PCA with function princomp
+pca2 = princomp(USArrests, cor = TRUE)
+
+# sqrt of eigenvalues
+pca2$sdev
+
+# loadings
+unclass(pca2$loadings)
+
+# PCs (aka scores)
+head(pca2$scores)
+```
+
+
+### Option 3: using PCA()
+
+A highly recommended option, especially if you want more detailed results and assessing tools, is the ```PCA()``` function from the package ```"FactoMineR"```. It is by far the best PCA function in R and it comes with a number of parameters that allow you to tweak the analysis in a very nice way.
+
+```{r pca_factominer, message=FALSE}
+# PCA with function PCA
+library(FactoMineR)
+
+# apply PCA
+pca3 = PCA(USArrests, graph = FALSE)
+
+# matrix with eigenvalues
+pca3$eig
+
+# correlations between variables and PCs
+pca3$var$coord
+
+# PCs (aka scores)
+head(pca3$ind$coord)
+```
+
+
+### Option 4: using dudi.pca()
+
+Another option is to use the ```dudi.pca()``` function from the package ```"ade4"``` which has a huge amount of other methods as well as some interesting graphics.
+
+```{r pca_ade4, message=FALSE}
+# PCA with function dudi.pca
+library(ade4)
+
+# apply PCA
+pca4 = dudi.pca(USArrests, nf = 5, scannf = FALSE)
+
+# eigenvalues
+pca4$eig
+
+# loadings
+pca4$c1
+
+# correlations between variables and PCs
+pca4$co
+
+# PCs
+head(pca4$li)
+```
+
+
+### Option 5: using acp()
+
+A fifth possibility is the ```acp()``` function from the package ```"amap"```.
+
+```{r pca_amap, message=FALSE}
+# PCA with function acp
+library(amap)
+
+# apply PCA
+pca5 = acp(USArrests)
+
+# sqrt of eigenvalues
+pca5$sdev
+
+# loadings
+pca5$loadings
+
+# scores
+head(pca5$scores)
+```
+
+Of course these are not the only options to do a PCA, but I'll leave the other approaches for another post.
+
+
+### PCA plots
+
+Everybody uses PCA to visualize the data, and most of the discussed functions come with their own plot functions. But you can also make use of the great graphical displays of ```"ggplot2"```. Just to show you a couple of plots, let's take the basic results from ```prcomp()```.
+
+#### Plot of observations 
+
+```{r pca_plot, fig.width=8, fig.height=6, message=FALSE, tidy=FALSE}
+# load ggplot2
+library(ggplot2)
+
+# create data frame with scores
+scores = as.data.frame(pca1$x)
+
+# plot of observations
+ggplot(data = scores, aes(x = PC1, y = PC2, label = rownames(scores))) +
+  geom_hline(yintercept = 0, colour = "gray65") +
+  geom_vline(xintercept = 0, colour = "gray65") +
+  geom_text(colour = "tomato", alpha = 0.8, size = 4) +
+  ggtitle("PCA plot of USA States - Crime Rates")
+```
+
+
+#### Circle of correlations
+
+```{r pca_circle, fig.width=6, fig.height=6}
+# function to create a circle
+circle <- function(center = c(0,0), npoints = 100)
+{
+  r = 1
+  tt = seq(0, 2*pi, length = npoints)
+  xx = center[1] + r * cos(tt)
+  yy = center[1] + r * sin(tt)
+  return(data.frame(x = xx, y = yy))
+}
+corcir = circle(c(0, 0), npoints = 100)
+
+# create data frame with correlations between variables and PCs
+correlations = as.data.frame(cor(USArrests, pca1$x))
+
+# data frame with arrows coordinates
+arrows = data.frame(
+  x1 = c(0, 0, 0,0), 
+  y1 = c(0, 0, 0, 0),
+  x2 = correlations$PC1, 
+  y2 = correlations$PC2)
+
+# geom_path will do open circles
+ggplot() +
+  geom_path(data = corcir, aes(x =x, y = y), colour = "gray65") +
+  geom_segment(data = arrows, 
+               aes(x = x1, y = y1, xend = x2, yend = y2), colour = "gray65") +
+  geom_text(data = correlations, 
+            aes(x = PC1, y = PC2, label = rownames(correlations))) +
+  geom_hline(yintercept = 0, colour = "gray65") +
+  geom_vline(xintercept = 0, colour = "gray65") +
+  xlim(-1.1, 1.1) + ylim(-1.1, 1.1) +
+  labs(x = "pc1 aixs", y = "pc2 axis") +
+  ggtitle("Circle of correlations")
+```
