@@ -5,10 +5,11 @@
 basegray  = rgb(110/255, 110/255, 110/255)
 darkgray = rgb(100/255, 100/255, 100/255)
 mustard = rgb(255/255, 199/255, 0/255)
-mustardlight = "#FFC70055"
+mustardlight = "#FFd74c"
 uniblue = rgb(89/255, 132/255, 212/255)
 mamey = rgb(255/255, 107/255, 107/255)
 mandarina = rgb(229/255, 133/255, 64/255)
+mandarina2 = rgb(245/255, 123/255, 23/255)
 background = rgb(246/255, 244/255, 240/255)
 
 main = "PCA Revealed"
@@ -60,15 +61,15 @@ for (i in 1:length(titles))
 # save it
 png(filename = "/Users/Gaston/Desktop/pcarevealed/pca_cover.png", 
     width = 700, height = 400)
-op = par(bg = mustard, mar = rep(0, 4))
+op = par(bg = mustardlight, mar = rep(0, 4))
 # plot
 plot(0.5, 0.5, type = "n", xlim = c(0, 1), ylim = c(0, 1), axes = FALSE)
 text(0.5, 0.7, col = uniblue, cex = 4, pos = 1,
      labels = "Principal Components ")
 text(0.33, 0.55, col = uniblue, cex = 4, pos = 1,
      labels = "Analysis ")
-text(0.63, 0.55, col = mandarina, cex = 4, pos = 1,
-     labels = " Revealed")
+text(0.63, 0.55, col = mandarina2, cex = 4, pos = 1,
+     labels = " Revealed", font = 2)
 text(x = 0.5, y = 0.05, labels="Gaston Sanchez", cex=2, 
      col = "white")
 # reset par
