@@ -8,7 +8,7 @@ title: Teaching
 #### Some of my teaching materials, tutorials, docs, etc
 
 
-## <a name="webdata"></a>Manipulating Data Tables in R
+## <a name="dataframes"></a>Manipulating Data Tables in R
 
 <ul>
 	<li><a href="https://docs.google.com/presentation/d/1frT_uB2vAmTdX2-daq2LVCTYRG1iAb2Qj02LvM7UPUY/pub?start=false&loop=false&delayms=3000" target="_blank">Reading and Creating Data Frames</a></li>
@@ -16,6 +16,7 @@ title: Teaching
 	<li><a href="https://docs.google.com/presentation/d/1HmHV1QYbVOtxGfCeSWgJQdSpnrKGOqVAqxrTSX1OVmo/pub?start=false&loop=false&delayms=3000" target="_blank">Modifying Data Frames</a></li>
 	<li><a href="https://docs.google.com/presentation/d/1jWDk_9VEb9pz9jCjhLI_il-VDQQUSgBnZyewyZiuKKI/pub?start=false&loop=false&delayms=3000" target="_blank">Some Advanced Manipulations</a></li>
 	<li><a href="https://docs.google.com/presentation/d/1Jp4QgnL4cncMB-f4k-4tMMR2gkdmwkCYpeZx3gUMdeY/pub?start=false&loop=false&delayms=3000" target="_blank">Applying Functions to Data Elements</a></li>
+	<li><a href="https://docs.google.com/presentation/d/122Mlw3o_xgAUQXrO4o-IzmQy8hG77AQ0oaxJj7DYwfc/pub?start=false&loop=false&delayms=3000" target="_blank">Basics of Package "plyr"</a></li>
 </ul>
 
 
