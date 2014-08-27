@@ -8,6 +8,17 @@ title: Teaching
 #### Some of my teaching materials, tutorials, docs, etc
 
 
+## <a name="webdata"></a>Manipulating Data Tables in R
+
+<ul>
+	<li><a href="https://docs.google.com/presentation/d/1frT_uB2vAmTdX2-daq2LVCTYRG1iAb2Qj02LvM7UPUY/pub?start=false&loop=false&delayms=3000" target="_blank">Reading and Creating Data Frames</a></li>
+	<li><a href="https://docs.google.com/presentation/d/1BKaF9JFat_-gZ7zZWIf0zr7mQhW3_MA29uFW44la6b8/pub?start=false&loop=false&delayms=3000" target="_blank">Retrieving Contents</a></li>
+	<li><a href="https://docs.google.com/presentation/d/1HmHV1QYbVOtxGfCeSWgJQdSpnrKGOqVAqxrTSX1OVmo/pub?start=false&loop=false&delayms=3000" target="_blank">Modifying Data Frames</a></li>
+	<li><a href="https://docs.google.com/presentation/d/1jWDk_9VEb9pz9jCjhLI_il-VDQQUSgBnZyewyZiuKKI/pub?start=false&loop=false&delayms=3000" target="_blank">Some Advanced Manipulations</a></li>
+	<li><a href="https://docs.google.com/presentation/d/1Jp4QgnL4cncMB-f4k-4tMMR2gkdmwkCYpeZx3gUMdeY/pub?start=false&loop=false&delayms=3000" target="_blank">Applying Functions to Data Elements</a></li>
+</ul>
+
+
 ## <a name="webdata"></a>Getting Data From the Web with R
 
 - [Introduction](/work/webdata/getting_web_data_r1_introduction.pdf)
