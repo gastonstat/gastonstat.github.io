@@ -85,6 +85,6 @@ My [R pubs](http://rpubs.com/gaston)
 
 ## Other
 
-[Tips for presentations](https://docs.google.com/presentation/d/1XZj_vU9LMCYZYjAuDQI1QecXLl004wz32OpXB3uzl04/pub?start=false&amp;loop=false&amp;delayms=3000)
+<a href="https://docs.google.com/presentation/d/1XZj_vU9LMCYZYjAuDQI1QecXLl004wz32OpXB3uzl04/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank">Tips for presentations</a>
 
 <br/>
