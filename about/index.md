@@ -21,7 +21,7 @@ layout: page
 
 ## Summary
 
-I’ve spent the last 10 years working on a number of projects, most of them with the 
+I’ve spent the last 9+ years working on a number of projects, most of them with the 
 central theme of exploring, analyzing and visualizing data in a context of multiple 
 variables and high dimensionality. Great part of my work has been focused on the 
 development of software for statistical computations, graphics and data analysis. 
