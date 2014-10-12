@@ -21,27 +21,18 @@ layout: page
 
 ## Summary
 
-I’ve spent the last 9+ years working on a number of projects, most of them with the 
-central theme of exploring, analyzing and visualizing data in a context of multiple 
-variables and high dimensionality. Great part of my work has been focused on the 
-development of software for statistical computations, graphics and data analysis. 
-Behind all the stuff that I’ve done there is a single idea and goal: 
+In the last 9+ years I've been spending my time working on a number of projects, 
+most of them with the central theme of exploring, analyzing and visualizing data 
+in a context of multiple variables and high dimensionality. 
+
+This means that I've been revisiting the core concepts behind methods for 
+association-relationship between multiple sets of variables (i.e. multiblock data) 
+using different approaches from a broad range of disciplines (e.g. psychometrics, 
+chemometrics, sensometrics, econometrics, ecology and biometrics).
+
+In particular, I've done a lot of programming and development of software for statistical 
+computations, graphics, and data analysis. Behind all the stuff that I’ve done there is a single idea and goal: 
 **to build a succinct summary of the data I'm analyzing**.
-
-
-## Currently
-
-I'm a Data Science Fellow at [Insight Data Science](http://insightdatascience.com/). 
-
-
-## Research Interests
-
-My research work revisits the core concepts behind methods for association-relationship 
-between multiple sets of variables (multiblock data) using different approaches from a 
-broad range of disciplines (e.g. psychometrics, chemometrics, sensometrics, 
-econometrics, ecology and biometrics). Broadly speaking, my research focuses on how to 
-study the relationships between multiple variables, how to graphically represent such 
-relationships, and how to quantify latent factors.  
 
 
 ## Overall Interests
@@ -72,42 +63,25 @@ What I like about my "job" is that:
 people from all over the world (from whom I've learned so much).
 
 
-## Photos
-
-<img class="centered" src="/images/website/water_drop.JPG">
-
-Besides data visualization, I also like to visualize the world through the lens of my camera
-
-- <a href="https://plus.google.com/photos/117265732281156472530/albums/5923141177468349217" target="_blank">Long Format</a><br>
-- <a href="https://plus.google.com/photos/117265732281156472530/albums/5850583855206261729" target="_blank">Nielsen Lab</a><br>
-- <a href="https://plus.google.com/photos/117265732281156472530/albums/5855398230533809713" target="_blank">Lab Stuff</a><br>
-- <a href="https://plus.google.com/photos/117265732281156472530/albums/5684951439367440929" target="_blank">Outdoors BW</a><br>
-- <a href="https://plus.google.com/photos/117265732281156472530/albums/5846352754687836433" target="_blank">Street Poles</a><br>
-
-
 ## Contact
 
-The easiest way to get in touch with me is by email. Feel free to drop me a line with 
-feedback, report bugs, suggest ideas, ask me questions about my work, or just say hi.
+The easiest way to get in touch with me is by email. Feel free to drop me a line 
+if you're interested in:
+
+- Training Workshops
+- Consulting
+- Seminars
+- Joint Research
 
 ```gaston.stat at gmail.com```
 
-I can quickly reply to **short** messages but if my answer is going to take me more than 1 
-minute I may not reply immediately (so be patient). 
-
-If you have something else in mind please consider the following options 
-(I'll be happy to discuss any details):
-
-- Reviewer
-- Invited Speaker
-- Consulting
 
 
 ## Wishlist
 
 This site remains ad-free and its content takes hundreds of hours a month to research and write. 
 If you find any joy and value in it, please consider supporting me. You can help me get 
-useful resources from my <a href="http://amzn.com/w/247IGP8DY2ER5" target="_blank">wishlist</a>.
+useful resources from my <a href="http://amzn.com/w/A8P707HJ94QI" target="_blank">wishlist</a>.
 
 <hr>
 
