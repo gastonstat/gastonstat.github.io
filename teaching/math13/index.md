@@ -98,7 +98,7 @@ Office hours Learning Resource Center (Rm 112), Tu 3:00pm - 4:00pm<br>
 	<li class="listing-item">
 		<time datetime>05-18-2015</time></li>
 	<li class="listing-item">
-		<time datetime>05-20-2015</time><a></a><b>FINAL<b></li>
+		<time datetime>05-20-2015</time><a></a><b>FINAL</b></li>
 </ul>
 
 
