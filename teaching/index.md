@@ -8,6 +8,11 @@ title: Teaching
 #### Some of my teaching materials, tutorials, docs, etc
 
 
+## <a name="math13"></a>Math13 BCC
+
+<a href="/teaching/math13">Introduction to Statistics</a>
+
+
 ## <a name="dataframes"></a>Manipulating Data Tables in R
 
 <ul>

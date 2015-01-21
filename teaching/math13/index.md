@@ -12,10 +12,10 @@ title: math13
 
 Course Code 21947<br>
 Monday / Wednesday 3:30pm - 5:30pm. BCC 033<br>
-Gaston Sanchez, (`gsanchez at peralta.com`)<br>
+Gaston Sanchez<br>
 Office hours Learning Resource Center (BCC 112), Tu 3:00pm - 4:00pm
 
-[Course Syllabus](/teaching/math13/math13_spring2015_syllabus.pdf)
+<a href="/teaching/math13/math13_spring2015_syllabus.pdf" target="_blank">Course Syllabus</a>
 
 <hr/>
 
@@ -30,7 +30,7 @@ Office hours Learning Resource Center (BCC 112), Tu 3:00pm - 4:00pm
 	</li>
 	<li class="listing-item">
 	  <time datetime="01-26-2015">01-26-2015</time>
-	  <a href="https://docs.google.com/presentation/d/1frT_uB2vAmTdX2-daq2LVCTYRG1iAb2Qj02LvM7UPUY/pub?start=false&loop=false&delayms=3000" target="_blank">What is Statistics</a>
+	  &nbsp;&nbsp;&nbsp;&nbsp;What is Statistics
 	</li>
 </ul>
 
@@ -39,7 +39,7 @@ Office hours Learning Resource Center (BCC 112), Tu 3:00pm - 4:00pm
 <ul class="listing">
 	<li class="listing-item">
 	  <time datetime="01-28-2015">01-28-2015</time>
-	  <a href="https://docs.google.com/presentation/d/1frT_uB2vAmTdX2-daq2LVCTYRG1iAb2Qj02LvM7UPUY/pub?start=false&loop=false&delayms=3000" target="_blank">Summary Stats</a>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Summary Stats
 	</li>
 </ul>
 
