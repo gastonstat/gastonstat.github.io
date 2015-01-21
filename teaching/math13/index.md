@@ -26,7 +26,7 @@ Office hours Learning Resource Center (BCC 112), Tu 3:00pm - 4:00pm
 <ul class="listing">
 	<li class="listing-item">
 	  <time datetime="01-21-2015">01-21-2015</time>
-	  <a href="https://docs.google.com/presentation/d/1frT_uB2vAmTdX2-daq2LVCTYRG1iAb2Qj02LvM7UPUY/pub?start=false&loop=false&delayms=3000" target="_blank">Course Presentation</a>
+	  <a href="https://docs.google.com/presentation/d/1UmNMjYYOmEVm8BGyjaoz-e9MBQS8yZOHwT0hJPdN0P4/pub?start=false&loop=false&delayms=3000" target="_blank">Course Presentation</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="01-26-2015">01-26-2015</time>
