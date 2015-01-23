@@ -11,7 +11,7 @@ title: math13
 ### Spring 2015
 
 Course Code 21947<br>
-Monday / Wednesday 3:30pm - 5:30pm. BCC 033<br>
+Monday / Wednesday, 3:30pm - 5:20pm. BCC 033<br>
 Gaston Sanchez<br>
 Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm
 
