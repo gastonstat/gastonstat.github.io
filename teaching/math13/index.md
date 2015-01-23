@@ -12,7 +12,6 @@ title: math13
 
 Course Code 21947<br>
 Monday / Wednesday, 3:30pm - 5:20pm. BCC 033<br>
-Gaston Sanchez<br>
 Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm
 
 <a href="/teaching/math13/math13_spring2015_syllabus.pdf" target="_blank">Course Syllabus</a>
@@ -39,7 +38,31 @@ Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm
 <ul class="listing">
 	<li class="listing-item">
 	  <time datetime="01-26-2015">01-26-2015</time>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Summary Stats
+	  &nbsp;&nbsp;&nbsp;&nbsp;Descriptive Statistics
+	</li>
+	<li class="listing-item">
+	  <time datetime="01-28-2015">01-28-2015</time>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Measures of center
+	</li>
+	<li class="listing-item">
+	  <time datetime="02-02-2015">02-02-2015</time>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Measures of spread
+	</li>
+	<li class="listing-item">
+	  <time datetime="02-04-2015">02-04-2015</time>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<em><small>coming soon</small></em>
+	</li>
+	<li class="listing-item">
+	  <time datetime="02-09-2015">02-09-2015</time>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<em><small>coming soon</small></em>
+	</li>
+	<li class="listing-item">
+	  <time datetime="02-11-2015">02-11-2015</time>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<em><small>coming soon</small></em>
+	</li>
+	<li class="listing-item">
+	  <time datetime="02-18-2015">02-18-2015</time>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<b>1st Exam</b>
 	</li>
 </ul>
 
