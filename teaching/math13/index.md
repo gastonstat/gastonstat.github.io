@@ -15,12 +15,15 @@ Monday / Wednesday, 3:30pm - 5:20pm. BCC 033<br>
 Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm
 
 <a href="/teaching/math13/math13_spring2015_syllabus.pdf" target="_blank">Course Syllabus</a>
+<br>
+<br>
 
-<hr/>
+<hr class="margin" />
 
-## Lectures
+## Lecture slides, Homeworks, and Exercises
 
 **Introduction**
+<br><small>Textbook sections: 1.1</small>
 
 <ul class="listing">
 	<li class="listing-item">
@@ -34,6 +37,7 @@ Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm
 </ul>
 
 **Descriptive Statistics**
+<br><small>Textbook sections: 3.1, 3.2, 3.3, 2.1, 2.2, 2.3</small>
 
 <ul class="listing">
 	<li class="listing-item">
@@ -65,6 +69,8 @@ Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm
 	  &nbsp;&nbsp;&nbsp;&nbsp;<b>1st Exam</b>
 	</li>
 </ul>
+
+<hr/>
 
 **Probability Basics and Distributions**
 
