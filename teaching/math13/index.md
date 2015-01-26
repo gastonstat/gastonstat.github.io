@@ -12,11 +12,15 @@ title: math13
 
 Course Code 21947<br>
 Monday / Wednesday, 3:30pm - 5:20pm. BCC 033<br>
-Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm
+Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm<br>
+Homeworks to be turned in during class (see dates below)
 
-<a href="/teaching/math13/math13_spring2015_syllabus.pdf" target="_blank">Course Syllabus</a>
+<a class="graybutton" href="/teaching/math13/math13_spring2015_syllabus.pdf" target="_blank">Course Syllabus</a>
 <br>
 <br>
+
+<!-- <iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=500&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=8ll51p6hd92t7nm7dpio8j7s1g%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="680" height="400" frameborder="0" scrolling="no"></iframe>
+-->
 
 <hr class="margin" />
 
@@ -50,7 +54,8 @@ Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-02-2015">02-02-2015</time>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Measures of spread
+	  &nbsp;&nbsp;&nbsp;&nbsp;Measures of spread &nbsp;&nbsp; | <b><a href="/teaching/math13/homework1_math13.pdf" target="_blank">Homework 1</a>
+</b>
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-04-2015">02-04-2015</time>
