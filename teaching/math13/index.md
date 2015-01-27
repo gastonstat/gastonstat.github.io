@@ -46,15 +46,19 @@ Homeworks to be turned in during class (see dates below)
 <ul class="listing">
 	<li class="listing-item">
 	  <time datetime="01-26-2015">01-26-2015</time>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Descriptive Statistics
+	  <a href="https://docs.google.com/presentation/d/14XU_vLIBUh6yWfxhHxJwCl9irGKG3mCIntlZD6pjkVY/pub?start=false&loop=false&delayms=3000" target="_blank">Introduction to Descriptive Statistics</a>
+	</li>
+	<li class="listing-item">
+	  <time datetime="01-26-2015">01-26-2015</time>
+	  <a href="https://docs.google.com/presentation/d/1QCrikMs63EhU3TALiDXheaMKyAoqEGhz9z6oCxpIi2k/pub?start=false&loop=false&delayms=3000" target="_blank">Measures of center</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="01-28-2015">01-28-2015</time>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Measures of center
+	  &nbsp;&nbsp;&nbsp;&nbsp;Measures of spread &nbsp;&nbsp;
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-02-2015">02-02-2015</time>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Measures of spread &nbsp;&nbsp; | <b><a href="/teaching/math13/homework1_math13.pdf" target="_blank">Homework 1</a>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<em><small>coming soon</small></em>   | <b><a href="/teaching/math13/homework1_math13.pdf" target="_blank">Homework 1</a>
 </b>
 	</li>
 	<li class="listing-item">
