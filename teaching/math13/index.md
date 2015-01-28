@@ -57,9 +57,12 @@ Homeworks to be turned in during class (see dates below)
 	  &nbsp;&nbsp;&nbsp;&nbsp;Measures of spread &nbsp;&nbsp;
 	</li>
 	<li class="listing-item">
+	  <time datetime="01-28-2015">01-28-2015</time>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Weighted Averages and Frequency Tables&nbsp;&nbsp;
+	</li>
+	<li class="listing-item">
 	  <time datetime="02-02-2015">02-02-2015</time>
-	  &nbsp;&nbsp;&nbsp;&nbsp;<em><small>coming soon</small></em>   | <b><a href="/teaching/math13/homework1_math13.pdf" target="_blank">Homework 1</a>
-</b>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<em><small>coming soon</small></em>   | <b><a href="/teaching/math13/homework1_math13.pdf" target="_blank">Homework 1&nbsp;&nbsp;(Feb 2)</a></b>
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-04-2015">02-04-2015</time>
