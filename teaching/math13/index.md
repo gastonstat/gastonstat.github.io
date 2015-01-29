@@ -58,7 +58,7 @@ Homeworks to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-02-2015">02-02-2015</time>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Weighted Averages and Frequency Tables &nbsp; | <b><a href="/teaching/math13/homework1_math13.pdf" target="_blank">Homework 1</a></b>
+	  <a href="https://docs.google.com/presentation/d/1trAK25ZQjuP3El1nsWxjooFwYxOmvd0ODiKX-W6EVJc/pub?start=false&loop=false&delayms=3000" target="_blank">Weighted Averages and Frequency Tables</a> | <b><a href="/teaching/math13/homework1_math13.pdf" target="_blank">Homework 1</a></b>
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-04-2015">02-04-2015</time>
