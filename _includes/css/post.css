@@ -103,3 +103,10 @@
     width: 700px; 
   }
 }
+
+
+/* used for teaching math13 */
+.lecture small{
+  color: #ddd; 
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 80%; }
