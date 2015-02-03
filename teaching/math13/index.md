@@ -46,7 +46,7 @@ Homeworks to be turned in during class (see dates below)
 	  <time datetime="02-02-2015">Mon, Feb 2&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 3.1, 2.1, 2.2</time><br>
 	  <b><a href="/teaching/math13/homework1_math13.pdf" target="_blank">Homework 1</a></b><br>
 	  <a href="https://docs.google.com/presentation/d/1trAK25ZQjuP3El1nsWxjooFwYxOmvd0ODiKX-W6EVJc/pub?start=false&loop=false&delayms=3000" target="_blank">Weighted Averages and Frequency Tables</a><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Visualizing Qualitative Variables
+	  <a href="https://docs.google.com/presentation/d/1Rc0FwkYaWzLL4nzXuplnsArxBDs5TK6qktJ4C3eRxKc/pub?start=false&loop=false&delayms=3000">Visualizing Qualitative Variables</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-04-2015">Wed, Feb 4&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 2.1, 2.3, 3.3</time><br>
