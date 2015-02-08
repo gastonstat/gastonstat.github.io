@@ -106,12 +106,12 @@ Homeworks to be turned in during class (see dates below)
 	  &nbsp;&nbsp;&nbsp;&nbsp;Normal Distribution (part 2)
 	</li>
 	<li class="listing-item">
-	  <time datetime="03-23-2015">Mon, Mar 16&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: </time><br>
+	  <time datetime="03-23-2015">Mon, Mar 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: </time><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;<em>Review</em>
 	</li>
 	<li class="listing-item">
-	  <time datetime="03-25-2015">Wed, Mar 18&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 4, 5, 6</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;<b>Exam 2</b>
+	  <time datetime="03-25-2015">Wed, Mar 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 4, 5, 6</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<b>2nd Exam</b>
 	</li>
 </ul>
 
