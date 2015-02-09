@@ -55,10 +55,11 @@ Homeworks to be turned in during class (see dates below)
 	<li class="listing-item">
 	  <time datetime="02-09-2015">Mon, Feb 9&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: </time><br>
 	  <b><a href="/teaching/math13/homework2_math13.pdf" target="_blank">Homework 2</a></b><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;<em><small>coming soon</small></em>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Discussion
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-11-2015">Wed, Feb 11&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: </time><br>
+	  <a href="https://docs.google.com/document/d/1aI0kHQvdlCix1TDn06sN7i0iwrhLe1U3cE9UDnMCizU/pub" target="_blank"><b>Exercises</b></a><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;Exam Review
 	</li>
 	<li class="listing-item">
