@@ -12,11 +12,14 @@ title: math13
 
 Course Code 21947<br>
 Monday / Wednesday, 3:30pm - 5:20pm. BCC 033<br>
+Meeting request: ```gsancheztrujillo at peralta.edu```<br>
 Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm<br>
 Textbook "Understandable Statistics" (11th edition or older)<br>
 Homeworks to be turned in during class (see dates below)
 
 <a class="graybutton" href="/teaching/math13/math13_spring2015_syllabus.pdf" target="_blank">Course Syllabus</a>
+&nbsp;&nbsp;
+<a class="graybutton" href="https://docs.google.com/presentation/d/1SFHjJmGds355fVezfxP1u0L6gI141amS4BOx5HDdJdk/pub?start=false&loop=false&delayms=3000" target="_blank">Email Policy</a>
 <br>
 <br>
 
