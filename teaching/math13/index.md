@@ -63,7 +63,7 @@ Homeworks to be turned in during class (see dates below)
 	<li class="listing-item">
 	  <time datetime="02-11-2015">Wed, Feb 11&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: </time><br>
 	  <a href="https://docs.google.com/document/d/1aI0kHQvdlCix1TDn06sN7i0iwrhLe1U3cE9UDnMCizU/pub" target="_blank"><b>Exercises</b></a><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Exam Review
+	  &nbsp;&nbsp;&nbsp;&nbsp;Homework Review and Questions
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-18-2015">Wed, Feb 18&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 1.1, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3</time><br>
