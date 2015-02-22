@@ -76,17 +76,17 @@ Homeworks to be turned in during class (see dates below)
 **Probability Basics and Distributions**
 <ul class="listing">
 	<li class="listing-item">
-	  <time datetime="02-23-2015">Mon, Feb 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.1</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Basics of Probability Theory
+	  <time datetime="02-23-2015">Mon, Feb 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.1, 4.2</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Intro to Probability Theory<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Random Experiments and Events
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-25-2015">Wed, Feb 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.1, 4.2</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Events
-	<br>
 	&nbsp;&nbsp;&nbsp;&nbsp;Probability Rules
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-02-2015">Mon, Mar 2&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.3</time><br>
+	  <b><a href="/teaching/math13/homework3_math13.pdf" target="_blank">Homework 3</a></b><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;Counting Review
 	</li>
 	<li class="listing-item">
@@ -95,14 +95,16 @@ Homeworks to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-09-2015">Mon, Mar 9&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.2, 5.3</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Binomial Probabilities
+	 &nbsp;&nbsp;&nbsp;&nbsp;<b>Homework 4</b><br>
+	 &nbsp;&nbsp;&nbsp;&nbsp;Binomial Distribution
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-11-2015">Wed, Mar 11&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.3, 5.4</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Binomial Related Probabilities
+	  &nbsp;&nbsp;&nbsp;&nbsp;Binomial Related Distributions
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-16-2015">Mon, Mar 16&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.1, 6.2, 6.3</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<b>Homework 5</b><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;Normal Distribution (part 1)
 	</li>
 	<li class="listing-item">
@@ -111,7 +113,8 @@ Homeworks to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-23-2015">Mon, Mar 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: </time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;<em>Review</em>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<b>Homework 6</b><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<em>Tentative Review</em>
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-25-2015">Wed, Mar 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 4, 5, 6</time><br>
