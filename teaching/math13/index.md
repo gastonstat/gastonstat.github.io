@@ -81,7 +81,7 @@ Homeworks to be turned in during class (see dates below)
 	  &nbsp;&nbsp;&nbsp;&nbsp;Random Experiments and Events
 	</li>
 	<li class="listing-item">
-	  <time datetime="02-25-2015">Wed, Feb 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.1, 4.2</time><br>
+	  <time datetime="02-25-2015">Wed, Feb 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.1, 4.2, Appendix I</time><br>
 	&nbsp;&nbsp;&nbsp;&nbsp;Probability Rules
 	</li>
 	<li class="listing-item">
