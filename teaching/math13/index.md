@@ -77,8 +77,8 @@ Homeworks to be turned in during class (see dates below)
 <ul class="listing">
 	<li class="listing-item">
 	  <time datetime="02-23-2015">Mon, Feb 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.1, 4.2</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Intro to Probability Theory<br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Random Experiments and Events
+	  <a href="https://docs.google.com/presentation/d/1lpAOPYFbz4odsLVb1QgDNjp6qej4AFv4wLYLqLMNHB4/pub?start=false&loop=false&delayms=3000" target="_blank">Intro to Probability Theory</a><br>
+	  <a href="https://docs.google.com/presentation/d/1cx94AKho0z15uwC_moocel2dOIp6NdjDyvMHCMVORIw/pub?start=false&loop=false&delayms=3000" target="_blank">Random Experiments and Events</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-25-2015">Wed, Feb 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.1, 4.2, Appendix I</time><br>

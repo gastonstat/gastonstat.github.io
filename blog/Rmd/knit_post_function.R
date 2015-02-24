@@ -15,7 +15,8 @@ setwd("/Users/Gaston/Documents/gastonstat.github.io/blog/Rmd")
 # (they are commented out in the Rmd files to avoid jekyll crash)
 
 
-KnitPost("code-2014-12-21-capturing-R-printed-output.Rmd")
+KnitPost("code-2015-02-23-splitting-rows.Rmd")
+# KnitPost("code-2014-12-21-capturing-R-printed-output.Rmd")
 # KnitPost("code-2014-08-16-Density-Curves.Rmd")
 # KnitPost("code-2014-04-20-Failing-reading-table-in-R.Rmd")
 # KnitPost("code-2014-01-15-Center-data-in-R.Rmd")
