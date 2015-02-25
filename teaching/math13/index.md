@@ -15,7 +15,7 @@ Monday / Wednesday, 3:30pm - 5:20pm. BCC 033<br>
 Meeting request: ```gsancheztrujillo at peralta.edu```<br>
 Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm<br>
 Textbook "Understandable Statistics" (11th edition or older)<br>
-Homeworks to be turned in during class (see dates below)
+Homework to be turned in during class (see dates below)
 
 <a class="graybutton" href="/teaching/math13/math13_spring2015_syllabus.pdf" target="_blank">Course Syllabus</a>
 &nbsp;&nbsp;
@@ -81,13 +81,14 @@ Homeworks to be turned in during class (see dates below)
 	  <a href="https://docs.google.com/presentation/d/1cx94AKho0z15uwC_moocel2dOIp6NdjDyvMHCMVORIw/pub?start=false&loop=false&delayms=3000" target="_blank">Random Experiments and Events</a>
 	</li>
 	<li class="listing-item">
-	  <time datetime="02-25-2015">Wed, Feb 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.1, 4.2, Appendix I</time><br>
-	&nbsp;&nbsp;&nbsp;&nbsp;Probability Rules
+	  <time datetime="02-25-2015">Wed, Feb 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.1, 4.2</time><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Probability Rules (part 1)<br>
 	</li>
 	<li class="listing-item">
-	  <time datetime="03-02-2015">Mon, Mar 2&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.3</time><br>
+	  <time datetime="03-02-2015">Mon, Mar 2&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.2, Appendix I, 4.3</time><br>
 	  <b><a href="/teaching/math13/homework3_math13.pdf" target="_blank">Homework 3</a></b><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Counting Review
+	  &nbsp;&nbsp;&nbsp;&nbsp;Probability Rules (part 2)<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Counting Principles
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-04-2015">Wed, Mar 4&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.1</time><br>
