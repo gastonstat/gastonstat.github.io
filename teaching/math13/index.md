@@ -82,7 +82,7 @@ Homework to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-25-2015">Wed, Feb 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.1, 4.2</time><br>
-	&nbsp;&nbsp;&nbsp;&nbsp;Probability Rules (part 1)<br>
+	  <a href="https://docs.google.com/presentation/d/1cJCPgszna-QLD6o2ab6c9SUkFFEt0bJljy5xVIkPfA0/pub?start=false&loop=false&delayms=3000" target="_blank">Probability Rules (part 1)</a><br>
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-02-2015">Mon, Mar 2&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.2, Appendix I, 4.3</time><br>
