@@ -96,7 +96,7 @@ Homework to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-09-2015">Mon, Mar 9&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.2, 5.3</time><br>
-	 &nbsp;&nbsp;&nbsp;&nbsp;<b>Homework 4</b><br>
+	 <b><a href="/teaching/math13/homework4_math13.pdf" target="_blank">Homework 4</a></b><br>
 	 &nbsp;&nbsp;&nbsp;&nbsp;Binomial Distribution
 	</li>
 	<li class="listing-item">
