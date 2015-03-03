@@ -87,16 +87,16 @@ Homework to be turned in during class (see dates below)
 	<li class="listing-item">
 	  <time datetime="03-02-2015">Mon, Mar 2&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.2, Appendix I, 4.3</time><br>
 	  <b><a href="/teaching/math13/homework3_math13.pdf" target="_blank">Homework 3</a></b><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Probability Rules (part 2)<br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Counting Principles
+	  <a href="https://docs.google.com/presentation/d/1Xxy6ZoVBN9duY5iy9j-4yXKywDbK4fRWo5wadyPsOjk/pub?start=false&loop=false&delayms=3000" target="_blank">Probability Rules (part 2)</a><br>
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-04-2015">Wed, Mar 4&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.1</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Random Variables
+	  &nbsp;&nbsp;&nbsp;&nbsp;Counting Principles
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-09-2015">Mon, Mar 9&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.2, 5.3</time><br>
 	 <b><a href="/teaching/math13/homework4_math13.pdf" target="_blank">Homework 4</a></b><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Random Variables<br>
 	 &nbsp;&nbsp;&nbsp;&nbsp;Binomial Distribution
 	</li>
 	<li class="listing-item">
