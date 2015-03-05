@@ -91,7 +91,7 @@ Homework to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-04-2015">Wed, Mar 4&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.1</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Counting Principles
+	  <a href="https://docs.google.com/presentation/d/1kgZsJFMibB5rRx1sVqJTy6efd6dgrfg1S89dAZ-wPeI/pub?start=false&loop=false&delayms=3000" target="_blank">Counting Principles</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-09-2015">Mon, Mar 9&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.2, 5.3</time><br>
