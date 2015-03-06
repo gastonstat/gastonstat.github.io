@@ -5,7 +5,7 @@ layout: page
 
 # About Me
 
-#### I'm a statistical programmer and data science consultant for non-governmental organizations, small start-ups, academic scholars, and research labs in general. I'm also a lecturer of Statistics courses.
+#### I'm a statistical programmer and data science consultant for NGO's, small start-ups, academic scholars, and research labs in general. I'm also a lecturer of Statistics courses.
 
 
 <a class="graybutton" href="/about/GastonSanchez_resumecode.pdf">resume</a>
