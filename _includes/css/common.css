@@ -109,6 +109,9 @@ html, body {
 }
 */
 
+/* id attribute "svgtree" that centers d3js layout tree (graph) */
+#svgtree {margin-left:auto; margin-right: auto;}
+
 .clear {
   clear: left;
 }
