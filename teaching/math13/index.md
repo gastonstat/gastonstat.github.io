@@ -94,28 +94,28 @@ Homework to be turned in during class (see dates below)
 	  <a href="https://docs.google.com/presentation/d/1kgZsJFMibB5rRx1sVqJTy6efd6dgrfg1S89dAZ-wPeI/pub?start=false&loop=false&delayms=3000" target="_blank">Counting Principles</a>
 	</li>
 	<li class="listing-item">
-	  <time datetime="03-09-2015">Mon, Mar 9&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.1</time><br>
+	  <time datetime="03-09-2015">Mon, Mar 9&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: Chapter 4</time><br>
 	 <b><a href="/teaching/math13/homework4_math13.pdf" target="_blank">Homework 4</a></b><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Review Homework 4<br>
+	</li>
+	<li class="listing-item">
+	  <time datetime="03-11-2015">Wed, Mar 11&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.1</time><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;Random Variables
 	</li>
 	<li class="listing-item">
-	  <time datetime="03-11-2015">Wed, Mar 11&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.2, 5.3</time><br>
+	  <time datetime="03-16-2015">Mon, Mar 16&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.2, 5.3</time><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;Binomial Distribution<br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;Binomial Related Distributions
 	</li>
 	<li class="listing-item">
-	  <time datetime="03-16-2015">Mon, Mar 16&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.1, 6.2, 6.3</time><br>
+	  <time datetime="03-18-2015">Wed, Mar 18&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.1, 6.2, 6.3</time><br>
 	  <b><a href="/teaching/math13/homework5_math13.pdf" target="_blank">Homework 5</a></b><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;Normal Distribution (part 1)
 	</li>
 	<li class="listing-item">
-	  <time datetime="03-18-2015">Wed, Mar 18&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.4, 6.5, 6.6</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Normal Distribution (part 2)
-	</li>
-	<li class="listing-item">
-	  <time datetime="03-23-2015">Mon, Mar 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: </time><br>
+	  <time datetime="03-23-2015">Mon, Mar 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.4, 6.5, 6.6</time><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;<b>Homework 6</b><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;<em>Tentative Review</em>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Normal Distribution (part 2)
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-25-2015">Wed, Mar 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 4, 5, 6</time><br>
