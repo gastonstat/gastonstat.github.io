@@ -100,7 +100,7 @@ Homework to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-11-2015">Wed, Mar 11&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.1</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Random Variables
+	  <a href="https://docs.google.com/presentation/d/1mXkzTzr80sOfxs45QEFgywjUMw8FSHvAv8KNYO0X9Tc/pub?start=false&loop=false&delayms=3000" target="_blank">Random Variables</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-16-2015">Mon, Mar 16&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.2, 5.3</time><br>
