@@ -2,6 +2,6 @@ author: Gaston Sanchez
 description: My personal website and blog about data analysis, applied statistics, R
 highlighter: pygments
 permalink: /blog/:categories/:year/:month/:day/:title.html
-markdown: redcarpet
+markdown: kramdown
 exclude: ["Rmd", ".DS_Store", "README.md"]
 excerpt_separator: <!--more-->

@@ -84,12 +84,12 @@ $$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$
 Or even better:
 
 {% highlight r %}
-$$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$
+\\[ \mathbf{X} = \mathbf{Z} \mathbf{P^\mathsf{T}} \\]
 {% endhighlight %}
 
 is displayed as
 
-\\[ \mathbf{X} = \mathbf{Z} \mathbf{P'} \\]
+\\[ \mathbf{X} = \mathbf{Z} \mathbf{P^\mathsf{T}} \\]
 
 If you want to use subscripts like this \\( \mathbf{X}\_{n,p} \\) you need to scape the 
 underscores with a backslash like so ``` \mathbf{X}\_{n,p} ```:

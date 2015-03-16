@@ -13,7 +13,7 @@ title: math13
 Course Code 21947<br>
 Monday / Wednesday, 3:30pm - 5:20pm. BCC 033<br>
 Meeting request: ```gsancheztrujillo at peralta.edu```<br>
-Office hours Learning Resource Center (BCC 112), Tu 3pm - 4pm<br>
+Office hours LRC 112, Tu 3pm - 4pm (or by appointment)<br>
 Textbook "Understandable Statistics" (11th edition or older)<br>
 Homework to be turned in during class (see dates below)
 
