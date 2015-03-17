@@ -23,14 +23,13 @@ Homework to be turned in during class (see dates below)
 <br>
 <br>
 
-<!-- <iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=500&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=8ll51p6hd92t7nm7dpio8j7s1g%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="680" height="400" frameborder="0" scrolling="no"></iframe>
--->
 
 <hr class="margin" />
 
 ## Lecture slides, Homeworks, and Exercises
 
 **Introduction: Descriptive Statistics**
+
 <ul class="listing">
 	<li class="listing-item">
 	  <time datetime="01-21-2015">Wed, Jan 21&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 1.1</time><br><a href="https://docs.google.com/presentation/d/1UmNMjYYOmEVm8BGyjaoz-e9MBQS8yZOHwT0hJPdN0P4/pub?start=false&loop=false&delayms=3000" target="_blank">Course Presentation</a>
@@ -74,6 +73,7 @@ Homework to be turned in during class (see dates below)
 <hr/>
 
 **Probability Basics and Distributions**
+
 <ul class="listing">
 	<li class="listing-item">
 	  <time datetime="02-23-2015">Mon, Feb 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 4.1, 4.2</time><br>
@@ -104,8 +104,7 @@ Homework to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-16-2015">Mon, Mar 16&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 5.2, 5.3</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Binomial Distribution<br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Binomial Related Distributions
+	  <a href="https://docs.google.com/presentation/d/1l269oLR23ZkZe2allThPMn2PMj6Q9MVp7j8oL2uiVuI/pub?start=false&loop=false&delayms=3000" target="_blank">Binomial Distribution</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-18-2015">Wed, Mar 18&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.1, 6.2, 6.3</time><br>
