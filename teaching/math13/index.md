@@ -61,7 +61,7 @@ Homework to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="02-11-2015">Wed, Feb 11&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: </time><br>
-	  <a href="https://docs.google.com/document/d/1aI0kHQvdlCix1TDn06sN7i0iwrhLe1U3cE9UDnMCizU/pub" target="_blank"><b>Exercises</b></a><br>
+	  <a href="https://docs.google.com/document/d/1aI0kHQvdlCix1TDn06sN7i0iwrhLe1U3cE9UDnMCizU/pub" target="_blank"><b>Exercises Test 1</b></a><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;Homework Review and Questions
 	</li>
 	<li class="listing-item">
@@ -113,7 +113,7 @@ Homework to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-23-2015">Mon, Mar 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.4, 6.5, 6.6</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;<b>Homework 6</b><br>
+	  <b><a href="/teaching/math13/exercises2.pdf" target="_blank">Exercises Test 2</a></b><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;Normal Distribution (part 2)
 	</li>
 	<li class="listing-item">
