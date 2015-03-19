@@ -109,12 +109,12 @@ Homework to be turned in during class (see dates below)
 	<li class="listing-item">
 	  <time datetime="03-18-2015">Wed, Mar 18&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.1, 6.2, 6.3</time><br>
 	  <b><a href="/teaching/math13/homework5_math13.pdf" target="_blank">Homework 5</a></b><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Normal Distribution (part 1)
+	  <a href="https://docs.google.com/presentation/d/1Pqzgn5bU18r5P8OKVFnplQCRXB1IUi6c2_ZdRRDFPmw/pub?start=false&loop=false&delayms=3000" target="_blank">Binomial Related Distributions</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-23-2015">Mon, Mar 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.4, 6.5, 6.6</time><br>
 	  <b><a href="/teaching/math13/exercises2.pdf" target="_blank">Exercises Test 2</a></b><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Normal Distribution (part 2)
+	  &nbsp;&nbsp;&nbsp;&nbsp;Review
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-25-2015">Wed, Mar 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 4, 5, 6</time><br>
