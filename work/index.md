@@ -58,7 +58,7 @@ title: Work
  This site is a space dedicated to Partial Least Squares Data Analysis Methods. Its content 
  reflects my opinionated interpretation of how I understand the PLS universe. &nbsp;&nbsp;
 </p>
-<a href="http://www.plsmodeling.com/">
+<a href="http://plsmodeling.com/">
 <img class="centered" src="/images/website/plsmodeling.png"/></a>
 <hr>
 
