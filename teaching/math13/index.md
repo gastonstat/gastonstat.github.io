@@ -114,7 +114,7 @@ Homework to be turned in during class (see dates below)
 	<li class="listing-item">
 	  <time datetime="03-23-2015">Mon, Mar 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.4, 6.5, 6.6</time><br>
 	  <b><a href="/teaching/math13/exercises2.pdf" target="_blank">Exercises Test 2</a></b><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Review
+	  <b>Answers: </b><a href="/teaching/math13/exercises2_answers.pdf" target="_blank">Answers Exercises 2</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-25-2015">Wed, Mar 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 4, 5, 6</time><br>
