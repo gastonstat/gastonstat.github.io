@@ -12,8 +12,13 @@ title: Teaching
 
 <a href="/teaching/math13">Introduction to Statistics</a>
 
+<br/>
 
-## <a name="dataframes"></a>Manipulating Data Tables in R
+<hr class="margin" />
+
+## Tutorials, Workshops & Boot Camps
+
+### <a name="dataframes"></a>Manipulating Data Tables in R
 
 <ul>
 	<li><a href="https://docs.google.com/presentation/d/1frT_uB2vAmTdX2-daq2LVCTYRG1iAb2Qj02LvM7UPUY/pub?start=false&loop=false&delayms=3000" target="_blank">Reading and Creating Data Frames</a></li>
@@ -25,7 +30,7 @@ title: Teaching
 </ul>
 
 
-## <a name="webdata"></a>Getting Data From the Web with R
+### <a name="webdata"></a>Getting Data From the Web with R
 
 - [Introduction](/work/webdata/getting_web_data_r1_introduction.pdf)
 - [Reading Files from the Web](/work/webdata/getting_web_data_r2_reading_files.pdf)
@@ -37,14 +42,27 @@ title: Teaching
 - [Getting Data via Web APIs](/work/webdata/getting_web_data_r8_web_apis.pdf)
 
 
-## <a name="matrix"></a>Matrix Algebra for Data Analysis
+### <a name="pca"></a>PCA Revealed
+
+- [Presentation](/teaching/pcarevealed/PCA_presentation.pdf)
+- [Introduction](/teaching/pcarevealed/PCA_introduction.pdf)
+- [Preliminary Concepts](/teaching/pcarevealed/PCA_preliminaries.pdf)
+- [Summarizing Information](/teaching/pcarevealed/PCA_Infosum_Approach.pdf)
+- [Geometric Approach](/teaching/pcarevealed/PCA_Geometric_Approach.pdf)
+- [Minimization Approach](/teaching/pcarevealed/PCA_Minimization.pdf)
+- [PCA with R](/teaching/pcarevealed/PCA_with_R.pdf)
+- [Hacking your own PCA](/teaching/pcarevealed/PCA_Hacking.pdf)
+- [Appendix](/teaching/pcarevealed/PCA_Appendix.pdf)
+
+
+### <a name="matrix"></a>Matrix Algebra for Data Analysis
 
 - [Matrix Basics 1](/teaching/matrix_basics1.pdf)
 - [Matrix Basics 2](/teaching/matrix_basics2.pdf)
 - [Decompositions](/teaching/matrix_decompositions.pdf)
 
 
-## <a name="pls"></a>Partial Least Squares
+### <a name="pls"></a>Partial Least Squares
 
 - [PLS Path Modeling with R](/PLS_Path_Modeling_with_R.pdf)
 - [PLS Regression 1](/plsdepot_plsreg1.pdf)
@@ -54,12 +72,9 @@ title: Teaching
 - [PLS Canonical Analysis](/plsdepot_plsca.pdf)
 - [Tucker's Inter-Battery](/plsdepot_interbat.pdf)
 - [NIPALS](/plsdepot_nipals.pdf)
-- [plsmodeling.com](http://www.plsmodeling.com) (companion website)
 
 
-## Creating R packages in Windows
-
-Slides of the workshop about Creating an R package in windows
+### Creating R packages in Windows
 
 - [Creating an R package](https://docs.google.com/presentation/d/1mGSgTeYeiDv-LRpFQ2xGJw7DEPcfeAEXYPP4ltq5Sd0/pub?start=false&loop=false&delayms=3000) (intro)
 - [Setting up your PC](https://docs.google.com/presentation/d/1U4TlOWaRxfjauDzMYrD6ikLTUnbohrgsGBUUVi0oGRk/pub?start=false&loop=false&delayms=3000) (part 1)
@@ -69,7 +84,7 @@ Slides of the workshop about Creating an R package in windows
 - [Develop smarter, NOT harder](https://docs.google.com/presentation/d/1C085WTEjKd7oA0LyxuaQC8ESNsEMXFdOR7ditl3qeZM/pub?start=false&loop=false&delayms=3000) (part 5)
 
 
-## Association Analysis in Statistical Genetics
+### Association Analysis in Statistical Genetics
 
 - [Single Locus Tests](https://docs.google.com/presentation/d/1a31SELGS6JXivQAY0jy3G3BtuUJHxiELWGl-gk-N5Nw/pub?start=false&loop=false&delayms=3000)
 - [Multiple Locus Methods I](https://docs.google.com/presentation/d/1PIwawKmn_lDJp5W28xzxpVtzK0hVVEYr7caL85oCFpQ/pub?start=false&loop=false&delayms=3000)
@@ -77,9 +92,7 @@ Slides of the workshop about Creating an R package in windows
 - [Collapsing Methods for Rare Variants](https://docs.google.com/presentation/d/1aj7QJP5MJ2XceeZMReVgQLlBQXMpVJAnfmKnCKOoFSc/pub?start=false&loop=false&delayms=3000)
 
 
-## R pubs
-
-My [R pubs](http://rpubs.com/gaston)
+### R pubs
 
 - [Visualizing correlations with corrgrams](http://rpubs.com/gaston/corrgrams)
 - [Multiple Correspondence Analysis](http://rpubs.com/gaston/MCA)
@@ -88,8 +101,16 @@ My [R pubs](http://rpubs.com/gaston)
 - [Visualizing hurricane trajectories](http://rpubs.com/gaston/hurricanes)
 
 
-## Other
+<br/>
 
-<a href="https://docs.google.com/presentation/d/1XZj_vU9LMCYZYjAuDQI1QecXLl004wz32OpXB3uzl04/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank">Tips for presentations</a>
+<hr class="margin" />
+
+## Talks
+
+- <a href="https://docs.google.com/presentation/d/1bWM7RxihSBzrcp07g026Lu5Ey10OACujj727vAIE7wo/pub?start=false&loop=false&delayms=3000" target="_blank">Arc Diagrams with R</a> (BARUG Meetup, April 2014)
+- <a href="https://docs.google.com/presentation/d/1Gihs0tPSBqKpXomqMk2IX6W8GTCIxAgARauG5PYTbqU/pub?start=false&loop=false&delayms=3000" target="_blank">Stats Software</a> (LMA2 Agrocampus Rennes)
+- <a href="https://docs.google.com/presentation/d/1XZj_vU9LMCYZYjAuDQI1QecXLl004wz32OpXB3uzl04/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank">Tips for presentations</a> (Oniris-Nantes)
+- <a href="https://docs.google.com/presentation/d/1X70pano06VH4xG9KGjLiq9YTuV5llXSiFftTgLYcnPE/pub?start=false&loop=false&delayms=3000" target="_blank">Personal Introduction to USC</a> (Oniris-Nantes)
+- <a href="https://docs.google.com/presentation/d/1mOaJzFMIpE8Vztep9zJXYBPl9QJRGpRDgUNIFCZZKBo/pub?start=false&loop=false&delayms=3000" target="_blank">Scoring Personal Care Products</a> (Insight Data Science project)
 
 <br/>

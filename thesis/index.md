@@ -24,7 +24,7 @@ is to select, among a set of segmentation variables, those having more discrimin
 capacity to separate the path models as much as possible. The result is a Pathmox 
 tree in which each node corresponds to a different segment with its own particular path model.
 
-<a class="redbutton" href="/thesis/pathmox-approach-thesis-gaston-sanchez.pdf" target="_blank">Download pdf</a>
+<a class="redbutton" href="https://www.dropbox.com/s/3b9gfy5w45a4xcr/pathmox-approach-thesis-gaston-sanchez.pdf" target="_blank">Download pdf</a>
 
 <hr>
 

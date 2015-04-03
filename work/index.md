@@ -3,90 +3,71 @@ layout: page
 title: Work
 ---
 
-# Works, Projects and Experiments
+# Books and Projects
 
-#### Some of my projects, works, and featured creations
+#### Some of my books, projects, and featured creations
 
 <hr/>
 
-<a href="/work/webdata"><img class="centered" src="/images/website/webdata_cover.png"/></a>
-<p>
- Slides for helping you get started with getting data from the Web with R. &nbsp;&nbsp;
-</p>
-<p>
- <a class="redbutton" href="/work/webdata">Read More</a>
-</p>
+## The Saga of PLS
+
+This text narrates the story behind the origins, development, and evolution of Partial Least Squares (PLS) methods. The perfect companion reading for any course, workshop, or seminar about PLS.
+
+<a class="graybutton">Coming really soon!!!</a>
+
+<hr/>
+
+## Handling and Processing Strings in R
+
+This book aims to help you get started with manipulating strings in R. It provides an  overview of several resources for string manipulation, general topics,  common operations, and other tricks.
+
+<a class="graybutton" href="/Handling_and_Processing_Strings_in_R.pdf">Read more</a>
+
+<hr/>
+
+## PLS Path Modeling with R
+
+This book provides a hands-on introduction to Partial Least Squares Path Modeling (PLS-PM) using the R package <code>"plspm"</code>.
+
+<a class="graybutton" href="/PLS_Path_Modeling_with_R.pdf">Read more</a>
+
 <hr/>
 
 
-<a href="/work/pcarevealed"><img class="centered" src="/images/website/pca_cover.png"/></a>
-<p>
- Slides for helping you get a good grasp of PCA fundamentals. &nbsp;&nbsp;
-</p>
-<p>
- <a class="redbutton" href="/work/pcarevealed">Read More</a>
-</p>
-<hr/>
+## plsmodeling.com
 
+This is a site dedicated to Partial Least Squares Data Analysis Methods. Its content is temporarily under re-construction but you're welcome to visit it.
 
-<a href="/Handling_and_Processing_Strings_in_R.pdf"><img class="centered" src="/images/website/strings_book_cover.png"/></a>
-<p>
- This book aims to help you get started with manipulating strings in R. It provides an 
- overview of several resources for string manipulation, general topics, 
- common operations, and other tricks. &nbsp;&nbsp;
-</p>
-<p>
- <a class="redbutton" href="/Handling_and_Processing_Strings_in_R.pdf">Download</a>
-</p>
-<hr/>
+<a class="graybutton" href="http://www.plsmodeling.com">Visit it</a>
 
+<hr>
 
-<a href="/PLS_Path_Modeling_with_R.pdf">
-<img class="centered" src="/images/website/plspm_book_cover.png"/></a>
-<p>
- This book provides a hands-on introduction to Partial Least Squares Path Modeling (PLS-PM) 
- using the R package <code>"plspm"</code>. &nbsp;&nbsp;
-</p>
-<p>
- <a class="redbutton" href="/PLS_Path_Modeling_with_R.pdf">Download</a>
-</p>
-<hr/>
+## Star Wars Arc Diagram
 
+Inspired by the <a href="http://similardiversity.net" target="_blank" title="similar diversity">Similar Diversity</a> 
+project of Philipp Steinweber and Andreas Koller, I spent some time to produce 
+<a href="starwars">my own version</a> of an arc diagram... based on the Star Wars movie scripts.
 
-<h2>PLS Modeling (site)</h2>
-<p>
- This site is a space dedicated to Partial Least Squares Data Analysis Methods. Its content 
- reflects my opinionated interpretation of how I understand the PLS universe. &nbsp;&nbsp;
-</p>
-<a href="http://plsmodeling.com/">
-<img class="centered" src="/images/website/plsmodeling.png"/></a>
+<a class="graybutton" href="/work/starwars">Read more</a>
+
 <hr>
 
 
-<h2>Star Wars Arc Diagram</h2>
-<p>
- Inspired by the <a href="http://similardiversity.net" target="_blank" title="similar diversity">Similar Diversity</a> 
- project of Philipp Steinweber and Andreas Koller, I spent some time to produce 
- <a href="starwars">my own version</a> of an arc diagram... based on the Star Wars movie scripts.
-</p>
-<a href="starwars"><img class="centered" src="/images/website/starwars_arcdiagram.png"/></a>
-<hr>
+## Mining Twitter
 
-
-<h2>Mining Twitter</h2>
-<p>
- I setup a compilation of short scripts to analyze tweets with R. Although this project 
- has been <b>deprecated</b>, most of <a href="https://sites.google.com/site/miningtwitter/" target="_blank">its content</a> 
+I setup a compilation of short scripts to analyze tweets with R. Although this project has been <b>deprecated</b>, most of <a href="https://sites.google.com/site/miningtwitter/" target="_blank">its content</a> 
  might help you to get some inspiration and try your own analysis. 
-</p>
-<a href="https://sites.google.com/site/miningtwitter/" target="_blank">
-<img class="centered" src="/images/website/twitter_mining.png"/></a>
+
+<a class="graybutton" href="https://sites.google.com/site/miningtwitter/" target="_blank">Visit it</a>
+
 <hr>
 
 
-<h2>R-tist</h2>
-<p>
- Some of <a href="/work/rtist">my weird</a> and abstract plots in R
-</p>
-<a href="/work/rtist/"><img src="/images/rtist/green_bolts.png"/></a>
+## R-tist
+
+Some of <a href="/work/rtist">my weird</a> and abstract plots in R
+
+<a class="graybutton" href="/work/rtist/">Read more</a>
+
+<br>
 

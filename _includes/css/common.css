@@ -293,8 +293,8 @@ a:hover {
 } 
 
 .graybutton:hover { 
-  background: #ccc; 
-  transition: 0.3s ease-in;
+  background: #f74a52; 
+  transition: 0.2s ease-in;
   color: white; 
   text-decoration: none; 
 } 
