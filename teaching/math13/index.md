@@ -32,13 +32,17 @@ Homework to be turned in during class (see dates below)
 
 <ul class="listing">
 	<li class="listing-item">
-	  <time datetime="03-25-2015">Wed, Mar 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 4, 5, 6</time><br>
+	  <time datetime="04-06-2015">Mon, Apr 6&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.1, 6.2, 6.3</time><br>
+	  <a href="https://docs.google.com/presentation/d/1WPUjZUCeiLE1MhVMCpG8GFc35t2mj3fNRbZaGAPzTdg/pub?start=false&loop=false&delayms=3000" target="_blank">Normal Distribution (part 1)</a>
+	</li>
+	<li class="listing-item">
+	  <time datetime="03-25-2015">Wed, Mar 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 4, 5</time><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;<b>2nd Exam</b>
 	</li>
 	<li class="listing-item">
-	  <time datetime="03-23-2015">Mon, Mar 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.4, 6.5, 6.6</time><br>
+	  <time datetime="03-23-2015">Mon, Mar 23&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 4, 5</time><br>
 	  <b><a href="/teaching/math13/exercises2.pdf" target="_blank">Exercises Test 2</a></b><br>
-	  <b>Answers: </b><a href="/teaching/math13/exercises2_answers.pdf" target="_blank">Answers Exercises 2</a>
+	  <a href="/teaching/math13/exercises2_answers.pdf" target="_blank">Answers Exercises 2</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="03-18-2015">Wed, Mar 18&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.1, 6.2, 6.3</time><br>
