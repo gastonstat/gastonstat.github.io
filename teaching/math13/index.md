@@ -28,13 +28,33 @@ Homework to be turned in during class (see dates below)
 
 ## Lecture slides, Homeworks, and Exercises
 
-**Probability Basics and Distributions**
+**Continuous Distributions**
 
 <ul class="listing">
 	<li class="listing-item">
-	  <time datetime="04-06-2015">Mon, Apr 6&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.1, 6.2, 6.3</time><br>
+	  <time datetime="04-15-2015">Wed, Apr 15&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 7.1, 7.2</time><br>
+	  <b><a href="/teaching/math13/homework6_math13.pdf" target="_blank">Homework 6</a></b><br>
+	</li>
+	<li class="listing-item">
+	  <time datetime="04-13-2015">Mon, Apr 13&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.5, 6.6</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Central Limit Theorem and Sampling Distributions
+	</li>
+	<li class="listing-item">
+	  <time datetime="04-08-2015">Wed, Apr 8&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.3, 6.4</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Normal Distribution (part 2)
+	</li>
+	<li class="listing-item">
+	  <time datetime="04-06-2015">Mon, Apr 6&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.1, 6.2</time><br>
 	  <a href="https://docs.google.com/presentation/d/1WPUjZUCeiLE1MhVMCpG8GFc35t2mj3fNRbZaGAPzTdg/pub?start=false&loop=false&delayms=3000" target="_blank">Normal Distribution (part 1)</a>
 	</li>
+</ul>
+
+<hr/>
+
+
+**Probability Basics and Discrete Distributions**
+
+<ul class="listing">
 	<li class="listing-item">
 	  <time datetime="03-25-2015">Wed, Mar 25&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 4, 5</time><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;<b>2nd Exam</b>
