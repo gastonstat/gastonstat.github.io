@@ -41,7 +41,7 @@ Homework to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="04-08-2015">Wed, Apr 8&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.3, 6.4</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Normal Distribution (part 2)
+	  <a href="https://docs.google.com/presentation/d/18z03Mnk5tlcSIIO1yqwuPruobBCIO2ogW1Jyin1Z9KY/pub?start=false&loop=false&delayms=3000" target="_blank">Normal Distribution (part 2)</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="04-06-2015">Mon, Apr 6&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.1, 6.2</time><br>
