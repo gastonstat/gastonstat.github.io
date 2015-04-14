@@ -32,15 +32,16 @@ Homework to be turned in during class (see dates below)
 
 <ul class="listing">
 	<li class="listing-item">
-	  <time datetime="04-15-2015">Wed, Apr 15&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 7.1, 7.2</time><br>
+	  <time datetime="04-15-2015">Wed, Apr 15&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.5, 6.6</time><br>
 	  <b><a href="/teaching/math13/homework6_math13.pdf" target="_blank">Homework 6</a></b><br>
-	</li>
-	<li class="listing-item">
-	  <time datetime="04-13-2015">Mon, Apr 13&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.5, 6.6</time><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;Central Limit Theorem and Sampling Distributions
 	</li>
 	<li class="listing-item">
-	  <time datetime="04-08-2015">Wed, Apr 8&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.3, 6.4</time><br>
+	  <time datetime="04-13-2015">Mon, Apr 13&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.4</time><br>
+	  <a href="https://docs.google.com/presentation/d/1tN69mjeqAwIHpc_1yLuP1GkZgxFqEh0RK1Ec3MzOv2g/pub?start=false&loop=false&delayms=3000" target="_blank">Normal Distribution (part 3)</a>
+	</li>
+	<li class="listing-item">
+	  <time datetime="04-08-2015">Wed, Apr 8&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.3</time><br>
 	  <a href="https://docs.google.com/presentation/d/18z03Mnk5tlcSIIO1yqwuPruobBCIO2ogW1Jyin1Z9KY/pub?start=false&loop=false&delayms=3000" target="_blank">Normal Distribution (part 2)</a>
 	</li>
 	<li class="listing-item">
