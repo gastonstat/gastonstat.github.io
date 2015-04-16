@@ -34,7 +34,7 @@ Homework to be turned in during class (see dates below)
 	<li class="listing-item">
 	  <time datetime="04-15-2015">Wed, Apr 15&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.5, 6.6</time><br>
 	  <b><a href="/teaching/math13/homework6_math13.pdf" target="_blank">Homework 6</a></b><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Central Limit Theorem and Sampling Distributions
+	  <a href="https://docs.google.com/presentation/d/1hOJ_QsjbbIYxXFciK2vXLgFG407aZ64ipndUyKljmo8/pub?start=false&loop=false&delayms=3000" target="_blank">Sampling Distributions & CLT (part 1)</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="04-13-2015">Mon, Apr 13&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.4</time><br>
