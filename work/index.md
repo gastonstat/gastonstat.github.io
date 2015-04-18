@@ -13,7 +13,7 @@ title: Work
 
 This text narrates the story behind the origins, development, and evolution of Partial Least Squares (PLS) methods. The perfect companion reading for any course, workshop, or seminar about PLS.
 
-<a class="graybutton">Coming really soon!!!</a>
+<a class="graybutton" href="http://sagaofpls.github.io">Read more</a>
 
 <hr/>
 
