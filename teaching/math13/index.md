@@ -28,9 +28,27 @@ Homework to be turned in during class (see dates below)
 
 ## Lecture slides, Homeworks, and Exercises
 
-**Continuous Distributions**
+**Continuous Distributions and Estimation**
 
 <ul class="listing">
+	<li class="listing-item">
+	  <time datetime="04-29-2015">Wed, Apr 29&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.3</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<b>3rd Exam</b><br>
+	  <b><a href="/teaching/math13/exam3_review_math13.pdf" target="_blank">Exercises Test 3</a></b> (optional credit) <br>
+	</li>
+	<li class="listing-item">
+	  <time datetime="04-27-2015">Mon, Apr 27&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.1, 8.2</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Hypothesis test
+	</li>
+	<li class="listing-item">
+	  <time datetime="04-22-2015">Wed, Apr 22&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 7.2, 7.3</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Estimation of proportions
+	</li>
+	<li class="listing-item">
+	  <time datetime="04-20-2015">Mon, Apr 20&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 7.1, 7.2</time><br>
+	  <a href="https://docs.google.com/presentation/d/1mav1fbW42UKDoSZtqVzMh68hPLMj-zMzYzyJN4jp0RQ/pub?start=false&loop=false&delayms=3000" target="_blank">Estimation of Means</a><br>
+	  <a href="https://docs.google.com/presentation/d/1T6FmrySOMi_JgrY-3F1dP4AdIkJvnSm3s6ibKNvUSY8/pub?start=false&loop=false&delayms=3000" target="_blank">Normal Approximation to Binomial Distribution</a>
+  	</li>
 	<li class="listing-item">
 	  <time datetime="04-15-2015">Wed, Apr 15&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 6.5, 6.6</time><br>
 	  <b><a href="/teaching/math13/homework6_math13.pdf" target="_blank">Homework 6</a></b><br>
