@@ -42,7 +42,7 @@ Homework to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="04-22-2015">Wed, Apr 22&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 7.2, 7.3</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Estimation of proportions
+	  <a href="https://docs.google.com/presentation/d/1QWx8gfr9t0fI4P2bkIXHtCvYxj6H_CXkEO1Tsa4yfIo/pub?start=false&loop=false&delayms=3000" target="_blank">Estimation of Proportions</a>
 	</li>
 	<li class="listing-item">
 	  <time datetime="04-20-2015">Mon, Apr 20&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 7.1, 7.2</time><br>
