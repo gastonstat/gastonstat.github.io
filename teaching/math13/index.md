@@ -34,7 +34,7 @@ Homework to be turned in during class (see dates below)
 	<li class="listing-item">
 	  <time datetime="04-29-2015">Wed, Apr 29&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.3</time><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;<b>3rd Exam</b><br>
-	  <b><a href="/teaching/math13/exam3_review_math13.pdf" target="_blank">Exercises Test 3</a></b> (optional credit) <br>
+	  <b><a href="/teaching/math13/exercises3.pdf" target="_blank">Exercises Test 3</a></b> (optional credit) <br>
 	</li>
 	<li class="listing-item">
 	  <time datetime="04-27-2015">Mon, Apr 27&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.1, 8.2</time><br>
