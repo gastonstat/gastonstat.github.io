@@ -28,20 +28,48 @@ Homework to be turned in during class (see dates below)
 
 ## Lecture slides, Homeworks, and Exercises
 
+**Hypothesis Testing and Regression**
+
+<ul class="listing">
+	<li class="listing-item">
+	  <time datetime="05-18-2015">Mon, May 18&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 1-9</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<b>Final Exam</b><br>
+	</li>
+	<li class="listing-item">
+	  <time datetime="05-13-2015">Wed, May 13&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 9.2</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Regression
+	</li>
+	<li class="listing-item">
+	  <time datetime="05-11-2015">Mon, May 11&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 9.1</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Correlation
+	</li>
+	<li class="listing-item">
+	  <time datetime="05-06-2015">Wed, May 6&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.3</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Hypothesis test (part 2)
+	</li>
+	<li class="listing-item">
+	  <time datetime="05-04-2015">Mon, May 4&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.1, 8.2</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Hypothesis test (part 1)
+	</li>
+</ul>
+
+<hr/>
+
+
 **Continuous Distributions and Estimation**
 
 <ul class="listing">
 	<li class="listing-item">
-	  <time datetime="04-29-2015">Wed, Apr 29&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.3</time><br>
+	  <time datetime="04-29-2015">Wed, Apr 29&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 6, 7</time><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;<b>3rd Exam</b><br>
 	  <b><a href="/teaching/math13/exercises3.pdf" target="_blank">Exercises Test 3</a></b> (optional credit) <br>
 	</li>
 	<li class="listing-item">
-	  <time datetime="04-27-2015">Mon, Apr 27&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.1, 8.2</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Hypothesis test
+	  <time datetime="04-27-2015">Mon, Apr 27&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 7.1, 7.2, 7.3</time><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Exam review
 	</li>
 	<li class="listing-item">
-	  <time datetime="04-22-2015">Wed, Apr 22&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 7.2, 7.3</time><br>
+	  <time datetime="04-22-2015">Wed, Apr 22&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 7.2</time><br>
 	  <a href="https://docs.google.com/presentation/d/1QWx8gfr9t0fI4P2bkIXHtCvYxj6H_CXkEO1Tsa4yfIo/pub?start=false&loop=false&delayms=3000" target="_blank">Estimation of Proportions</a>
 	</li>
 	<li class="listing-item">
@@ -163,12 +191,6 @@ Homework to be turned in during class (see dates below)
 </ul>
 
 <hr/>
-
-**Statistical Inference: Estimation**
-
-**Statistical Inference: Hypothesis Tests**
-
-**Predictive Modeling: Regression Analysis**
 
 
 
