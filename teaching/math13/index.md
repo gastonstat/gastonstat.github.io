@@ -45,11 +45,11 @@ Homework to be turned in during class (see dates below)
 	</li>
 	<li class="listing-item">
 	  <time datetime="05-06-2015">Wed, May 6&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.3</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Hypothesis test (part 2)
+	  &nbsp;&nbsp;&nbsp;&nbsp;Hypothesis tests (part 2)
 	</li>
 	<li class="listing-item">
 	  <time datetime="05-04-2015">Mon, May 4&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.1, 8.2</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Hypothesis test (part 1)
+	  &nbsp;&nbsp;&nbsp;&nbsp;Hypothesis tests (part 1)
 	</li>
 </ul>
 
