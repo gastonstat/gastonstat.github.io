@@ -42,15 +42,16 @@ Homework to be turned in during class (see dates below)
 	<li class="listing-item">
 	  <time datetime="05-11-2015">Mon, May 11&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 9.1</time><br>
 	  <b><a href="/teaching/math13/homework7_math13.pdf" target="_blank">Homework 7</a></b><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Correlation
+	  &nbsp;&nbsp;&nbsp;&nbsp;Regression
 	</li>
 	<li class="listing-item">
 	  <time datetime="05-06-2015">Wed, May 6&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.3</time><br>
-	  <a href="https://docs.google.com/presentation/d/12yS0nt2BLZ9nwYWBAMpFM589oteflse3HbP-oKsagnk/pub?start=false&loop=false&delayms=3000" target="_blank">Testing Mean and Proportion</a><br>
+	  <a href="https://docs.google.com/presentation/d/1Us875ne5g_qBxRsw_08BbuRjefC2H8g9pBpelA0qUmY/pub?start=false&loop=false&delayms=3000" target="_blank">Correlation</a><br>
 	</li>
 	<li class="listing-item">
 	  <time datetime="05-04-2015">Mon, May 4&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.1, 8.2</time><br>
 	  <a href="https://docs.google.com/presentation/d/11pegEt3GgGtL3EWMine8Es0T_hrptiC_z56g85Pye5g/pub?start=false&loop=false&delayms=3000" target="_blank">Hypothesis Tests</a><br>
+	  <a href="https://docs.google.com/presentation/d/12yS0nt2BLZ9nwYWBAMpFM589oteflse3HbP-oKsagnk/pub?start=false&loop=false&delayms=3000" target="_blank">Testing Mean and Proportion</a><br>
 	</li>
 </ul>
 

@@ -107,6 +107,7 @@ title: Teaching
 
 ## Talks
 
+- <a href="https://docs.google.com/presentation/d/1dySXEBDWKG3t5bVK2PBlRBWh_wjKtT7pgQCR9joBMpU/pub?start=false&loop=false&delayms=3000" target="_blank">Unconventional Plots with R</a> (Berkeley City College, May 2015)
 - <a href="https://docs.google.com/presentation/d/1bWM7RxihSBzrcp07g026Lu5Ey10OACujj727vAIE7wo/pub?start=false&loop=false&delayms=3000" target="_blank">Arc Diagrams with R</a> (BARUG Meetup, April 2014)
 - <a href="https://docs.google.com/presentation/d/1Gihs0tPSBqKpXomqMk2IX6W8GTCIxAgARauG5PYTbqU/pub?start=false&loop=false&delayms=3000" target="_blank">Stats Software</a> (LMA2 Agrocampus Rennes)
 - <a href="https://docs.google.com/presentation/d/1XZj_vU9LMCYZYjAuDQI1QecXLl004wz32OpXB3uzl04/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank">Tips for presentations</a> (Oniris-Nantes)
