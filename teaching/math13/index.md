@@ -34,10 +34,11 @@ Homework to be turned in during class (see dates below)
 	<li class="listing-item">
 	  <time datetime="05-18-2015">Mon, May 18&nbsp;&nbsp; | &nbsp;&nbsp;Textbook chapters: 1-9</time><br>
 	  &nbsp;&nbsp;&nbsp;&nbsp;<b>Final Exam</b><br>
+	  <b><a href="/teaching/math13/homework8_math13.pdf" target="_blank">Homework 8</a></b><br>
 	</li>
 	<li class="listing-item">
 	  <time datetime="05-13-2015">Wed, May 13&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 9.2</time><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Regression
+	  &nbsp;&nbsp;&nbsp;&nbsp;Exam Review
 	</li>
 	<li class="listing-item">
 	  <time datetime="05-11-2015">Mon, May 11&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 9.1</time><br>
