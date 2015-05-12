@@ -43,7 +43,7 @@ Homework to be turned in during class (see dates below)
 	<li class="listing-item">
 	  <time datetime="05-11-2015">Mon, May 11&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 9.1</time><br>
 	  <b><a href="/teaching/math13/homework7_math13.pdf" target="_blank">Homework 7</a></b><br>
-	  &nbsp;&nbsp;&nbsp;&nbsp;Regression
+	  <a href="https://docs.google.com/presentation/d/1qtRsWWtAEBuikep3jU01EaQ3-n_OVRt2zSqXrDjk5yA/pub?start=false&loop=false&delayms=3000" target="_blank">Regression</a><br>
 	</li>
 	<li class="listing-item">
 	  <time datetime="05-06-2015">Wed, May 6&nbsp;&nbsp; | &nbsp;&nbsp;Textbook sections: 8.3</time><br>
