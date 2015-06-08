@@ -8,6 +8,10 @@ title: Teaching
 #### Some of my teaching materials, tutorials, docs, etc
 
 
+## <a name="stat133"></a>STAT 133 UC Berkeley
+
+<a href="/teaching/stat133">Concepts in Computing with Data</a>
+
 ## <a name="math13"></a>Math13 BCC
 
 <a href="/teaching/math13">Introduction to Statistics</a>
