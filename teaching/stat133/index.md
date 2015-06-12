@@ -26,7 +26,8 @@ Office hours: Evans 387, Mon 3pm - 4pm (or by appointment)<br>
 - June 9: [Getting Started with R](/teaching/stat133/02-R-basics.pdf)
 - June 10: [Data Structures](/teaching/stat133/03-data-structures.pdf)
 - June 11: [Numeric vectors](/teaching/stat133/04-numeric-vectors.pdf)
-- June 12: Character Vectors and Factors
+- June 12: [Character Vectors and Factors](/teaching/stat133/05-char-vectors-factors.pdf)
+- June 15: Data Frame Basics
 
 
 <hr class="margin" />
