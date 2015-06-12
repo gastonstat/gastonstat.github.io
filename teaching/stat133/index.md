@@ -13,6 +13,7 @@ title: stat133
 Monday - Friday, 9-10:00 am. Evans 342<br>
 Meeting request: ```gaston.stat at gmail.com```<br>
 Office hours: Evans 387, Mon 3pm - 4pm (or by appointment)<br>
+Github repository: [github.com/gastonstat/stat133](https://github.com/gastonstat/stat133)<br>
 
 <a class="graybutton" href="/teaching/stat133/stat133_summer2015_syllabus.pdf" target="_blank">Course Syllabus</a>
 <br>
