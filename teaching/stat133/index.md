@@ -21,6 +21,15 @@ Github repository: [github.com/gastonstat/stat133](https://github.com/gastonstat
 
 <hr class="margin" />
 
+## Homework assignments
+
+All homework assignment files can be obtained in the [github repository](https://github.com/gastonstat/stat133). See the due dates below and upload your file to the Dropbox folder for the class. If you don't have access to such folder, contact the instructor.
+
+- HW1: Tuesday, June 16
+- HW2: comming soon
+
+<hr class="margin" />
+
 ## Lecture slides
 
 - June 8: [Introduction](/teaching/stat133/01-introduction.pdf)
