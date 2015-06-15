@@ -26,7 +26,7 @@ Github repository: [github.com/gastonstat/stat133](https://github.com/gastonstat
 All homework assignment files can be obtained in the [github repository](https://github.com/gastonstat/stat133). See the due dates below and upload your file to the Dropbox folder for the class. If you don't have access to such folder, contact the instructor.
 
 - HW1: Tuesday, June 16
-- HW2: comming soon
+- HW2: coming soon
 
 <hr class="margin" />
 
@@ -35,9 +35,13 @@ All homework assignment files can be obtained in the [github repository](https:/
 - June 8: [Introduction](/teaching/stat133/01-introduction.pdf)
 - June 9: [Getting Started with R](/teaching/stat133/02-R-basics.pdf)
 - June 10: [Data Structures](/teaching/stat133/03-data-structures.pdf)
-- June 11: [Numeric vectors](/teaching/stat133/04-numeric-vectors.pdf)
+- June 11: [Numeric Vectors](/teaching/stat133/04-numeric-vectors.pdf)
 - June 12: [Character Vectors and Factors](/teaching/stat133/05-char-vectors-factors.pdf)
-- June 15: Data Frame Basics
+- June 15: [Data Frame Basics](/teaching/stat133/06-dataframe-basics.pdf)
+- June 16: Reading Data tables
+- June 17: Graphics Introduction
+- June 18: Traditional Graphics
+- June 19: Graphics with ggplot2
 
 
 <hr class="margin" />
