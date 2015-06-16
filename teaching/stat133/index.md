@@ -38,7 +38,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - June 11: [Numeric Vectors](/teaching/stat133/04-numeric-vectors.pdf)
 - June 12: [Character Vectors and Factors](/teaching/stat133/05-char-vectors-factors.pdf)
 - June 15: [Data Frame Basics](/teaching/stat133/06-dataframe-basics.pdf)
-- June 16: Reading Data Tables <br>
+- June 16: [Reading Data Tables](/teaching/stat133/07-import-data-tables.pdf)
 - June 17: Graphics Introduction <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Looking at Qualitative Variables
 - June 18: Looking at Quantitative Variables
