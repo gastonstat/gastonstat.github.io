@@ -41,7 +41,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - June 16: [Reading Data Tables](/teaching/stat133/07-import-data-tables.pdf)
 - June 17: [Graphics Introduction](/teaching/stat133/08-graphics-introduction.pdf) and some [extra slides](http://bit.ly/1L0UdlS)
 - June 18: [Looking at Single Variables](/teaching/stat133/09-univariate-graphics.pdf)
-- June 19: Traditional Graphics
+- June 19: [Traditional Graphics](/teaching/stat133/10-base-graphics1.pdf)
 - June 22: Graphics with ggplot2
 
 
