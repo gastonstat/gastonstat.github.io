@@ -12,7 +12,7 @@ title: stat133
 
 Monday - Friday, 9-10:00 am. Evans 342<br>
 Meeting request: ```gaston.stat at gmail.com```<br>
-Office hours: Evans 387, Mon 3pm - 4pm (or by appointment)<br>
+Office hours: Evans 387, Mon 10am - 11am (or by appointment)<br>
 Github repository: [github.com/gastonstat/stat133](https://github.com/gastonstat/stat133)<br>
 
 <a class="graybutton" href="/teaching/stat133/stat133_summer2015_syllabus.pdf" target="_blank">Course Syllabus</a>
@@ -23,10 +23,11 @@ Github repository: [github.com/gastonstat/stat133](https://github.com/gastonstat
 
 ## Homework assignments
 
-All homework assignment files can be obtained in the [github repository](https://github.com/gastonstat/stat133). See the due dates below and upload your file to the Dropbox folder for the class. If you don't have access to such folder, contact the instructor.
+All homework assignment files can be obtained in the [github repository](https://github.com/gastonstat/stat133). See the due dates below and submit your assignment to __bcourses__.
 
 - HW1: Tuesday, June 16
-- HW2: coming soon
+- HW2: __Thursday, June 25__
+- HW3: coming soon
 
 <hr class="margin" />
 
