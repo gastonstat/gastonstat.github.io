@@ -44,7 +44,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - June 18: [Looking at Single Variables](/teaching/stat133/09-univariate-graphics.pdf)
 - June 19: [Traditional Graphics 1](/teaching/stat133/10-base-graphics1.pdf)
 - June 22: [Traditional Graphics 2](/teaching/stat133/11-base-graphics2.pdf)
-- June 23: Colors and other parameters
+- June 23: [Colors](/teaching/stat133/12-colors.pdf)
 - June 24: Graphics with ggplot2
 
 
