@@ -47,7 +47,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - June 23: [Colors](/teaching/stat133/12-colors.pdf)
 - June 24: [Graphics with ggplot2](/teaching/stat133/13-ggplot.pdf)
 - June 25: Graphics with ggplot2 (cont'd)
-- June 26: Control Flow Structures
+- June 26: [Control Flow Structures](/teaching/stat133/14-control-flow.pdf)
 - June 29: Functions
 
 
