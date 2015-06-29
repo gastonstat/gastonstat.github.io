@@ -26,8 +26,9 @@ Github repository: [github.com/gastonstat/stat133](https://github.com/gastonstat
 All homework assignment files can be obtained in the [github repository](https://github.com/gastonstat/stat133). See the due dates below and submit your assignment to __bcourses__.
 
 - HW1: Tuesday, June 16
-- HW2: __Thursday, June 25__
-- HW3: coming soon
+- HW2: Thursday, June 25
+- HW3: __Friday, July 3__
+- HW4: Friday, July 10
 
 <hr class="margin" />
 
