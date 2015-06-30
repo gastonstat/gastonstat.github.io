@@ -34,8 +34,8 @@ All homework assignment files can be obtained in the [github repository](https:/
 
 ## Lecture slides
 
-- June 8: [Introduction](/teaching/stat133/01-introduction.pdf)
-- June 9: [Getting Started with R](/teaching/stat133/02-R-basics.pdf)
+- June 08: [Introduction](/teaching/stat133/01-introduction.pdf)
+- June 09: [Getting Started with R](/teaching/stat133/02-R-basics.pdf)
 - June 10: [Data Structures](/teaching/stat133/03-data-structures.pdf)
 - June 11: [Numeric Vectors](/teaching/stat133/04-numeric-vectors.pdf)
 - June 12: [Character Vectors and Factors](/teaching/stat133/05-char-vectors-factors.pdf)
@@ -50,7 +50,10 @@ All homework assignment files can be obtained in the [github repository](https:/
 - June 25: Graphics with ggplot2 (cont'd)
 - June 26: [Control Flow Structures](/teaching/stat133/14-control-flow.pdf)
 - June 29: Control Flow Structures (cont'd)
-- June 30: Functions
+- June 30: [Functions](/teaching/stat133/15-functions.pdf)
+- July 01: _coming soon_
+- July 02: _coming soon_
+- July 03: No class
 
 
 <hr class="margin" />
