@@ -51,7 +51,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - June 26: [Control Flow Structures](/teaching/stat133/14-control-flow.pdf)
 - June 29: Control Flow Structures (cont'd)
 - June 30: [Functions](/teaching/stat133/15-functions.pdf)
-- July 01: _coming soon_
+- July 01: [Strings Basics](/teaching/stat133/16-strings-basics.pdf)
 - July 02: _coming soon_
 - July 03: No class
 
