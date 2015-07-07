@@ -54,6 +54,8 @@ All homework assignment files can be obtained in the [github repository](https:/
 - July 01: Functions (cont'd)
 - July 02: [Strings Basics](/teaching/stat133/16-strings-basics.pdf)
 - July 03: No class
+- July 06: Midterm
+- July 07: [Practice string basics](/teaching/stat133/lecture-jul-07.Rmd)
 
 
 <hr class="margin" />
