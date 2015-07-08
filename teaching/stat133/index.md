@@ -56,6 +56,8 @@ All homework assignment files can be obtained in the [github repository](https:/
 - July 03: No class
 - July 06: Midterm
 - July 07: [Practice string basics](/teaching/stat133/lecture-jul-07.Rmd)
+- July 08: [Package "stringr"](/teaching/stat133/17-stringr-basics.pdf)
+- July 08: [Regular Expressions 1](/teaching/stat133/18-regex1.pdf)
 
 
 <hr class="margin" />
