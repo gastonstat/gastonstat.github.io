@@ -25,10 +25,8 @@ Github repository: [github.com/gastonstat/stat133](https://github.com/gastonstat
 
 All homework assignment files can be obtained in the [github repository](https://github.com/gastonstat/stat133). See the due dates below and submit your assignment to __bcourses__.
 
-- HW1: Tuesday, June 16
-- HW2: Thursday, June 25
-- HW3: __Friday, July 3__
 - HW4: Friday, July 10
+- HW5: __Friday, July 17__
 
 <hr class="margin" />
 
@@ -60,6 +58,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - July 08: [Regular Expressions 1](/teaching/stat133/18-regex1.pdf)
 - July 09: [Regex practice 1](/teaching/stat133/lecture-regex.Rmd)
 - July 10: [Regex practice 2](/teaching/stat133/more-regex.Rmd)
+- July 13: [Apply Functions](/teaching/stat133/19-apply-functions.pdf)
 
 
 <hr class="margin" />
