@@ -60,6 +60,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - July 10: [Regex practice 2](/teaching/stat133/more-regex.Rmd)
 - July 13: [Apply Functions](/teaching/stat133/19-apply-functions.pdf)
 - July 14: [Aggregating Data](/teaching/stat133/aggregate-data.Rmd)
+- July 15: [Analytical Thinking](http://bit.ly/1I1dNz0)
 
 
 <hr class="margin" />
