@@ -61,6 +61,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - July 13: [Apply Functions](/teaching/stat133/19-apply-functions.pdf)
 - July 14: [Aggregating Data](/teaching/stat133/aggregate-data.Rmd)
 - July 15: [Analytical Thinking](http://bit.ly/1I1dNz0)
+- July 16: [Merging Tables](/teaching/stat133/20-merging-data.pdf)
 
 
 <hr class="margin" />
