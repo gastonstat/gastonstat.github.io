@@ -63,6 +63,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - July 15: [Analytical Thinking](http://bit.ly/1I1dNz0)
 - July 16: [Merging Tables](/teaching/stat133/20-merging-data.pdf)
 - July 17: [Good Habits 1](/teaching/stat133/21-good-habits1.pdf)
+- July 20: [File Management](/teaching/stat133/22-file-system.pdf)
 
 
 <hr class="margin" />
