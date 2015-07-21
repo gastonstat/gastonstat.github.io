@@ -64,6 +64,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - July 16: [Merging Tables](/teaching/stat133/20-merging-data.pdf)
 - July 17: [Good Habits 1](/teaching/stat133/21-good-habits1.pdf)
 - July 20: [File Management](/teaching/stat133/22-file-system.pdf)
+- July 21: [Project Organization](/teaching/stat133/23-project-organization.pdf)
 
 
 <hr class="margin" />
