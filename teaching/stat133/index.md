@@ -66,7 +66,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - July 20: [File Management](/teaching/stat133/22-file-system.pdf)
 - July 21: [Project Organization](/teaching/stat133/23-project-organization.pdf)
 - July 22: [Command Line 1](/teaching/stat133/24-command-line1.pdf)
-- July 23: Command Line 2
+- July 23: [Command Line 2](/teaching/stat133/25-command-line2.pdf)
 
 
 <hr class="margin" />
