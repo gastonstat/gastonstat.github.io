@@ -68,6 +68,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - July 22: [Command Line 1](/teaching/stat133/24-command-line1.pdf)
 - July 23: [Command Line 2](/teaching/stat133/25-command-line2.pdf)
 - July 24: [Data Files & Storage](/teaching/stat133/26-data-storage.pdf)
+- July 25: [Intro to XML](/teaching/stat133/27-xml.pdf)
 
 
 <hr class="margin" />
