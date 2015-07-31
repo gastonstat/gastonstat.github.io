@@ -71,7 +71,9 @@ All homework assignment files can be obtained in the [github repository](https:/
 - July 27: [Intro to XML](/teaching/stat133/27-xml.pdf)
 - July 28: Intro to XML (cont'd)
 - July 29: [Parsing XML](/teaching/stat133/28-parsing-xml.pdf)
-- July 30: Intro to XPath (cont'd)
+- July 29: (see `parsing-xml.Rmd` in github repo)
+- July 30: Intro to XPath (see `xpath.Rmd` in github repo)
+- July 31: Web Scraping (see `web-scraping.Rmd` in github repo)
 
 
 <hr class="margin" />
