@@ -75,7 +75,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - July 30: Intro to XPath (see `xpath.Rmd` in github repo)
 - July 31: Web Scraping (see `web-scraping.Rmd` in github repo)
 - Aug 03: [Effective Charts](http://bit.ly/1KMPW71)
-- Aug 04: Graphics Devices
+- Aug 04: [Graphics Devices](/teaching/stat133/29-graphics-devices.pdf)
 
 
 <hr class="margin" />
