@@ -12,12 +12,18 @@ title: math13
 
 Course Code 40161<br>
 Monday / Wednesday, 3:30pm - 5:20pm. BCC 431<br>
+
+Course Code 40163, 44968<br>
+Tuesday / Thursday, 6:30pm - 7:45pm. Annex Rm 1<br>
+
 Meeting request: ```gsancheztrujillo at peralta.edu```<br>
 Office hours by appointment<br>
 Textbook "Understandable Statistics" (11th edition or older)<br>
 Homework to be turned in during class (see dates below)
 
-<a class="graybutton" href="/teaching/math13/math13_fall2015_syllabus.pdf" target="_blank">Course Syllabus</a>
+<a class="graybutton" href="/teaching/math13/math13_fall2015_syllabus_40161.pdf" target="_blank">Syllabus 40161</a>
+&nbsp;&nbsp;
+<a class="graybutton" href="/teaching/math13/math13_fall2015_syllabus_40163.pdf" target="_blank">Syllabus 40163</a>
 &nbsp;&nbsp;
 <a class="graybutton" href="https://docs.google.com/presentation/d/1SFHjJmGds355fVezfxP1u0L6gI141amS4BOx5HDdJdk/pub?start=false&loop=false&delayms=3000" target="_blank">Email Policy</a>
 <br>
