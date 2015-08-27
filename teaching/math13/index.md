@@ -21,7 +21,8 @@ Tuesday / Thursday, 6:30pm - 7:45pm. Annex Rm 1<br>
 - "Understandable Statistics" (11th edition or older)<br>
 - <a href="http://202.114.108.237/Download/4ad56511-0538-47b1-9c39-0aff5c3f6403.pdf" target="_blank">"Introductory Statistics" (9th edition)</a><br>
 
-Homework to be turned in during class (see dates below)
+Homework to be turned in during class (see dates below): <br>
+<a href="https://docs.google.com/document/d/1MxJLcLo7VSa63_BuZ4EAAETHrAvs1uUh0_jwcjE8E_o/pub" target="_blank"><b>Assignments for class on Tu-Th 6:30-7:45pm</b></a>
 
 <a class="graybutton" href="/teaching/math13/math13_fall2015_syllabus_40161.pdf" target="_blank">Syllabus 40161</a>
 &nbsp;&nbsp;
@@ -43,12 +44,12 @@ Homework to be turned in during class (see dates below)
 - <a href="https://docs.google.com/presentation/d/14XU_vLIBUh6yWfxhHxJwCl9irGKG3mCIntlZD6pjkVY/pub?start=false&loop=false&delayms=3000" target="_blank">Introduction to Descriptive Statistics</a>
 - <a href="https://docs.google.com/presentation/d/1QCrikMs63EhU3TALiDXheaMKyAoqEGhz9z6oCxpIi2k/pub?start=false&loop=false&delayms=3000" target="_blank">Measures of center</a>
 - <a href="https://docs.google.com/presentation/d/1wZa-ugbyaCHA-4rAVLxPONuMd9gJc3Ithxogt8Lv-zY/pub?start=false&loop=false&delayms=3000" target="_blank">Measures of spread</a>
-- <a href="/teaching/math13/homework1_math13.pdf" target="_blank">Homework 1</a>
+- <a href="/teaching/math13/homework1_math13.pdf" target="_blank">Homework 1 - code 40161</a>
 - <a href="https://docs.google.com/presentation/d/1trAK25ZQjuP3El1nsWxjooFwYxOmvd0ODiKX-W6EVJc/pub?start=false&loop=false&delayms=3000" target="_blank">Weighted Averages and Frequency Tables</a><br>
 - <a href="https://docs.google.com/presentation/d/1Rc0FwkYaWzLL4nzXuplnsArxBDs5TK6qktJ4C3eRxKc/pub?start=false&loop=false&delayms=3000" target="_blank">Visualizing Qualitative Variables</a>
 - <a href="https://docs.google.com/presentation/d/1sML3V9Ikd6k09Cyl8-gm0DkIK1Zhzpk5rVLND8tAM-o/pub?start=false&loop=false&delayms=3000" target="_blank">Visualizing Quantitative Variables</a>
 - <a href="https://docs.google.com/presentation/d/1ncfKq9Q8HcxuxJ2SiSc78-gf2jvGu6YDmoaKh8EEWCQ/pub?start=false&loop=false&delayms=3000" target="_blank">Discussion of Various Examples</a>
-- <a href="/teaching/math13/homework2_math13.pdf" target="_blank">Homework 2</a>
+- <a href="/teaching/math13/homework2_math13.pdf" target="_blank">Homework 2, code 40161</a>
 - <a href="https://docs.google.com/document/d/1aI0kHQvdlCix1TDn06sN7i0iwrhLe1U3cE9UDnMCizU/pub" target="_blank"><b>Exercises Test 1</b></a>
 
 
