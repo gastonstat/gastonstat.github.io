@@ -8,7 +8,7 @@ layout: page
 #### I'm a statistical programmer and data science consultant for NGO's, small start-ups, academic scholars, and research labs in general. I'm also a lecturer of Statistics courses.
 
 
-<a class="graybutton" href="/about/GastonSanchez_resumecode.pdf">resume</a>
+<a class="graybutton" href="/about/GastonSanchez_resume.pdf">resume</a>
 &nbsp;&nbsp;
 <a class="graybutton" href="http://www.linkedin.com/in/sanchezgaston" target="_blank">linkedin</a>
 &nbsp;&nbsp;
