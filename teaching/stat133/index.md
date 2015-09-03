@@ -8,13 +8,22 @@ title: stat133
 #### Teaching material for STAT-133 at UC Berkeley
 
 
-### Summer 2015
+### Fall 2015
 
 001 LEC: MWF, 11-12pm, 2060 VLSB<br>
 002 LEC: TuTh, 9:30-11am, 10 Evans<br>
 Meeting request: ```gaston.stat at gmail.com```<br>
-Office hours: 387 Evans, by appointment<br>
+Office hours: 341 Evans, by appointment<br>
 Github repository: [github.com/gastonstat/stat133](https://github.com/gastonstat/stat133)<br>
+
+### GSIs
+
+- Peter Sujan (`peterasujan at gmail.com`): 101, 104
+- Yuan He (`yuanhe326 at berkeley.edu`): 102, 103
+- Chenzhi Li (`lichenzhi428 at gmail.com`): 105, 205
+- Christine Kuang (`xtine_kuang at berkeley.edu`): 201, 203
+- Andrew Do (`do at berkeley.edu`): 202, 204
+
 
 <a class="graybutton" href="/teaching/stat133/stat133_fall2015_syllabus.pdf" target="_blank">Course Syllabus</a>
 <br>
@@ -24,8 +33,9 @@ Github repository: [github.com/gastonstat/stat133](https://github.com/gastonstat
 
 ## Homework assignments
 
-All homework assignment files can be obtained in the [github repository](https://github.com/gastonstat/stat133). See the due dates below and submit your assignment to __bcourses__.
-
+All homework assignment files can be obtained in the [github repository](https://github.com/gastonstat/stat133). Announcements will be posted on __bCourses__; submissions will be made to __bCourses__.
+<br>
+<br>
 
 <hr class="margin" />
 
