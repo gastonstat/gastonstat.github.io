@@ -16,18 +16,16 @@ Meeting request: ```gaston.stat at gmail.com```<br>
 Office hours: 341 Evans, by appointment<br>
 Github repository: [github.com/gastonstat/stat133](https://github.com/gastonstat/stat133)<br>
 
-### GSIs
-
-- Peter Sujan (`peterasujan at gmail.com`): 101, 104
-- Yuan He (`yuanhe326 at berkeley.edu`): 102, 103
-- Chenzhi Li (`lichenzhi428 at gmail.com`): 105, 205
-- Christine Kuang (`xtine_kuang at berkeley.edu`): 201, 203
-- Andrew Do (`do at berkeley.edu`): 202, 204
-
-
 <a class="graybutton" href="/teaching/stat133/stat133_fall2015_syllabus.pdf" target="_blank">Course Syllabus</a>
 <br>
-<br>
+
+### GSIs
+
+- Peter Sujan, `peterasujan at gmail.com`, 101, 104
+- Yuan He, `yuanhe326 at berkeley.edu`, 102, 103
+- Chenzhi Li, `lichenzhi428 at gmail.com`, 105, 205
+- Christine Kuang, `xtine_kuang at berkeley.edu`, 201, 203
+- Andrew Do, `do at berkeley.edu`, 202, 204
 
 <hr class="margin" />
 
@@ -46,23 +44,21 @@ All homework assignment files can be obtained in the [github repository](https:/
 	- [Getting Started with R](/teaching/stat133/02-R-basics.pdf)
 - Week 2
 	- [Data Structures](/teaching/stat133/03-data-structures.pdf)
+- Week 3
 	- [Numeric Vectors](/teaching/stat133/04-numeric-vectors.pdf)
 	- [Character Vectors and Factors](/teaching/stat133/05-char-vectors-factors.pdf)
-- Week 3
 	- [Data Frame Basics](/teaching/stat133/06-dataframe-basics.pdf)
 	- [Reading Data Tables](/teaching/stat133/07-import-data-tables.pdf)
-	- [Graphics Introduction](/teaching/stat133/08-graphics-introduction.pdf) and some [extra slides](http://bit.ly/1L0UdlS)
 - Week 4
+	- [Graphics Introduction](/teaching/stat133/08-graphics-introduction.pdf) and some [extra slides](http://bit.ly/1L0UdlS)
 	- [Looking at Single Variables](/teaching/stat133/09-univariate-graphics.pdf)
 	- [Traditional Graphics 1](/teaching/stat133/10-base-graphics1.pdf)
 	- [Traditional Graphics 2](/teaching/stat133/11-base-graphics2.pdf)
 - Week 5
 	- [Colors](/teaching/stat133/12-colors.pdf)
 	- [Graphics with ggplot2](/teaching/stat133/13-ggplot.pdf)
-	- Graphics with ggplot2 (cont'd)
 - Week 6
 	- [Control Flow Structures](/teaching/stat133/14-control-flow.pdf)
-	- Control Flow Structures (cont'd)
 	- [Functions](/teaching/stat133/15-functions.pdf)
 - Week 7
 	- [Strings Basics](/teaching/stat133/16-strings-basics.pdf)
