@@ -39,6 +39,8 @@ Homework to be turned in during class (see dates below): <br>
 
 **Introduction: Descriptive Statistics**
 
+"Understandable Statistics" chapters 1, 2, 3
+
 - <a href="https://docs.google.com/presentation/d/198SOU2LJlhNnaZKdychSRRmJ5qqHTc4ANHG5KH_sWjo/pub?start=false&loop=false&delayms=3000" target="_blank">Course Presentation</a>
 - <a href="https://docs.google.com/presentation/d/1Kb4kzobkNyBgoy5cxGs7zQ_6fm8tGpZ_sBvw_ygT_48/pub?start=false&loop=false&delayms=3000" target="_blank">What is Statistics</a>
 - <a href="https://docs.google.com/presentation/d/14XU_vLIBUh6yWfxhHxJwCl9irGKG3mCIntlZD6pjkVY/pub?start=false&loop=false&delayms=3000" target="_blank">Introduction to Descriptive Statistics</a>
