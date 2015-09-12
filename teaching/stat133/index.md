@@ -48,8 +48,8 @@ All homework assignment files can be obtained in the [github repository](https:/
 	- [Numeric Vectors](/teaching/stat133/04-numeric-vectors.pdf)
 	- [Character Vectors and Factors](/teaching/stat133/05-char-vectors-factors.pdf)
 	- [Data Frame Basics](/teaching/stat133/06-dataframe-basics.pdf)
-	- [Reading Data Tables](/teaching/stat133/07-import-data-tables.pdf)
 - Week 4
+	- [Reading Data Tables](/teaching/stat133/07-import-data-tables.pdf)
 	- [Graphics Introduction](/teaching/stat133/08-graphics-introduction.pdf) and some [extra slides](http://bit.ly/1L0UdlS)
 	- [Looking at Single Variables](/teaching/stat133/09-univariate-graphics.pdf)
 	- [Traditional Graphics 1](/teaching/stat133/10-base-graphics1.pdf)
