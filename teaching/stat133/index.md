@@ -52,9 +52,9 @@ All homework assignment files can be obtained in the [github repository](https:/
 	- [Reading Data Tables](/teaching/stat133/07-import-data-tables.pdf)
 	- [Graphics Introduction](/teaching/stat133/08-graphics-introduction.pdf) and some [extra slides](http://bit.ly/1L0UdlS)
 	- [Looking at Single Variables](/teaching/stat133/09-univariate-graphics.pdf)
+- Week 5
 	- [Traditional Graphics 1](/teaching/stat133/10-base-graphics1.pdf)
 	- [Traditional Graphics 2](/teaching/stat133/11-base-graphics2.pdf)
-- Week 5
 	- [Colors](/teaching/stat133/12-colors.pdf)
 	- [Graphics with ggplot2](/teaching/stat133/13-ggplot.pdf)
 - Week 6
