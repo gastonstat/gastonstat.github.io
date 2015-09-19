@@ -39,7 +39,8 @@ Homework to be turned in during class (see dates below): <br>
 
 **Introduction: Descriptive Statistics**
 
-"Understandable Statistics" chapters 1, 2, 3
+"Understandable Statistics", Chapters 1, 2, 3 <br>
+Sections: 1.1, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3
 
 - <a href="https://docs.google.com/presentation/d/198SOU2LJlhNnaZKdychSRRmJ5qqHTc4ANHG5KH_sWjo/pub?start=false&loop=false&delayms=3000" target="_blank">Course Presentation</a>
 - <a href="https://docs.google.com/presentation/d/1Kb4kzobkNyBgoy5cxGs7zQ_6fm8tGpZ_sBvw_ygT_48/pub?start=false&loop=false&delayms=3000" target="_blank">What is Statistics</a>
@@ -53,6 +54,8 @@ Homework to be turned in during class (see dates below): <br>
 - <a href="https://docs.google.com/presentation/d/1ncfKq9Q8HcxuxJ2SiSc78-gf2jvGu6YDmoaKh8EEWCQ/pub?start=false&loop=false&delayms=3000" target="_blank">Discussion of Various Examples</a>
 - <a href="/teaching/math13/homework2_math13.pdf" target="_blank">Homework 2, code 40161</a>
 - <a href="https://docs.google.com/document/d/1aI0kHQvdlCix1TDn06sN7i0iwrhLe1U3cE9UDnMCizU/pub" target="_blank">Exercises Test 1</a>
+- __Test 1 (44968, 40163) Tuesday Sep-21__
+- __Test 1 (40161) Wednesday Sep-23__
 
 
 <hr/>
