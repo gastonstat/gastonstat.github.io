@@ -55,6 +55,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 - Week 5
 	- [Traditional Graphics 1](/teaching/stat133/10-base-graphics1.pdf)
 	- [Traditional Graphics 2](/teaching/stat133/11-base-graphics2.pdf)
+	- [Graphical Parameters](/teaching/stat133/r-graphical-parameters-cheatsheet.pdf) cheat sheet
 	- [Colors](/teaching/stat133/12-colors.pdf)
 	- [Graphics with ggplot2](/teaching/stat133/13-ggplot.pdf)
 - Week 6
