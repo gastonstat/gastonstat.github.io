@@ -58,6 +58,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 	- [Graphical Parameters](/teaching/stat133/r-graphical-parameters-cheatsheet.pdf) cheat sheet
 	- [Colors](/teaching/stat133/12-colors.pdf)
 	- [Graphics with ggplot2](/teaching/stat133/13-ggplot.pdf)
+	- [RStudio ggplot2](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) cheat sheet
 - Week 6
 	- [Control Flow Structures](/teaching/stat133/14-control-flow.pdf)
 	- [Functions](/teaching/stat133/15-functions.pdf)
@@ -110,5 +111,6 @@ There is no textbook that covers all the material for this class. Some recommend
 - [R Graphics Cookbook](http://proquest.safaribooksonline.com/9781449363086) by Winston Chang (2012)
 - [Introduction to Data Technologies](https://www.stat.auckland.ac.nz/~paul/ItDT/) by Paul Murrell (2008)
 - [XML and Web Technologies for Data Sciences with R](http://link.springer.com/book/10.1007%2F978-1-4614-7900-0) by Deborah Nolan and Duncan Temple Lang (2014)
+- [RStudio cheat sheets](https://www.rstudio.com/resources/cheatsheets/)
  
 
