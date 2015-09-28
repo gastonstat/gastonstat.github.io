@@ -58,7 +58,8 @@ All homework assignment files can be obtained in the [github repository](https:/
 	- [Graphical Parameters](/teaching/stat133/r-graphical-parameters-cheatsheet.pdf) cheat sheet
 	- [Colors](/teaching/stat133/12-colors.pdf)
 - Week 6
-	- [Graphics with ggplot2](/teaching/stat133/13-ggplot.pdf)
+	- [Getting Started with ggplot2](/teaching/stat133/13-ggplot2-part1.pdf)
+	- [Graphics with ggplot2](/teaching/stat133/13-ggplot2-part2.pdf)
 	- [RStudio ggplot2](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) cheat sheet
 	- [Control Flow Structures](/teaching/stat133/14-control-flow.pdf)
 - Week 7
