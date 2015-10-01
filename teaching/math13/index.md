@@ -63,10 +63,15 @@ Sections: 1.1, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3
 
 **Probability Basics and Discrete Distributions**
 
+"Understandable Statistics", Chapters 4, 5 <br>
+Sections: 4.1, 4.1, 4.3, 4.4, 5.1, 5.2, 5.3
+
 - <a href="https://docs.google.com/presentation/d/1lpAOPYFbz4odsLVb1QgDNjp6qej4AFv4wLYLqLMNHB4/pub?start=false&loop=false&delayms=3000" target="_blank">Intro to Probability Theory</a>
 - <a href="https://docs.google.com/presentation/d/1cx94AKho0z15uwC_moocel2dOIp6NdjDyvMHCMVORIw/pub?start=false&loop=false&delayms=3000" target="_blank">Random Experiments and Events</a>
-- <a href="/teaching/math13/homework3_math13.pdf" target="_blank">Homework 3</a>
+- <a href="/teaching/math13/homework3_math13a.pdf" target="_blank">Homework 3a</a>
+- <a href="https://docs.google.com/presentation/d/1cJCPgszna-QLD6o2ab6c9SUkFFEt0bJljy5xVIkPfA0/pub?start=false&loop=false&delayms=3000" target="_blank">Probability Rules (part 1)</a>
 - <a href="https://docs.google.com/presentation/d/1Xxy6ZoVBN9duY5iy9j-4yXKywDbK4fRWo5wadyPsOjk/pub?start=false&loop=false&delayms=3000" target="_blank">Probability Rules (part 2)</a>
+- <a href="/teaching/math13/homework3_math13b.pdf" target="_blank">Homework 3b</a>
 - <a href="https://docs.google.com/presentation/d/1kgZsJFMibB5rRx1sVqJTy6efd6dgrfg1S89dAZ-wPeI/pub?start=false&loop=false&delayms=3000" target="_blank">Counting Principles</a>
 - <a href="/teaching/math13/homework4_math13.pdf" target="_blank">Homework 4</a>
 - <a href="https://docs.google.com/presentation/d/1mXkzTzr80sOfxs45QEFgywjUMw8FSHvAv8KNYO0X9Tc/pub?start=false&loop=false&delayms=3000" target="_blank">Random Variables</a>
