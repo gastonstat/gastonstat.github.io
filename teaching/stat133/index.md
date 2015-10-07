@@ -63,7 +63,8 @@ All homework assignment files can be obtained in the [github repository](https:/
 	- [RStudio ggplot2](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) cheat sheet
 	- [Control Flow Structures](/teaching/stat133/14-control-flow.pdf)
 - Week 7
-	- [Functions](/teaching/stat133/15-functions.pdf)
+	- [Functions 1](/teaching/stat133/15-functions-part1.pdf)
+	- [Functions 2](/teaching/stat133/15-functions-part2.pdf)
 - Week 8
 	- [Strings Basics](/teaching/stat133/16-strings-basics.pdf)
 	- [Practice string basics](/teaching/stat133/lecture-jul-07.Rmd)
