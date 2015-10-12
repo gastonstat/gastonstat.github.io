@@ -61,10 +61,10 @@ Sections: 1.1, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3
 <hr/>
 
 
-**Probability Basics and Discrete Distributions**
+**Probability Basics and Counting Principles**
 
-"Understandable Statistics", Chapters 4, 5 <br>
-Sections: 4.1, 4.1, 4.3, 4.4, 5.1, 5.2, 5.3
+"Understandable Statistics", Chapter 4<br>
+Sections: 4.1, 4.1, 4.3
 
 - <a href="https://docs.google.com/presentation/d/1lpAOPYFbz4odsLVb1QgDNjp6qej4AFv4wLYLqLMNHB4/pub?start=false&loop=false&delayms=3000" target="_blank">Intro to Probability Theory</a>
 - <a href="https://docs.google.com/presentation/d/1cx94AKho0z15uwC_moocel2dOIp6NdjDyvMHCMVORIw/pub?start=false&loop=false&delayms=3000" target="_blank">Random Experiments and Events</a>
@@ -74,11 +74,23 @@ Sections: 4.1, 4.1, 4.3, 4.4, 5.1, 5.2, 5.3
 - <a href="/teaching/math13/homework3b_math13.pdf" target="_blank">Homework 3b</a>
 - <a href="https://docs.google.com/presentation/d/1kgZsJFMibB5rRx1sVqJTy6efd6dgrfg1S89dAZ-wPeI/pub?start=false&loop=false&delayms=3000" target="_blank">Counting Principles</a>
 - <a href="/teaching/math13/homework4_math13.pdf" target="_blank">Homework 4</a>
+- <a href="/teaching/math13/exercises2.pdf" target="_blank">Exercises Test 2</a>
+- __Test 2 (44968, 40163) Thursday Oct-22__
+- __Test 2 (40161) Wednesday Oct-21__
+
+
+<hr/>
+
+**Discrete Distributions**
+
+"Understandable Statistics", Chapter 5 <br>
+Sections: 5.1, 5.2, 5.3
+
 - <a href="https://docs.google.com/presentation/d/1mXkzTzr80sOfxs45QEFgywjUMw8FSHvAv8KNYO0X9Tc/pub?start=false&loop=false&delayms=3000" target="_blank">Random Variables</a>
 - <a href="https://docs.google.com/presentation/d/1l269oLR23ZkZe2allThPMn2PMj6Q9MVp7j8oL2uiVuI/pub?start=false&loop=false&delayms=3000" target="_blank">Binomial Distribution</a>
 - <a href="https://docs.google.com/presentation/d/1Pqzgn5bU18r5P8OKVFnplQCRXB1IUi6c2_ZdRRDFPmw/pub?start=false&loop=false&delayms=3000" target="_blank">Binomial Related Distributions</a>
 - <a href="/teaching/math13/homework5_math13.pdf" target="_blank">Homework 5</a>
-- <a href="/teaching/math13/exercises2.pdf" target="_blank">Exercises Test 2</a>
+- <a href="/teaching/math13/exercises3.pdf" target="_blank">Exercises Test 3</a>
 
 <hr/>
 
@@ -93,7 +105,7 @@ Sections: 4.1, 4.1, 4.3, 4.4, 5.1, 5.2, 5.3
 - <a href="https://docs.google.com/presentation/d/1T6FmrySOMi_JgrY-3F1dP4AdIkJvnSm3s6ibKNvUSY8/pub?start=false&loop=false&delayms=3000" target="_blank">Normal Approximation to Binomial Distribution</a>
 - <a href="https://docs.google.com/presentation/d/1mav1fbW42UKDoSZtqVzMh68hPLMj-zMzYzyJN4jp0RQ/pub?start=false&loop=false&delayms=3000" target="_blank">Estimation of Means</a><br>
 - <a href="https://docs.google.com/presentation/d/1QWx8gfr9t0fI4P2bkIXHtCvYxj6H_CXkEO1Tsa4yfIo/pub?start=false&loop=false&delayms=3000" target="_blank">Estimation of Proportions</a>
-- <a href="/teaching/math13/exercises3.pdf" target="_blank">Exercises Test 3</a>
+- <a href="/teaching/math13/exercises4.pdf" target="_blank">Exercises Test 4</a>
 
 
 <hr/>
