@@ -66,37 +66,40 @@ All homework assignment files can be obtained in the [github repository](https:/
 	- [Functions 1](/teaching/stat133/15-functions-part1.pdf)
 	- [Functions 2](/teaching/stat133/15-functions-part2.pdf)
 - Week 8
+	- [Simulation 1](/teaching/stat133/16-simulation-part1.pdf)
+	- Simulation 2
+- Week 9
 	- [Strings Basics](/teaching/stat133/16-strings-basics.pdf)
 	- [Practice string basics](/teaching/stat133/lecture-jul-07.Rmd)
 	- [Package "stringr"](/teaching/stat133/17-stringr-basics.pdf)
-- Week 9
+- Week 10
 	- [Regular Expressions 1](/teaching/stat133/18-regex1.pdf)
 	- [Regex practice 1](/teaching/stat133/lecture-regex.Rmd)
 	- [Regex practice 2](/teaching/stat133/more-regex.Rmd)
-- Week 10
+- Week 11
 	- [Apply Functions](/teaching/stat133/19-apply-functions.pdf)
 	- [Aggregating Data](/teaching/stat133/aggregate-data.Rmd)
 	- [Analytical Thinking](http://bit.ly/1I1dNz0)
-- Week 11
+- Week 12
 	- [Merging Tables](/teaching/stat133/20-merging-data.pdf)
 	- [Good Habits 1](/teaching/stat133/21-good-habits1.pdf)
 	- [Project Organization](/teaching/stat133/23-project-organization.pdf)
-- Week 12
+- Week 13
 	- [File Management](/teaching/stat133/22-file-system.pdf)
 	- [Command Line 1](/teaching/stat133/24-command-line1.pdf)
 	- [Command Line 2](/teaching/stat133/25-command-line2.pdf)
 	- [Data Files & Storage](/teaching/stat133/26-data-storage.pdf)
-- Week 13
+- Week 14
 	- [Intro to XML](/teaching/stat133/27-xml.pdf)
 	- [Parsing XML](/teaching/stat133/28-parsing-xml.pdf)
 	- (see `parsing-xml.Rmd` in github repo)
 	- Intro to XPath (see `xpath.Rmd` in github repo)
 	- Web Scraping (see `web-scraping.Rmd` in github repo)
-- Week 14
+- Week 15
 	- [Effective Charts](http://bit.ly/1KMPW71)
 	- [Graphics Devices](/teaching/stat133/29-graphics-devices.pdf)
 	- [Missing Values](/teaching/stat133/30-missing-values.pdf)
-- Week 15
+- Week 16
 	- RDBMS
 	- SQL part 1
 	- SQL part 2
