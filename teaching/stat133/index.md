@@ -59,15 +59,15 @@ All homework assignment files can be obtained in the [github repository](https:/
 	- [Colors](/teaching/stat133/12-colors.pdf)
 - Week 6
 	- [Getting Started with ggplot2](/teaching/stat133/13-ggplot2-part1.pdf)
-	- [Graphics with ggplot2](/teaching/stat133/13-ggplot2-part2.pdf)
+	- [Graphics with ggplot2](/teaching/stat133/14-ggplot2-part2.pdf)
 	- [RStudio ggplot2](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) cheat sheet
-	- [Control Flow Structures](/teaching/stat133/14-control-flow.pdf)
+	- [Control Flow Structures](/teaching/stat133/15-control-flow.pdf)
 - Week 7
-	- [Functions 1](/teaching/stat133/15-functions-part1.pdf)
-	- [Functions 2](/teaching/stat133/15-functions-part2.pdf)
+	- [Functions 1](/teaching/stat133/16-functions-part1.pdf)
+	- [Functions 2](/teaching/stat133/17-functions-part2.pdf)
 - Week 8
-	- [Simulation 1](/teaching/stat133/16-simulation-part1.pdf)
-	- [Simulation 2](/teaching/stat133/17-simulation-part2.pdf)
+	- [Simulation 1](/teaching/stat133/18-simulation-part1.pdf)
+	- [Simulation 2](/teaching/stat133/19-simulation-part2.pdf)
 - Week 9
 	- [Strings Basics](/teaching/stat133/16-strings-basics.pdf)
 	- [Practice string basics](/teaching/stat133/lecture-jul-07.Rmd)
