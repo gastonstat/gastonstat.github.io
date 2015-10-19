@@ -69,6 +69,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 	- [Simulation 1](/teaching/stat133/18-simulation-part1.pdf)
 	- [Simulation 2](/teaching/stat133/19-simulation-part2.pdf)
 - Week 9
+	- [Good Habits](/teaching/stat133/20-good-habits.pdf)
 	- [Strings Basics](/teaching/stat133/16-strings-basics.pdf)
 	- [Practice string basics](/teaching/stat133/lecture-jul-07.Rmd)
 	- [Package "stringr"](/teaching/stat133/17-stringr-basics.pdf)
