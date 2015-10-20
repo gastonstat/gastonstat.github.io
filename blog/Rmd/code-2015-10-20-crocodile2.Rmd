@@ -1,0 +1,26 @@
+#---
+#layout: post
+#title: "Crocodile Math Problem in R"
+#date: 2015-10-20
+#category: how-to
+#tags: [crocodile]
+#image: crocodile-zebra.png
+#---
+
+Using R to solve the [crocodile math problem]() of the Scottish __Higher Maths__ exam in May 2015.
+
+<!--more-->
+
+![](/images/blog/crocodile-zebra.png)
+
+<hr/>
+
+### Motivation
+
+Reading the Spanish newspaper [La Vanguardia](http://www.lavanguardia.com/vida/20151019/54437267761/enigma-cocodrilo-cebra-estudiantes-escoceses.html), I found a curious article about a math problem that S4 Scottish students (equivalent to high school's senior year) struggled with last May on the [SQA Higher Maths test](http://www.sqa.org.uk/pastpapers/papers/papers/2015/NH_Mathematics_all_2015.pdf).
+
+Now let's add a figure
+```{r 'testfigure', fig.width=9, fig.height=6}
+plot(1:10, 1:10, pch = 19, las = 1, cex = 3, col = "#68A959",
+      xlab = "distance", ylab = "time")
+```
