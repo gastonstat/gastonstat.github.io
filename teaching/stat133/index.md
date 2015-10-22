@@ -70,13 +70,11 @@ All homework assignment files can be obtained in the [github repository](https:/
 	- [Simulation 2](/teaching/stat133/19-simulation-part2.pdf)
 - Week 9
 	- [Good Habits](/teaching/stat133/20-good-habits.pdf)
+- Week 10
 	- [Strings Basics](/teaching/stat133/16-strings-basics.pdf)
 	- [Practice string basics](/teaching/stat133/lecture-jul-07.Rmd)
 	- [Package "stringr"](/teaching/stat133/17-stringr-basics.pdf)
-- Week 10
 	- [Regular Expressions 1](/teaching/stat133/18-regex1.pdf)
-	- [Regex practice 1](/teaching/stat133/lecture-regex.Rmd)
-	- [Regex practice 2](/teaching/stat133/more-regex.Rmd)
 - Week 11
 	- [Apply Functions](/teaching/stat133/19-apply-functions.pdf)
 	- [Aggregating Data](/teaching/stat133/aggregate-data.Rmd)
