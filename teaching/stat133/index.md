@@ -70,18 +70,19 @@ All homework assignment files can be obtained in the [github repository](https:/
 	- [Simulation 2](/teaching/stat133/19-simulation-part2.pdf)
 - Week 9
 	- [Good Habits](/teaching/stat133/20-good-habits.pdf)
+	- __Midterm Test and Project__
 - Week 10
-	- [Strings Basics](/teaching/stat133/16-strings-basics.pdf)
+	- [Upcoming Topics](http://bit.ly/1XsH5KY)
+	- Text Data
 	- [Practice string basics](/teaching/stat133/lecture-jul-07.Rmd)
 	- [Package "stringr"](/teaching/stat133/17-stringr-basics.pdf)
 	- [Regular Expressions 1](/teaching/stat133/18-regex1.pdf)
 - Week 11
 	- [Apply Functions](/teaching/stat133/19-apply-functions.pdf)
 	- [Aggregating Data](/teaching/stat133/aggregate-data.Rmd)
-	- [Analytical Thinking](http://bit.ly/1I1dNz0)
 - Week 12
 	- [Merging Tables](/teaching/stat133/20-merging-data.pdf)
-	- [Good Habits 1](/teaching/stat133/21-good-habits1.pdf)
+	- [Analytical Thinking](http://bit.ly/1I1dNz0)
 	- [Project Organization](/teaching/stat133/23-project-organization.pdf)
 - Week 13
 	- [File Management](/teaching/stat133/22-file-system.pdf)
