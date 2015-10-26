@@ -37,6 +37,17 @@ All homework assignment files can be obtained in the [github repository](https:/
 
 <hr class="margin" />
 
+## Group Project
+
+More information about the group project will be posted on bCourses. In the meantime, please fill out the google form and submit your answers no later than November 13:
+
+- [Form for Lecture 1 (MWF)](http://goo.gl/forms/m2bvWX8BoF)
+- [Form for Lecture 2 (TuTh)](http://goo.gl/forms/RETJYmTrSu)
+
+<br>
+
+<hr class="margin" />
+
 ## Lecture slides
 
 - Week 1
