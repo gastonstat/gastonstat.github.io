@@ -84,7 +84,7 @@ More information about the group project will be posted on bCourses. In the mean
 	- __Midterm Test and Project__
 - Week 10
 	- [Upcoming Topics](http://bit.ly/1XsH5KY)
-	- Text Data
+	- [About Text Data](/teaching/stat133/21-about-text-data.pdf)
 	- [Practice string basics](/teaching/stat133/lecture-jul-07.Rmd)
 	- [Package "stringr"](/teaching/stat133/17-stringr-basics.pdf)
 	- [Regular Expressions 1](/teaching/stat133/18-regex1.pdf)
