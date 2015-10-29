@@ -85,10 +85,10 @@ More information about the group project will be posted on bCourses. In the mean
 - Week 10
 	- [Upcoming Topics](http://bit.ly/1XsH5KY)
 	- [About Text Data](/teaching/stat133/21-about-text-data.pdf)
-	- [Practice string basics](/teaching/stat133/lecture-jul-07.Rmd)
+	- [Strings basics](/teaching/stat133/22-strings-basics.pdf)
 	- [Package "stringr"](/teaching/stat133/17-stringr-basics.pdf)
-	- [Regular Expressions 1](/teaching/stat133/18-regex1.pdf)
 - Week 11
+	- [Regular Expressions 1](/teaching/stat133/18-regex1.pdf)
 	- [Apply Functions](/teaching/stat133/19-apply-functions.pdf)
 	- [Aggregating Data](/teaching/stat133/aggregate-data.Rmd)
 - Week 12
