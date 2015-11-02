@@ -86,7 +86,7 @@ Quantifiers specify how many repetitions of the pattern.
   * `{n,m}`: matches between n and m times.     
 
 ```{r, eval=FALSE}
-# at least 0 'o'
+# at least 0 or more 'o'
 grep('o*', animals, value = TRUE)
 
 # at least 1 'o'

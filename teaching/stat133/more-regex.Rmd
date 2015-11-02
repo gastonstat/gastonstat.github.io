@@ -59,7 +59,7 @@ Regex quantifiers:
 Let's start small by taking a sample of 10 values from the `DateTime` column:
 ```{r}
 # sample of date-times
-set.seed(10)
+set.seed(102030)
 x <- sample(df$DateTime, size = 10)
 x
 ```
@@ -97,13 +97,19 @@ Looking at the values in `DateTime` they all have a similar format.
 
 ```
 
-6. How would you get the __times__ (hour and minutes): e.g. `7:55`?
+6. How would you get the time-value: e.g. `7:55p.m.`?
+```{r}
+# full time value from x
+
+```
+
+7. How would you get the __times__ (hours and minutes): e.g. `7:55`?
 ```{r}
 # times from x
 
 ```
 
-7. How would you get the __time period__: e.g. `p.m.`?
+8. How would you get the __time period__: e.g. `p.m.`?
 ```{r}
 # time periods from x
 
