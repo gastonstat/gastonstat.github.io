@@ -89,7 +89,8 @@ More information about the group project will be posted on bCourses. In the mean
 	- [Package "stringr"](/teaching/stat133/23-stringr-basics.pdf)
 - Week 11
 	- [Regular Expressions](/teaching/stat133/24-regex-basics.pdf)
-	- [Regular Expressions](/teaching/stat133/lecture-regex.Rmd)
+	- [Strings practice](/teaching/stat133/more-regex.Rmd)
+	- [Regex practice](/teaching/stat133/lecture-regex.Rmd)
 	- [Apply Functions](/teaching/stat133/19-apply-functions.pdf)
 	- [Aggregating Data](/teaching/stat133/aggregate-data.Rmd)
 - Week 12
