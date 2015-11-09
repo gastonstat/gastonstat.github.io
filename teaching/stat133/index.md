@@ -39,7 +39,7 @@ All homework assignment files can be obtained in the [github repository](https:/
 
 ## Group Project
 
-More information about the group project will be posted on bCourses. In the meantime, please fill out the google form and submit your answers no later than November 13:
+More information about the group project __[here](http://bit.ly/1Mjkj0X)__. Please fill out the google form and submit your answers no later than November 13:
 
 - [Form for Lecture 1 (MWF)](http://goo.gl/forms/m2bvWX8BoF)
 - [Form for Lecture 2 (TuTh)](http://goo.gl/forms/RETJYmTrSu)
@@ -94,7 +94,7 @@ More information about the group project will be posted on bCourses. In the mean
 	- [Apply Functions](/teaching/stat133/25-apply-functions.pdf)
 	- [Aggregating Data](/teaching/stat133/aggregate-data.Rmd)
 - Week 12
-	- [Merging Tables](/teaching/stat133/20-merging-data.pdf)
+	- [Merging Tables](/teaching/stat133/26-merging-data.pdf)
 	- [Analytical Thinking](http://bit.ly/1I1dNz0)
 	- [Project Organization](/teaching/stat133/23-project-organization.pdf)
 - Week 13
