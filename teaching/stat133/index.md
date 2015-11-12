@@ -95,10 +95,9 @@ More information about the group project __[here](http://bit.ly/1Mjkj0X)__. Plea
 	- [Aggregating Data](/teaching/stat133/aggregate-data.Rmd)
 - Week 12
 	- [Merging Tables](/teaching/stat133/26-merging-data.pdf)
-	- [Analytical Thinking](http://bit.ly/1I1dNz0)
+	- [File Management](/teaching/stat133/27-file-system.pdf)
 	- [Project Organization](/teaching/stat133/23-project-organization.pdf)
 - Week 13
-	- [File Management](/teaching/stat133/22-file-system.pdf)
 	- [Command Line 1](/teaching/stat133/24-command-line1.pdf)
 	- [Command Line 2](/teaching/stat133/25-command-line2.pdf)
 	- [Data Files & Storage](/teaching/stat133/26-data-storage.pdf)
