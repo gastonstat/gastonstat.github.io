@@ -91,6 +91,7 @@ Sections: 5.1, 5.2, 5.3
 - <a href="https://docs.google.com/presentation/d/1Pqzgn5bU18r5P8OKVFnplQCRXB1IUi6c2_ZdRRDFPmw/pub?start=false&loop=false&delayms=3000" target="_blank">Binomial Related Distributions</a>
 - <a href="/teaching/math13/homework5_math13.pdf" target="_blank">Homework 5</a>
 - <a href="/teaching/math13/exercises3.pdf" target="_blank">Exercises Test 3</a>
+- <a href="/teaching/math13/exercises3_answers.pdf" target="_blank">Answers Exercises 3</a>
 - __Test 3 (44968, 40163) Thursday Tue-17__
 - __Test 3 (40161) Wednesday Nov-18__
 
