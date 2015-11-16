@@ -94,6 +94,7 @@ Sections: 5.1, 5.2, 5.3
 - <a href="/teaching/math13/exercises3_answers.pdf" target="_blank">Answers Exercises 3</a>
 - __Test 3 (44968, 40163) Thursday Tue-17__
 - __Test 3 (40161) Wednesday Nov-18__
+- <a href="https://docs.google.com/document/d/1GTY4g5pDi2mDFfIxTiCta3gr63mcTUop2JPC2H2umfU/pub" target="_blank">Practice Test 3</a>
 
 <hr/>
 
