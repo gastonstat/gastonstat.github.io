@@ -95,6 +95,7 @@ Sections: 5.1, 5.2, 5.3
 - __Test 3 (44968, 40163) Thursday Nov-19__
 - __Test 3 (40161) Wednesday Nov-18__
 - <a href="https://docs.google.com/document/d/1GTY4g5pDi2mDFfIxTiCta3gr63mcTUop2JPC2H2umfU/pub" target="_blank">Practice Test 3</a>
+- <a href="https://docs.google.com/document/d/130k-wy0WWUFC3DdD1vsibr3xsVge0gkglDjtmm8SUZE/pub" target="_blank">Answers Practice Test 3</a>
 
 <hr/>
 
