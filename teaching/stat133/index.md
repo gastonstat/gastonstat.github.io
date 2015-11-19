@@ -98,8 +98,8 @@ More information about the group project __[here](http://bit.ly/1Mjkj0X)__. Plea
 	- [File Management](/teaching/stat133/27-file-system.pdf)
 	- [Project Organization](/teaching/stat133/23-project-organization.pdf)
 - Week 13
-	- [Command Line 1](/teaching/stat133/24-command-line1.pdf)
-	- [Command Line 2](/teaching/stat133/25-command-line2.pdf)
+	- [Command Line 1](/teaching/stat133/28-command-line1.pdf)
+	- [Command Line 2](/teaching/stat133/29-command-line2.pdf)
 	- [Data Files & Storage](/teaching/stat133/26-data-storage.pdf)
 - Week 14
 	- [Intro to XML](/teaching/stat133/27-xml.pdf)
