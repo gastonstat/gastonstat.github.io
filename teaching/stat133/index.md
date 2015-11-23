@@ -39,7 +39,8 @@ All homework assignment files can be obtained in the [github repository](https:/
 
 ## Group Project
 
-More information about the group project __[here](http://bit.ly/1Mjkj0X)__. Please fill out the google form and submit your answers no later than November 13:
+More information about the group project: __[slides](http://bit.ly/1Mjkj0X)__ and 
+__[doc](http://bit.ly/1R1i5cc)__. Please fill out the google form and submit your answers no later than November 13:
 
 - [Form for Lecture 1 (MWF)](http://goo.gl/forms/m2bvWX8BoF)
 - [Form for Lecture 2 (TuTh)](http://goo.gl/forms/RETJYmTrSu)
