@@ -103,7 +103,7 @@ __[doc](http://bit.ly/1R1i5cc)__. Please fill out the google form and submit you
 	- [Command Line 2](/teaching/stat133/29-command-line2.pdf)
 	- [Data Files & Storage](/teaching/stat133/26-data-storage.pdf)
 - Week 14
-	- [Intro to XML](/teaching/stat133/27-xml.pdf)
+	- [Intro to XML](/teaching/stat133/31-xml.pdf)
 	- [Parsing XML](/teaching/stat133/28-parsing-xml.pdf)
 	- (see `parsing-xml.Rmd` in github repo)
 	- Intro to XPath (see `xpath.Rmd` in github repo)
