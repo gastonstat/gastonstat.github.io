@@ -105,17 +105,12 @@ __[doc](http://bit.ly/1R1i5cc)__. Please fill out the google form and submit you
 - Week 14
 	- [Intro to XML](/teaching/stat133/31-xml.pdf)
 	- [Parsing XML](/teaching/stat133/28-parsing-xml.pdf)
-	- (see `parsing-xml.Rmd` in github repo)
-	- Intro to XPath (see `xpath.Rmd` in github repo)
-	- Web Scraping (see `web-scraping.Rmd` in github repo)
+	- [parsing-xml.Rmd](/teaching/stat133/parsing-xml.Rmd)
+	- [xpath.Rmd](/teaching/stat133/xpath.Rmd)
 - Week 15
 	- [Effective Charts](http://bit.ly/1KMPW71)
 	- [Graphics Devices](/teaching/stat133/29-graphics-devices.pdf)
 	- [Missing Values](/teaching/stat133/30-missing-values.pdf)
-- Week 16
-	- RDBMS
-	- SQL part 1
-	- SQL part 2
 
 <hr class="margin" />
 
