@@ -111,6 +111,8 @@ Sections: 5.1, 5.2, 5.3
 - <a href="https://docs.google.com/presentation/d/1mav1fbW42UKDoSZtqVzMh68hPLMj-zMzYzyJN4jp0RQ/pub?start=false&loop=false&delayms=3000" target="_blank">Estimation of Means</a><br>
 - <a href="https://docs.google.com/presentation/d/1QWx8gfr9t0fI4P2bkIXHtCvYxj6H_CXkEO1Tsa4yfIo/pub?start=false&loop=false&delayms=3000" target="_blank">Estimation of Proportions</a>
 - <a href="/teaching/math13/exercises4.pdf" target="_blank">Exercises Test 4</a>
+- <a href="/teaching/math13/exam4_normal_distribution_fall2015.pdf" target="_blank">Take Home Assignment</a>
+
 
 
 <hr/>
