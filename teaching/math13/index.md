@@ -99,6 +99,8 @@ Sections: 5.1, 5.2, 5.3
 - <a href="https://docs.google.com/spreadsheets/d/1PcmiIjQ26N3ybF2ZN98doIWqyjD5f_caiJzFh-57qLk/pubhtml" target="_blank"><b>Preliminary Grades MW</b></a>
 - <a href="https://docs.google.com/spreadsheets/d/1Hbqi6GnvAHa1Pee6xFCaepbOcHVPzMBuWbjKV6ySG_I/pubhtml" target="_blank"><b>Preliminary Grades TuTh</b></a>
 
+- <a href="https://docs.google.com/document/d/1mSZwngKBDaR9ZVUA8f7x3J6YAGOOWwmc_72CnFPwFnA/pub" target="_blank"><b>Practice Test</b></a>
+
 <hr/>
 
 
