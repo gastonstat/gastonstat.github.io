@@ -96,10 +96,6 @@ Sections: 5.1, 5.2, 5.3
 - __Test 3 (40161) Wednesday Nov-18__
 - <a href="https://docs.google.com/document/d/1GTY4g5pDi2mDFfIxTiCta3gr63mcTUop2JPC2H2umfU/pub" target="_blank">Practice Test 3</a>
 - <a href="https://docs.google.com/document/d/130k-wy0WWUFC3DdD1vsibr3xsVge0gkglDjtmm8SUZE/pub" target="_blank">Answers Practice Test 3</a>
-- <a href="https://docs.google.com/spreadsheets/d/1PcmiIjQ26N3ybF2ZN98doIWqyjD5f_caiJzFh-57qLk/pubhtml" target="_blank"><b>Preliminary Grades MW</b></a>
-- <a href="https://docs.google.com/spreadsheets/d/1Hbqi6GnvAHa1Pee6xFCaepbOcHVPzMBuWbjKV6ySG_I/pubhtml" target="_blank"><b>Preliminary Grades TuTh</b></a>
-
-- <a href="https://docs.google.com/document/d/1mSZwngKBDaR9ZVUA8f7x3J6YAGOOWwmc_72CnFPwFnA/pub" target="_blank"><b>Practice Test</b></a>
 
 <hr/>
 
@@ -117,6 +113,9 @@ Sections: 5.1, 5.2, 5.3
 - <a href="/teaching/math13/exercises4.pdf" target="_blank">Exercises Test 4</a>
 - <a href="/teaching/math13/exam4_normal_distribution_fall2015.pdf" target="_blank">Take Home Assignment</a>
 
+- <a href="https://docs.google.com/spreadsheets/d/1PcmiIjQ26N3ybF2ZN98doIWqyjD5f_caiJzFh-57qLk/pubhtml" target="_blank"><b>Preliminary Grades MW</b></a>
+- <a href="https://docs.google.com/spreadsheets/d/1Hbqi6GnvAHa1Pee6xFCaepbOcHVPzMBuWbjKV6ySG_I/pubhtml" target="_blank"><b>Preliminary Grades TuTh</b></a>
+- <a href="https://docs.google.com/document/d/1mSZwngKBDaR9ZVUA8f7x3J6YAGOOWwmc_72CnFPwFnA/pub" target="_blank"><b>Practice Test</b></a>
 
 
 <hr/>
