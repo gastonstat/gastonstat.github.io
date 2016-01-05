@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      4 ways to read a file in R... by columns &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">4 ways to read a file in R... by columns</h1>
+  <span class="post-date">23 Jun 2012</span>
+  <p>Ever wonder how to read a file in R by columns? This question comes to mind when your 
+analysis doesn&#39;t require to import all the data in R, especially if the file is huge.</p>
+
+<!--more-->
+
+<p>Sometimes you just want to read some columns, do some data manipulation, and plot some 
+graphics. How can you do that in R? I&#39;ll show you four different ways to do that without 
+having to use a data base management system (DBMS) and SQL queries.</p>
+
+<h3>Toy example</h3>
+
+<p>For this post let&#39;s consider a toy dataset of 12 rows and 7 columns in csv 
+(comma-separated value) format. For instance, a dataset like the following one:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># create toy dataset</span>
+dataset <span class="o">=</span> <span class="kt">data.frame</span><span class="p">(</span>
+   Id <span class="o">=</span> <span class="kp">paste</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">,</span> <span class="m">1</span><span class="o">:</span><span class="m">12</span><span class="p">,</span> sep <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">),</span>
+   Name <span class="o">=</span> <span class="kp">toupper</span><span class="p">(</span><span class="kc">letters</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">12</span><span class="p">]),</span>
+   Month <span class="o">=</span> <span class="kp">month.name</span><span class="p">,</span>
+   Num <span class="o">=</span> <span class="m">11</span><span class="o">:</span><span class="m">22</span><span class="p">,</span>
+   Qty <span class="o">=</span> <span class="kp">sample</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="m">3</span><span class="p">,</span> <span class="m">12</span><span class="p">,</span> replace <span class="o">=</span> <span class="kc">TRUE</span><span class="p">),</span>
+   Val <span class="o">=</span> <span class="m">10</span> <span class="o">*</span> runif<span class="p">(</span><span class="m">12</span><span class="p">,</span> <span class="m">0.5</span><span class="p">,</span> <span class="m">1</span><span class="p">),</span>
+   Col <span class="o">=</span> colors<span class="p">()[</span><span class="kp">seq</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">120</span><span class="p">,</span> <span class="m">10</span><span class="p">)]</span>
+<span class="p">)</span>
+
+<span class="c1"># save data in csv file</span>
+write.csv<span class="p">(</span>dataset<span class="p">,</span> <span class="s">&quot;some_file.csv&quot;</span><span class="p">,</span> row.names <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">##  Id   Name Month     Num Qty Val      Col
+##  id1  A    January   11  1   6.034408 white
+##  id2  B    February  12  1   5.242792 aquamarine3
+##  id3  C    March     13  3   7.296390 bisque2
+##  id4  D    April     14  2   8.792603 blueviolet
+##  id5  E    May       15  1   5.161514 burlywood4
+##  id6  F    June      16  3   8.153676 chartreuse4
+##  id7  G    July      17  0   9.788158 coral4
+##  id8  H    August    18  0   7.106729 cyan3
+##  id9  I    September 19  0   9.969363 darkgreen
+##  id10 J    October   20  2   7.117246 darkorange1
+##  id11 K    November  21  2   7.536335 darksalmon
+##  id12 L    December  22  1   6.374395 darkslategray3</code></pre></div>
+
+<h3>Option 1: cut and system</h3>
+
+<p>The first option consists of using a <a href="http://en.wikipedia.org/wiki/Cut_(Unix)" target="_blank">cut</a> 
+command with the desired columns, and calling this command within the <code>system()</code> 
+function. The only &quot;problem&quot; is that the data will be stored in a vector. It is not 
+the best solution if what you want is a data frame, but it can do the trick if you 
+want to quickly inspect the columns.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># collect columns 1, 3 and 7</span>
+tmp1 <span class="o">=</span> <span class="kp">system</span><span class="p">(</span><span class="s">&quot;cut -f1,3,7 -d&#39;,&#39; some_file.csv&quot;</span><span class="p">,</span> intern <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+
+<span class="c1"># remove extra quotation marks</span>
+tmp1 <span class="o">=</span> <span class="kp">gsub</span><span class="p">(</span><span class="s">&quot;\&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> tmp1<span class="p">)</span>
+
+<span class="c1"># split by commas (this returns a list)</span>
+list1 <span class="o">=</span> <span class="kp">strsplit</span><span class="p">(</span>tmp1<span class="p">,</span> <span class="s">&quot;,&quot;</span><span class="p">)</span></code></pre></div>
+
+<h3>Option 2: cut and pipe</h3>
+
+<p>The second option is similar to the first one. It consists of calling a <code>cut</code> 
+command but this time from the <code>pipe()</code> function, which in turn is contained 
+inside a <code>read.csv()</code> function.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># read columns 1 to 3</span>
+df2a <span class="o">=</span> read.csv<span class="p">(</span><span class="kp">pipe</span><span class="p">(</span><span class="s">&quot;cut -f1-3 -d&#39;,&#39; some_file.csv&quot;</span><span class="p">))</span>
+
+<span class="c1"># read columns 1, 3 and 7</span>
+df2b <span class="o">=</span> read.csv<span class="p">(</span><span class="kp">pipe</span><span class="p">(</span><span class="s">&quot;cut -f1,3,7 -d&#39;,&#39; some_file.csv&quot;</span><span class="p">))</span></code></pre></div>
+
+<h3>Option 3: package colbycol</h3>
+
+<p>The third option consists of using the very handy function <code>cbc.read.table()</code> that 
+comes with the package <code>&quot;colbycol&quot;</code> (by Carlos Gil)</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># remember to install colbycol</span>
+<span class="kn">require</span><span class="p">(</span>colbycol<span class="p">)</span>
+
+<span class="c1"># read desired columns</span>
+tmp3 <span class="o">=</span> cbc.read.table<span class="p">(</span><span class="s">&quot;some_file.csv&quot;</span><span class="p">,</span> just.read <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">7</span><span class="p">),</span> sep <span class="o">=</span> <span class="s">&quot;,&quot;</span><span class="p">)</span>
+
+<span class="c1"># convert to a data.frame</span>
+df3 <span class="o">=</span> <span class="kp">as.data.frame</span><span class="p">(</span>tmp3<span class="p">)</span></code></pre></div>
+
+<h3>Option 4: package limma</h3>
+
+<p>The last option consists of using the function <code>read.columns()</code> that comes with 
+the <code>&quot;limma&quot;</code> package (by Gordon Smyth <em>et al</em>). Just a small detail: <code>&quot;limma&quot;</code> 
+is in <a href="http://www.bioconductor.org/packages/2.13/bioc/html/limma.html">Bioconductor</a>, 
+not in CRAN. In this case, you need to specify the names of the columns to be read.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># install limma from bioconductor</span>
+<span class="kn">source</span><span class="p">(</span><span class="s">&quot;http://bioconductor.org/biocLite.R&quot;</span><span class="p">)</span>
+biocLite<span class="p">(</span><span class="s">&quot;limma&quot;</span><span class="p">)</span>
+
+<span class="c1"># load limma</span>
+<span class="kn">library</span><span class="p">(</span>limma<span class="p">)</span>
+
+<span class="c1"># read columns 1=Id, 3=Name, and 7=Col</span>
+df4 <span class="o">=</span> read.columns<span class="p">(</span><span class="s">&quot;some_file.csv&quot;</span><span class="p">,</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;Id&quot;</span><span class="p">,</span> <span class="s">&quot;Name&quot;</span><span class="p">,</span> <span class="s">&quot;Col&quot;</span><span class="p">),</span> sep <span class="o">=</span> <span class="s">&quot;,&quot;</span><span class="p">)</span></code></pre></div>
+
+<p>Happy data analysis!</p>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/how-to/2012/06/17/PCA-in-R/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/how-to/2012/06/30/My-first-Rpub/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>

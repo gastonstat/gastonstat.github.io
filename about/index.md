@@ -3,85 +3,38 @@ title: About
 layout: page
 ---
 
-# About Me
+# About 
 
-#### I'm a statistical programmer and data science consultant for NGO's, small start-ups, academic scholars, and research labs in general. I'm also a lecturer of Statistics courses.
+I am a Lecturer in the [Department of Statistics](http://statistics.berkeley.edu/) at the University of California Berkeley; Lecturer in the [Math Department](http://www.berkeleycitycollege.edu/wp/math/) at Berkeley City College; developer of various R [packages](/software), and founder of [plsmodeling.com](http://plsmodeling.com).
 
+<ul>
+	<li><a href="/about/GastonSanchez_resume.pdf">resume</a></li>
+	<li><a href="http://www.linkedin.com/in/sanchezgaston" target="_blank">linkedin</a></li>
+	<li><a href="https://github.com/gastonstat" target="_blank">github</a></li>
+</ul>
 
-<a class="graybutton" href="/about/GastonSanchez_resume.pdf">resume</a>
-&nbsp;&nbsp;
-<a class="graybutton" href="http://www.linkedin.com/in/sanchezgaston" target="_blank">linkedin</a>
-&nbsp;&nbsp;
-<a class="graybutton" href="https://github.com/gastonstat" target="_blank">github</a>
+I received a BS in [Actuarial Science](http://departamentodeactuaria.itam.mx/es) in 2001, from the Instituto Tecnologico Autonomo de Mexico (ITAM), and a PhD in [Statistics](https://www.eio.upc.edu/en) in 2009, from the Universitat Politecnica de Catalunya (UPC), under the supervision of [Tomas Aluja](https://recerca.upc.edu/liam/menu1/tomas-aluja). I was a postdoctoral researcher with Rasmus Nielsen at the [Nielsen Group](http://cteg.berkeley.edu/~nielsen/), 2011-2013. After that I was a research engineer at the [Unit of Chemometrics and Sensometric](http://www.oniris-nantes.fr/en/research/research-units/research-unit-sensometrics-chemometrics/unit-presentation/) (USC), Oniris-France 2013-2014. In the summer of 2014 I was an [Insight Data Science](http://insightdatascience.com/) fellow.
 
-<hr/>
+In the last 9+ years I've been spending my time working on a number of projects, most of them with the central theme of exploring, analyzing and visualizing data in a context of multiple variables and high dimensionality. 
 
+This means that I've been revisiting the core concepts behind methods for association-relationship between multiple sets of variables (i.e. multiblock data) using different approaches from a broad range of disciplines (e.g. psychometrics, chemometrics, sensometrics, econometrics, ecology and biometrics).
 
-## Summary
-
-In the last 9+ years I've been spending my time working on a number of projects, 
-most of them with the central theme of exploring, analyzing and visualizing data 
-in a context of multiple variables and high dimensionality. 
-
-This means that I've been revisiting the core concepts behind methods for 
-association-relationship between multiple sets of variables (i.e. multiblock data) 
-using different approaches from a broad range of disciplines (e.g. psychometrics, 
-chemometrics, sensometrics, econometrics, ecology and biometrics).
-
-In particular, I've done a lot of programming and development of software for statistical 
-computations, graphics, and data analysis. Behind all the stuff that I’ve done there is a single idea and goal: 
+In particular, I've done a lot of programming and development of software for statistical computations, graphics, and data analysis. Behind all the stuff that I’ve done there is a single idea and goal: 
 **to build a succinct summary of the data I'm analyzing**.
 
-
-## Overall Interests
-
-There are 3 major topics that I'm hooked to:
- 
-- I really like [working](/work) with analytical tools 
-and methods, especially those designed for very practical applications.
-- I'm fascinated with the use of graphical displays to understand data with 
-visualization.
-- I'm a passionate R user as well as a 
-[developer](/software) of statistical software in R.
-
-
-## Blog
-
-Occasionally, I like to talk about data analysis, visualization, statistics, R and 
-related stuff in my blog [Data Analysis Visually EnfoRced](/blog).
-
-
-## Trifecta
-
-What I like about my "job" is that:
-
-1. It can be applied to practically all sciences and disciplines;
-2. Consequently, it has allowed me to open the doors of many different fields;
-3. But most important, it has given me the fortune to work with very smart and talented 
-people from all over the world (from whom I've learned so much).
-
+-----
 
 ## Contact
 
-The easiest way to get in touch with me is by email. Feel free to drop me a line 
-if you're interested in:
-
-- Training Workshops
-- Consulting
-- Seminars
-- Joint Research
-
-```gaston.stat at gmail.com```
+Gaston Sanchez<br>
+Department of Statistics<br>
+University of California, Berkeley<br>
+309 Evans Hall<br>
+Berkeley, CA 94720<br>
+email: `gaston.stat at gmail.com`<br>
 
 
-
-## Wishlist
-
-This site remains ad-free and its content takes hundreds of hours a month to research and write. 
-If you find any joy and value in it, please consider supporting me. You can help me get 
-useful resources from my <a href="http://amzn.com/w/A8P707HJ94QI" target="_blank">wishlist</a>.
-
-<hr>
+-----
 
 # About this website
 
@@ -97,12 +50,11 @@ projects in order. This is easier said than done.
 <img class="centered" src="http://farm4.staticflickr.com/3765/11406802826_77d023acc1_o.jpg" alt="colophon"/> 
 </p>
 
-## Colophon
+## Wishlist
 
-I design and develop this site using [Jekyll](https://github.com/mojombo/jekyll), following 
-this [styleguide](/styleguide). 
-Hosting by [github pages](https://pages.github.com). Source available on 
-[github](https://github.com/gastonstat/gastonstat.github.io). 
+This site remains ad-free and its content takes hundreds of hours a month to research and write. 
+If you find any joy and value in it, please consider supporting me. You can help me get 
+useful resources from my <a href="http://amzn.com/w/A8P707HJ94QI" target="_blank">wishlist</a>.
 
 
 Unless specified otherwise, content on this site is licensed under a 

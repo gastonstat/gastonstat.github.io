@@ -1,0 +1,264 @@
+#---
+#layout: post
+#title: "5 functions to do Multiple Correspondence Analysis in R"
+#date: 2012-10-13
+#category: how-to
+#tags: [correspondence, multiple, analysis, R, mca, multivariate]
+#---
+
+Today is the turn to talk about five different options of doing **Multiple Correspondence Analysis** in R (don't confuse it with Correspondence Analysis).
+
+<!--more-->
+
+Put in very simple terms, Multiple Correspondence Analysis (MCA) is to qualitative data, as Principal Component Analysis (PCA) is to quantitative data. Well, maybe I'm oversimplifying a little bit because MCA has some special features that make it mathematically different from PCA, but they both share a lot of things in common from a data analysis standpoint. 
+
+As with PCA and Correspondence Analysis, MCA is just another tool in our kit of multivariate methods that allows us to analyze the systematic patterns of variations with categorical data. Keep in mind that MCA applies to tables in which the observations are described by a set of qualitative (i.e. categorical) variables. This means that in R you must have your table in the form of a data frame with factors (observations in the rows, qualitative variables in the columns).
+
+
+### MCA in R
+
+In R, there are several functions from different packages that allow us to apply Multiple Correspondence Analysis. In this post I'll show you 5 different ways to perform MCA using the following functions (with their corresponding packages in parentheses):
+
+- ```MCA()``` (FactoMineR)
+- ```mca()``` (MASS)
+- ```dudi.acm()``` (ade4)
+- ```mjca()``` (ca)
+- ```homals()``` (homals)
+
+No matter what function you decide to use for MCA, the typical results should consist of a set of eigenvalues, a table with the row coordinates, and a table with the column coordinates. 
+
+Compared to the eigenvalues obtained from a PCA or a CA, the eigenvalues in a MCA can be much more smaller. This is important to know because if you just consider the eigenvalues, you might be tempted to conclude that MCA sucks. Which is absolutely false. 
+
+Personally, I think that the real meat and potatoes of MCA relies in its dimension reduction properties that let us visualize our data, among other things. Besides the eigenvalues, the row coordinates provide information about the structure of the rows in the analyzed table. In turn, the column coordinates provide information about the structure of the analyzed variables and their corresponding categories.
+
+
+### The Data
+
+We'll use the dataset ```tea``` that comes in the R package ```"FactoMineR"``` . It's a data frame (of factors) containing the answers of a questionnaire on tea consumption for 300 individuals. Although the data contains 36 columns (i.e. variables), for demonstration purposes I will only consider the following columns:
+
+1. What kind of tea do you drink (black, green, flavored)
+2. How do you drink it (alone, w/milk, w/lemon, other)
+3. What kind of presentation do you buy (tea bags, loose tea, both)
+4. Do you add sugar (yes, no)
+5. Where do you buy it (supermarket, shops, both)
+6. Do you always drink tea (always, not always)
+
+
+```{r tea, message=FALSE}
+# load packages
+require(FactoMineR)
+require(ggplot2)
+
+# load data tea
+data(tea)
+
+# select these columns
+newtea = tea[, c("Tea", "How", "how", "sugar", "where", "always")]
+
+# take a peek
+head(newtea)
+
+# number of categories per variable
+cats = apply(newtea, 2, function(x) nlevels(as.factor(x)))
+
+cats
+```
+
+
+### Option 1: using MCA()
+
+My preferred function to do multiple correspondence analysis is the ```MCA()``` function that comes in the fabulous package ```"FactoMineR"``` by Francois Husson, Julie Josse, Sebastien Le, and Jeremy Mazet. If you have seen my other posts you'll know that this is one of favorite packages and I strongly recommend other users to seriously take a look at it. It provides the most complete list of results with different calculations for interpretation and diagnosis.
+
+```{r mca_factominer}
+# apply MCA
+mca1 = MCA(newtea, graph = FALSE)
+
+# list of results
+mca1
+
+# table of eigenvalues
+mca1$eig
+```
+
+We can use the package ```"ggplot2()"``` to get a nice plot:
+```{r tidy=FALSE, fig1, fig.width=10, fig.height=7, echo=TRUE}
+# data frame with variable coordinates
+mca1_vars_df = data.frame(mca1$var$coord, Variable = rep(names(cats), cats))
+
+# data frame with observation coordinates
+mca1_obs_df = data.frame(mca1$ind$coord)
+
+# plot of variable categories
+ggplot(data=mca1_vars_df, 
+       aes(x = Dim.1, y = Dim.2, label = rownames(mca1_vars_df))) +
+ geom_hline(yintercept = 0, colour = "gray70") +
+ geom_vline(xintercept = 0, colour = "gray70") +
+ geom_text(aes(colour=Variable)) +
+ ggtitle("MCA plot of variables using R package FactoMineR")
+```
+
+
+In order to have a more interesting representation, we could superimpose a graphic display of both the observations and the categories. Moreover, since some individuals will be overlapped, we can add some density curves with ```geom_density2d()``` to see those zones that are highly concentrated:
+
+```{r tidy=FALSE, fig2, fig.width=10, fig.height=7, echo=TRUE}
+# MCA plot of observations and categories
+ggplot(data = mca1_obs_df, aes(x = Dim.1, y = Dim.2)) +
+  geom_hline(yintercept = 0, colour = "gray70") +
+  geom_vline(xintercept = 0, colour = "gray70") +
+  geom_point(colour = "gray50", alpha = 0.7) +
+  geom_density2d(colour = "gray80") +
+  geom_text(data = mca1_vars_df, 
+            aes(x = Dim.1, y = Dim.2, 
+                label = rownames(mca1_vars_df), colour = Variable)) +
+  ggtitle("MCA plot of variables using R package FactoMineR") +
+  scale_colour_discrete(name = "Variable")
+```
+
+
+### Option 2: using mca()
+
+Another function for performing MCA is the ```mca()``` function that comes in the ```"MASS"``` package by Brian Ripley *et al*.
+
+```{r mca_mass, message=FALSE}
+# load MASS
+require(MASS)
+
+# apply mca
+mca2 = mca(newtea, nf = 5)
+
+# eigenvalues
+mca2$d^2
+# column coordinates
+head(mca2$cs)
+# row coordiantes
+head(mca2$rs)
+```
+
+We can get an MCA plot of variables:
+```{r tidy=FALSE, fig3, fig.width=10, fig.height=7, echo=TRUE}
+# data frame for ggplot
+mca2_vars_df = data.frame(mca2$cs, Variable = rep(names(cats), cats))
+
+# plot
+ggplot(data = mca2_vars_df, 
+       aes(x = X1, y = X2, label = rownames(mca2_vars_df))) +
+  geom_hline(yintercept = 0, colour = "gray70") +
+  geom_vline(xintercept = 0, colour = "gray70") +
+  geom_text(aes(colour = Variable)) +
+  ggtitle("MCA plot of variables using R package MASS")
+```
+
+
+If you prefer not to use ```"ggplot2"```, you can stay with the default plots (not for me)
+```{r tidy=FALSE, fig4, fig.width=8, fig.height=7, echo=TRUE}
+# default biplot in MASS (kind of ugly)
+plot(mca2)
+```
+
+
+### Option 3: using dudi.acm()
+
+A third option to perform MCA is by using the function ```dudi.acm()``` that comes with the package ```"ade4"``` by Simon Penel *et al* (remember to install the package first).
+
+```{r mca_ade4, message=FALSE}
+# MCA with function dudi.acm
+require(ade4)
+
+# apply dudi.acm
+mca3 = dudi.acm(newtea, scannf = FALSE, nf = 5)
+
+# eigenvalues
+mca3$eig
+# column coordinates
+head(mca3$co)
+# row coordinates
+head(mca3$li)
+```
+
+Here's how to get the MCA plot of variables with ```ggplot()```
+```{r tidy=FALSE, fig5, fig.width=10, fig.height=7, echo=TRUE}
+# data frame for ggplot
+mca3_vars_df = data.frame(mca3$co, Variable = rep(names(cats), cats))
+
+# plot
+ggplot(data = mca3_vars_df, 
+       aes(x = Comp1, y = Comp2, label = rownames(mca3_vars_df))) +
+  geom_hline(yintercept = 0, colour = "gray70") +
+  geom_vline(xintercept = 0, colour = "gray70") +
+  geom_text(aes(colour = Variable)) +
+  ggtitle("MCA plot of variables using R package ade4")
+```
+
+
+### Option 4: using mjca()
+
+Another interesting way for carrying out MCA is by using the function ```mjca()``` from the package ```"ca"``` by Michael Greenacre and Oleg Nenadic.
+
+```{r mca_ca, message=FALSE}
+# PCA with function mjca
+require(ca)
+
+# apply mjca
+mca4 = mjca(newtea, lambda="indicator", nd=5)
+
+# eigenvalues
+mca4$sv^2
+# column coordinates
+head(mca4$colcoord)
+# row coordinates
+head(mca4$rowcoord)
+```
+
+We'll use the column coordinates ```colcoord``` to make a data frame and pass it to ```ggplot()```:
+```{r tidy=FALSE, fig6, fig.width=10, fig.height=7, echo=TRUE}
+# data frame for ggplot
+mca4_vars_df = data.frame(mca4$colcoord, Variable = rep(names(cats), cats))
+rownames(mca4_vars_df) = mca4$levelnames
+
+# plot
+ggplot(data = mca4_vars_df, 
+       aes(x = X1, y = X2, label = rownames(mca4_vars_df))) +
+  geom_hline(yintercept = 0, colour = "gray70") +
+  geom_vline(xintercept = 0, colour = "gray70") +
+  geom_text(aes(colour = Variable)) +
+  ggtitle("MCA plot of variables using R package ca")
+```
+
+
+### Option 5: using homals()
+
+A fifth possibility is the ```homals()``` function from the package ```"homals"``` by Jan de Leeuw and Patrick Mair.
+
+```{r mca_homals, message=FALSE, warning=FALSE}
+# CA with function corresp
+require(homals)
+
+# apply homals
+mca5 = homals(newtea, ndim = 5, level = "nominal")
+
+# eigenvalues
+mca5$eigenvalues
+# column coordinates
+mca5$catscores
+# row coordinates
+head(mca5$objscores)
+```
+
+In order to get the MCA plot of variables, we first need to unlist the coordinates of the categories before creating the data frames for ```ggplot()```:
+```{r tidy=FALSE, fig7, fig.width=10, fig.height=7, echo=TRUE}
+# data frame for ggplot
+D1 = unlist(lapply(mca5$catscores, function(x) x[,1]))
+D2 = unlist(lapply(mca5$catscores, function(x) x[,2]))
+
+mca5_vars_df = data.frame(D1 = D1, D2 = D2, Variable = rep(names(cats), cats))
+rownames(mca5_vars_df) = unlist(sapply(mca5$catscores, function(x) rownames(x)))
+
+# plot
+ggplot(data = mca5_vars_df, 
+       aes(x = D1, y = D2, label = rownames(mca5_vars_df))) +
+  geom_hline(yintercept = 0, colour = "gray70") +
+  geom_vline(xintercept = 0, colour = "gray70") +
+  geom_text(aes(colour = Variable)) +
+  ggtitle("MCA plot of variables using R package homals")
+```
+

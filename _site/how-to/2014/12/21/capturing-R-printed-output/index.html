@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Capturing R Printed Outputs &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Capturing R Printed Outputs</h1>
+  <span class="post-date">21 Dec 2014</span>
+  <p>I&#39;m always surprised to find &quot;new&quot; (to me) functions and commands in R that I had no idea they existed. This is the case of the life-saving <code>capture.output()</code> function.</p>
+
+<!--more-->
+
+<p><img src="/images/blog/capture_output.png" alt=""></p>
+
+<h3>Motivation</h3>
+
+<p>I&#39;m sure you&#39;ve gone through this situation: you are applying some statistical tests in R, or estimating a model, and you have to use the generated results for either your report, your homework, or your thesis. In other words, your goal is to save the results that appear in your R console into a text file. How you do this without copy-pasting or taking a screenshot?</p>
+
+<p>For one of my projects I was running some anova and t-test. I wanted to capture some of the results, especially the p-values. I managed to do that in a very hacky way. However, I later discovered a very short but life-saving post at 
+<a href="http://rstatistics.tumblr.com/post/417394222/export-anova-table">Handy R things</a>.</p>
+
+<p>For illustration purposes I will use a couple of examples in the help documentation from the anova and t-test functions (for more info see <code>?aov</code> and <code>?t.test</code>).</p>
+
+<p>Here&#39;s the anova test example:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># anova test</span>
+anova_test <span class="o">=</span> aov<span class="p">(</span>yield <span class="o">~</span> block <span class="o">+</span> N <span class="o">*</span> P <span class="o">+</span> K<span class="p">,</span> npk<span class="p">)</span>
+
+anova_test</code></pre></div>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">## Call:
+##    aov(formula = yield ~ block + N * P + K, data = npk)
+## 
+## Terms:
+##                 block     N     P     K   N:P Residuals
+## Sum of Squares  343.3 189.3   8.4  95.2  21.3     218.9
+## Deg. of Freedom     5     1     1     1     1        14
+## 
+## Residual standard error: 3.954
+## Estimated effects may be unbalanced</code></pre></div>
+
+<p>And here&#39;s the t-test example:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># t test</span>
+t_test <span class="o">=</span> t.test<span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">,</span> y <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">7</span><span class="o">:</span><span class="m">20</span><span class="p">))</span>
+
+t_test</code></pre></div>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">## 
+##  Welch Two Sample t-test
+## 
+## data:  1:10 and c(7:20)
+## t = -5.435, df = 21.98, p-value = 1.855e-05
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -11.053  -4.947
+## sample estimates:
+## mean of x mean of y 
+##       5.5      13.5</code></pre></div>
+
+<p>And now the magic thanks to <code>capture.output()</code>. In this example, I will save the test results in the file <code>tests.txt</code>. By default this file will be created in your working directory but you can specify a different location. </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Title</span>
+<span class="kp">cat</span><span class="p">(</span><span class="s">&quot;Tests Output&quot;</span><span class="p">,</span> file <span class="o">=</span> <span class="s">&quot;tests.txt&quot;</span><span class="p">)</span>
+<span class="c1"># add 2 newlines</span>
+<span class="kp">cat</span><span class="p">(</span><span class="s">&quot;\n\n&quot;</span><span class="p">,</span> file <span class="o">=</span> <span class="s">&quot;tests.txt&quot;</span><span class="p">,</span> append <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+<span class="c1"># export anova test output</span>
+<span class="kp">cat</span><span class="p">(</span><span class="s">&quot;Anova Test\n&quot;</span><span class="p">,</span> file <span class="o">=</span> <span class="s">&quot;tests.txt&quot;</span><span class="p">,</span> append <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+capture.output<span class="p">(</span>anova_test<span class="p">,</span> file <span class="o">=</span> <span class="s">&quot;tests.txt&quot;</span><span class="p">,</span> append <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+<span class="c1"># add 2 newlines</span>
+<span class="kp">cat</span><span class="p">(</span><span class="s">&quot;\n\n&quot;</span><span class="p">,</span> file <span class="o">=</span> <span class="s">&quot;tests.txt&quot;</span><span class="p">,</span> append <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+<span class="c1"># export t-test output</span>
+<span class="kp">cat</span><span class="p">(</span><span class="s">&quot;T-Test\n&quot;</span><span class="p">,</span> file <span class="o">=</span> <span class="s">&quot;tests.txt&quot;</span><span class="p">,</span> append <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+capture.output<span class="p">(</span>t_test<span class="p">,</span> file <span class="o">=</span> <span class="s">&quot;tests.txt&quot;</span><span class="p">,</span> append <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span></code></pre></div>
+
+<p>This example is a little verbose so you can see what I&#39;m doing, but you can take shorcuts and reduce the number of used commands. Note that the first use of <code>cat()</code> is just to write a title, and indicate the file name. The rest of the commands require the argument <code>append = TRUE</code> in order to append the new content to the specified file without overwriting the existing content.</p>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/resources/2014/11/04/Beamer-GWDR-slides/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/opinion/2015/01/14/slides-workflow/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>

@@ -1,26 +1,10 @@
 ---
-layout: page
-title: "Error 404"
+layout: default
+title: "404: Page not found"
+permalink: 404.html
 ---
 
-<h2>404, Ooops!</h2>
-
-For some unknown/awkward/pathetic reasons the page you are looking for does not exist.
-
-
-<div id="posts" style="margin-top: 20px;">
-
-    However, you might be interested in these recent posts:
-
-    <br />
-
-    {% for post in site.posts offset: 0 limit: 5 %}
-
-        <small>
-            <a href="{{ post.url}}">{{ post.title }}</a>
-        </small>
-        <br />
-
-    {% endfor %}
-
+<div class="page">
+  <h1 class="page-title">404: Page not found</h1>
+  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}">Head back home</a> to try finding it again.</p>
 </div>

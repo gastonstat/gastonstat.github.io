@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Handling and Processing Strings in R &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Handling and Processing Strings in R</h1>
+  <span class="post-date">22 Sep 2013</span>
+  <p><img class="centered" src="http://farm8.staticflickr.com/7428/11440428013_dd9e6f064d_c.jpg" alt="string_blue"></p>
+
+<p><strong>Handling and Processing Strings in R</strong> is an ebook dedicated to show you some 
+introductory material to manipulate character strings in R.</p>
+
+<!--more-->
+
+<p><a href="/Handling_and_Processing_Strings_in_R.pdf">Download ebook</a></a></p>
+
+<h3>Why this ebook?</h3>
+
+<p>Many years ago I decided to apply for a job in a company that developed data mining 
+applications for big retailers. I was invited for an on-site visit and I went through 
+the typical series of interviews with the members of the analytics team. Everything was 
+going smoothly and I was enjoying all the conversations. Then it came turn to meet the 
+computer scientist. After briefly describing his role in the team he started asking me 
+a bunch of technical questions and tests. Although I was able to answer those questions 
+related with statistics and multivariate analysis, I had a really hard time trying to 
+answer a series of questions related with string manipulations. </p>
+
+<p>I will remember my interview with that guy as one of the most embarrassing moments of my 
+life. That day, the first thing I did when I went back home was to open my laptop, launch 
+R, and start reproducing the tests I failed to solve. It didn&#39;t take me that much to get 
+the right answers. Unfortunately, it was too late and the harm was already done. Needless 
+to say I wasn&#39;t offered the job. That shocking experience showed me that I was not 
+prepared for manipulating character strings. I felt so bad that I promised myself to 
+learn the basics of strings manipulation and text processing. 
+<em>&quot;Handling and Processing Strings in R&quot;</em> is one of the derived results of that old promise.</p>
+
+<p>The content of this ebook is the byproduct of my experience working with character 
+string data in R. It is based on my notes, scripts, projects, and uncountable days and 
+nights in which I&#39;ve been struggling with text data. Briefly, I&#39;ve tried to document 
+and organize several topics related with manipulating character strings.</p>
+
+<h3>Handling and Processing Strings in R in a nutshell</h3>
+
+<p>Although this is not a complete list of the topics covered in the manuscript, here are 
+some of the functions that are discussed in the ebook:</p>
+
+<h4>Basic functions</h4>
+
+<ul>
+<li><code>character()</code> creating a character vector</li>
+<li><code>is.character()</code> test character mode</li>
+<li><code>as.character()</code> convert as character</li>
+<li><code>paste()</code> pasting</li>
+</ul>
+
+<h4>Printing related functions</h4>
+
+<ul>
+<li><code>print()</code> generic printing</li>
+<li><code>noquote()</code> unquoted characters</li>
+<li><code>cat()</code> concatenate and print</li>
+<li><code>format()</code> special formats</li>
+<li><code>sprintf()</code> C-style string formatting</li>
+<li><code>toString()</code> convert to string objects</li>
+</ul>
+
+<h4>Basic String Manipulations</h4>
+
+<ul>
+<li><code>char()</code> count number of characters</li>
+<li><code>tolower()</code> convert to lower case</li>
+<li><code>toupper()</code> convert to upper case</li>
+<li><code>casefold()</code> case folding</li>
+<li><code>chartr()</code> character translation</li>
+<li><code>abbreviate()</code> abbreviation</li>
+<li><code>substring()</code> substrings of a character vector</li>
+<li><code>substr()</code> substrings of a character vector</li>
+</ul>
+
+<h4>String Manipulations with <code>stringr</code></h4>
+
+<ul>
+<li><code>str_c()</code> concatenation</li>
+<li><code>str_length()</code> number of characters</li>
+<li><code>str_sub()</code> substring</li>
+<li><code>str_dup()</code> string duplication</li>
+<li><code>str_pad()</code> string padding</li>
+<li><code>str_wrap()</code> string wrapping</li>
+<li><code>str_trim()</code> trimming whitespaces</li>
+<li><code>word()</code> extract words from a sentence</li>
+</ul>
+
+<h4>Functions for Regular Expressions</h4>
+
+<ul>
+<li><code>grep()</code></li>
+<li><code>grepl()</code></li>
+<li><code>regexpr()</code></li>
+<li><code>gregexpr()</code></li>
+<li><code>regexec()</code></li>
+<li><code>sub()</code></li>
+<li><code>gsub()</code></li>
+<li><code>strsplit()</code></li>
+<li><code>str_detect()</code></li>
+<li><code>str_extract()</code></li>
+<li><code>str_extract_all()</code></li>
+<li><code>str_match()</code></li>
+<li><code>str_match_all()</code></li>
+<li><code>str_locate()</code></li>
+<li><code>str_locate_all()</code></li>
+<li><code>str_replace()</code></li>
+<li><code>str_replace_all()</code></li>
+<li><code>str_split()</code></li>
+<li><code>str_split_fixed()</code></li>
+</ul>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/opinion/2013/08/14/PLS-meetings-for-2014/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/resources/2013/10/05/References-for-S4-classes-in-R/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>

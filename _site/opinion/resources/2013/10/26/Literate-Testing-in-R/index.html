@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Literate Testing in R &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Literate Testing in R</h1>
+  <span class="post-date">26 Oct 2013</span>
+  <p>This past summer I attended the French R meeting in Lyon. But that&#39;s secondary for this 
+story. The important part happened while I was on the train on my way to Lyon.</p>
+
+<!--more-->
+
+<p><img class="centered" src="/images/blog/literate_testing.png"></p>
+
+<p>As I was reviewing a couple of my functions, I noticed that I was getting sick. Not from 
+motion sickness but from the way I was validating the arguments of the functions. One of 
+the functions required a positive integer as an input. </p>
+
+<p>R has the function <code>is.integer(x)</code> to check if <code>x</code> is an integer. The problem is 
+that if you type <code>is.integer(1)</code> you would get <code>FALSE</code> as an answer. The reason 
+is because 1 is not stored as an integer in R, but as a double. If you want an integer 
+then you should use 1L. Now, if you type <code>is.integer(1L)</code> the answer is <code>TRUE</code>. 
+So, what does this have to do with my story? Well, if I want to validate whether a given 
+object <code>x</code> is a positive integer, I could write the following line:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># check if x is a positive integer</span>
+<span class="kr">if</span> <span class="p">(</span><span class="kp">mode</span><span class="p">(</span>x<span class="p">)</span> <span class="o">==</span> <span class="s">&quot;numeric&quot;</span> <span class="o">&amp;&amp;</span> x <span class="o">&gt;</span> <span class="m">0</span> <span class="o">&amp;&amp;</span> x <span class="o">%%</span> <span class="m">1</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span> <span class="kc">TRUE</span> <span class="kr">else</span> <span class="kc">FALSE</span></code></pre></div>
+
+<p>What if I could simply write something like this:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># test if x is a positive integer</span>
+<span class="n">is_positive_integer</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></pre></div>
+
+<p>Isn&#39;t this much better and simpler, not to mention more understandable? Hell yes! So why 
+not to have more functions like <code>is_positive_integer(x)</code> to test specific features 
+of some common R objects? </p>
+
+<p><img class="centered" src="/images/blog/literate_testing_really.png"></p>
+
+<p>I spent the rest of my ride to Lyon, and the next couple of days creating 
+<a href="http://cran.r-project.org/web/packages/tester/index.html" target="_blank">tester</a>, 
+an R package that provides a wide range of functions that will allow you to test 
+characteristics of common R objects ... in a more human readable way following the so 
+called <a href="http://literateprogramming.com/knuthweb.pdf" target="_blank">Literate Programming</a> 
+paradigm of Donald Knuth.</p>
+
+<p>To give you a better idea of <code>tester</code>, here are some of the functions that you can 
+find to make your life easier when testing the behavior of different R objects. The main 
+goal is to provide tools for checking arguments of functions in a more human readable way.</p>
+
+<h3>Testing numbers</h3>
+
+<p>Some of the functions related to different types of numbers:</p>
+
+<ul>
+<li><code>is_positive()</code> </li>
+<li><code>is_negative()</code> </li>
+<li><code>is_integer()</code> </li>
+<li><code>is_natural()</code> </li>
+<li><code>is_odd()</code> </li>
+<li><code>is_even()</code> </li>
+<li><code>is_decimal()</code> </li>
+<li><code>is_scalar()</code></li>
+</ul>
+
+<h3>Testing vectors</h3>
+
+<p>Some of the functions related to vectors:</p>
+
+<ul>
+<li><code>is_vector()</code> </li>
+<li><code>is_numeric_vector()</code> </li>
+<li><code>is_string_vector()</code> </li>
+<li><code>is_logical_vector()</code> </li>
+<li><code>is_not_vector()</code> </li>
+</ul>
+
+<h3>Testing matrices</h3>
+
+<p>Some of the functions related to matrices:</p>
+
+<ul>
+<li><code>is_matrix()</code> is a matrix</li>
+<li><code>is_numeric_matrix()</code> is a numeric matrix</li>
+<li><code>is_string_matrix()</code> is a character matrix</li>
+<li><code>is_logical_matrix()</code> is a logical matrix</li>
+<li><code>is_not_matrix()</code> is not a matrix</li>
+<li><code>is_square_matrix()</code> is a square matrix</li>
+<li><code>is_diagonal()</code> is a diagonal matrix</li>
+<li><code>is_triangular()</code> is a triangular matrix</li>
+</ul>
+
+<h3>Testing data frames</h3>
+
+<p>Some of the functions related to data frames:</p>
+
+<ul>
+<li><code>is_dataframe()</code> </li>
+<li><code>is_numeric_dataframe()</code> (is a numeric data frame)</li>
+<li><code>is_string_dataframe()</code> (is a character data frame)</li>
+<li><code>is_not_dataframe()</code> </li>
+</ul>
+
+<h3>Testing matrices and data frames</h3>
+
+<p>Some of the functions related to both matrices and data frames:</p>
+
+<ul>
+<li><code>is_tabular()</code> (is a matrix or data frame)</li>
+<li><code>is_not_tabular()</code> (is not matrix neither a data frame)</li>
+<li><code>has_dimension()</code> </li>
+<li><code>lacks_dimension()</code> </li>
+<li><code>is_one_dim()</code> </li>
+<li><code>has_rownames()</code> </li>
+<li><code>lacks_rownames()</code> </li>
+<li><code>has_colnames()</code> </li>
+<li><code>lacks_colnames()</code> </li>
+</ul>
+
+<h3>In summary</h3>
+
+<p>As you can tell, <code>tester</code> offers you several functions with simple memorable names 
+that are easy for us (human beings) to understand what the computer is doing. If you are 
+interested in the package, let me tell you that there are many more functions, and you 
+can also find an introductory 
+<a href="http://cran.r-project.org/web/packages/tester/vignettes/tester_introduction.pdf" target="_blank">vignette</a>.</p>
+
+<blockquote>
+<p>Let us change our traditional attitude to the construction of programs: Instead of 
+imaging that our main task is to instruct a computer what to do, let us concentrate 
+rather on explaining to <strong>human beings</strong> what we want a computer to do.</p>
+
+<p>Donald Knuth, 
+<a href="http://literateprogramming.com/knuthweb.pdf" target="_blank">Literate Programming</a> </p>
+</blockquote>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/resources/2013/10/05/References-for-S4-classes-in-R/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/opinion/2013/11/30/Talking-at-the-LMA-in-Agrocampus-Rennes/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>

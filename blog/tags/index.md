@@ -1,6 +1,6 @@
 ---
 title: Tags
-layout: page
+layout: subpage
 ---
 
 # Data Analysis Visually EnfoRced

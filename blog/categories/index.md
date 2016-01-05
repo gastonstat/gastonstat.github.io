@@ -1,6 +1,6 @@
 ---
 title: Categories
-layout: page
+layout: subpage
 ---
 
 # Data Analysis Visually EnfoRced

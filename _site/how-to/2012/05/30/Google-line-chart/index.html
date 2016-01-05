@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Replicating google line chart in R &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Replicating google line chart in R</h1>
+  <span class="post-date">30 May 2012</span>
+  <p>R is great for graphics although sometimes it can be really tricky to replicate other software charts. Take for example some of the graphics displayed with google charts such as the line chart displayed below.</p>
+
+<!--more-->
+
+<p><img class="centered" src="/images/blog/google_line_chart.png" /></p>
+
+<p>This google chart took me a dozen of clicks and a couple of minutes to create it. Honestly, it&#39;s not that bad at all. I bet we could also create something similar in excel. However, if we want to produce the same graphic in R we&#39;re going to need a good amount of patience and some guide to get the right color palette (I used the following website to get some colors <a href="http://www.color-hex.com%22">color hex</a>. So, let me show you how to mimic the google line chart with R. I guarantee you it is possible.</p>
+
+<h3>Code in R</h3>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># here&#39;s the data</span>
+numbers <span class="o">=</span> <span class="kt">c</span><span class="p">(</span>
+  <span class="m">0.61</span><span class="p">,</span> <span class="m">0.644</span><span class="p">,</span> <span class="m">0.586</span><span class="p">,</span> <span class="m">0.598</span><span class="p">,</span> <span class="m">0.596</span><span class="p">,</span> <span class="m">0.584</span><span class="p">,</span>
+  <span class="m">0.67</span><span class="p">,</span> <span class="m">0.712</span><span class="p">,</span> <span class="m">0.646</span><span class="p">,</span> <span class="m">0.68</span><span class="p">,</span> <span class="m">0.638</span><span class="p">,</span> <span class="m">0.66</span><span class="p">,</span>
+  <span class="m">0.618</span><span class="p">,</span> <span class="m">0.638</span><span class="p">,</span> <span class="m">0.58</span><span class="p">,</span> <span class="m">0.608</span><span class="p">,</span> <span class="m">0.592</span><span class="p">,</span> <span class="m">0.596</span><span class="p">,</span>
+  <span class="m">0.844</span><span class="p">,</span> <span class="m">0.87</span><span class="p">,</span> <span class="m">0.85</span><span class="p">,</span> <span class="m">0.844</span><span class="p">,</span> <span class="m">0.87</span><span class="p">,</span> <span class="m">0.838</span><span class="p">,</span>
+  <span class="m">0.342</span><span class="p">,</span> <span class="m">0.352</span><span class="p">,</span> <span class="m">0.316</span><span class="p">,</span> <span class="m">0.382</span><span class="p">,</span> <span class="m">0.328</span><span class="p">,</span> <span class="m">0.312</span><span class="p">,</span>
+  <span class="m">0.636</span><span class="p">,</span> <span class="m">0.704</span><span class="p">,</span> <span class="m">0.624</span><span class="p">,</span> <span class="m">0.658</span><span class="p">,</span> <span class="m">0.63</span><span class="p">,</span> <span class="m">0.646</span><span class="p">,</span>
+  <span class="m">0.676</span><span class="p">,</span> <span class="m">0.724</span><span class="p">,</span> <span class="m">0.666</span><span class="p">,</span> <span class="m">0.696</span><span class="p">,</span> <span class="m">0.656</span><span class="p">,</span> <span class="m">0.666</span><span class="p">)</span>
+
+<span class="c1"># put the data in a matrix</span>
+some_data <span class="o">=</span> <span class="kt">matrix</span><span class="p">(</span>numbers<span class="p">,</span> nrow <span class="o">=</span> <span class="m">7</span><span class="p">,</span> ncol <span class="o">=</span> <span class="m">6</span><span class="p">,</span> byrow <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+
+<span class="c1"># add row and column names</span>
+<span class="kp">rownames</span><span class="p">(</span>some_data<span class="p">)</span> <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">,</span> <span class="s">&quot;B&quot;</span><span class="p">,</span> <span class="s">&quot;C&quot;</span><span class="p">,</span> <span class="s">&quot;D&quot;</span><span class="p">,</span> <span class="s">&quot;E&quot;</span><span class="p">,</span> <span class="s">&quot;F&quot;</span><span class="p">,</span> <span class="s">&quot;G&quot;</span><span class="p">)</span>
+<span class="kp">colnames</span><span class="p">(</span>some_data<span class="p">)</span> <span class="o">=</span> <span class="kp">paste</span><span class="p">(</span><span class="s">&quot;Time&quot;</span><span class="p">,</span> <span class="m">1</span><span class="o">:</span><span class="m">6</span><span class="p">)</span>
+
+<span class="c1"># define color palette</span>
+cols <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;#1664d9&quot;</span><span class="p">,</span> <span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="s">&quot;orange&quot;</span><span class="p">,</span> <span class="s">&quot;green4&quot;</span><span class="p">,</span> <span class="s">&quot;purple2&quot;</span><span class="p">,</span> <span class="s">&quot;#1f9eb3&quot;</span><span class="p">,</span> <span class="s">&quot;#d93572&quot;</span><span class="p">)</span></code></pre></div>
+
+<p>Once we&#39;ve defined the toy data, we just need to specify a layout and then the plot:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># choose a graphic layout</span>
+layout<span class="p">(</span><span class="kp">rbind</span><span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">),</span> <span class="kt">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">)),</span> 
+       height <span class="o">=</span> <span class="kt">c</span><span class="p">(</span>lcm<span class="p">(</span><span class="m">11</span><span class="p">),</span> <span class="m">1</span><span class="p">),</span>
+       width <span class="o">=</span> <span class="kt">c</span><span class="p">(</span>lcm<span class="p">(</span><span class="m">18</span><span class="p">),</span> <span class="m">1</span><span class="p">))</span>
+
+<span class="c1"># set plot window for lines</span>
+op <span class="o">=</span> par<span class="p">(</span>mar <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">5</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
+plot<span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">6</span><span class="p">,</span> some_data<span class="p">[</span><span class="m">1</span><span class="p">,],</span> type <span class="o">=</span> <span class="s">&quot;n&quot;</span><span class="p">,</span> xaxt <span class="o">=</span> <span class="s">&quot;n&quot;</span><span class="p">,</span> yaxt <span class="o">=</span> <span class="s">&quot;n&quot;</span><span class="p">,</span>
+     xlab <span class="o">=</span> <span class="s">&quot;x label&quot;</span><span class="p">,</span> ylab <span class="o">=</span> <span class="s">&quot;y label&quot;</span><span class="p">,</span> bty <span class="o">=</span> <span class="s">&quot;n&quot;</span><span class="p">,</span> ylim <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">0.2</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
+<span class="c1"># add major grid lines</span>
+abline<span class="p">(</span>h <span class="o">=</span> <span class="kp">seq</span><span class="p">(</span><span class="m">0.2</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0.2</span><span class="p">),</span> col <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;black&quot;</span><span class="p">,</span> <span class="kp">rep</span><span class="p">(</span><span class="s">&quot;gray80&quot;</span><span class="p">,</span> <span class="m">4</span><span class="p">)))</span>
+<span class="c1"># add title</span>
+mtext<span class="p">(</span>side <span class="o">=</span> <span class="m">3</span><span class="p">,</span> <span class="s">&quot;Google Line Chart in R&quot;</span><span class="p">,</span> at <span class="o">=</span> <span class="m">1.5</span><span class="p">,</span> line <span class="o">=</span> <span class="m">0.5</span><span class="p">,</span> font <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
+<span class="c1"># add x-axis tick labels</span>
+mtext<span class="p">(</span>side <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="kp">colnames</span><span class="p">(</span>some_data<span class="p">),</span> at <span class="o">=</span> <span class="m">1</span><span class="o">:</span><span class="m">6</span><span class="p">)</span>
+<span class="c1"># add y-axis tick labels</span>
+mtext<span class="p">(</span>side <span class="o">=</span> <span class="m">2</span><span class="p">,</span> <span class="kp">seq</span><span class="p">(</span><span class="m">0.2</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0.2</span><span class="p">),</span> line <span class="o">=</span> <span class="m">1</span><span class="p">,</span> at <span class="o">=</span> <span class="kp">seq</span><span class="p">(</span><span class="m">0.2</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0.2</span><span class="p">),</span> las <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
+<span class="c1"># plot lines</span>
+<span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> <span class="m">1</span><span class="o">:</span><span class="kp">nrow</span><span class="p">(</span>some_data<span class="p">))</span>
+<span class="p">{</span>
+    lines<span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">6</span><span class="p">,</span> some_data<span class="p">[</span>i<span class="p">,],</span> col <span class="o">=</span> cols<span class="p">[</span>i<span class="p">],</span> lwd <span class="o">=</span> <span class="m">3</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1"># plot legend</span>
+par<span class="p">(</span>mar <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">5</span><span class="p">,</span> <span class="m">0.1</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">2</span><span class="p">))</span>
+plot<span class="p">(</span><span class="kp">rep</span><span class="p">(</span><span class="m">0.5</span><span class="p">,</span><span class="m">7</span><span class="p">),</span> <span class="kp">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> length <span class="o">=</span> <span class="m">7</span><span class="p">),</span> type <span class="o">=</span> <span class="s">&quot;n&quot;</span><span class="p">,</span> xlab <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span> ylab <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+     bty <span class="o">=</span> <span class="s">&quot;n&quot;</span><span class="p">,</span> xaxt <span class="o">=</span> <span class="s">&quot;n&quot;</span><span class="p">,</span> yaxt <span class="o">=</span> <span class="s">&quot;n&quot;</span><span class="p">,</span> xlim <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">0.4</span><span class="p">,</span> <span class="m">0.7</span><span class="p">),</span> ylim <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">0.2</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
+points<span class="p">(</span><span class="kp">rep</span><span class="p">(</span><span class="m">0.5</span><span class="p">,</span> <span class="m">7</span><span class="p">),</span> <span class="kp">seq</span><span class="p">(</span><span class="m">0.98</span><span class="p">,</span> <span class="m">0.6</span><span class="p">,</span> length <span class="o">=</span> <span class="m">7</span><span class="p">),</span> pch <span class="o">=</span> <span class="m">15</span><span class="p">,</span> 
+       col <span class="o">=</span> cols<span class="p">,</span> cex <span class="o">=</span> <span class="m">2.5</span><span class="p">)</span>
+text<span class="p">(</span><span class="kp">rep</span><span class="p">(</span><span class="m">0.6</span><span class="p">,</span> <span class="m">7</span><span class="p">),</span> <span class="kp">seq</span><span class="p">(</span><span class="m">0.98</span><span class="p">,</span> <span class="m">0.6</span><span class="p">,</span> length <span class="o">=</span> <span class="m">7</span><span class="p">),</span> <span class="kp">rownames</span><span class="p">(</span>some_data<span class="p">),</span> cex <span class="o">=</span> <span class="m">1.2</span><span class="p">)</span>
+<span class="c1"># reset parameters</span>
+par<span class="p">(</span>op<span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-05-30-Google-line-chart/fig1.png" alt="center"> </p>
+
+<p>That&#39;s it!</p>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/how-to/2012/05/29/Catching-errors-when-using-tolower/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/how-to/2012/06/01/How-to-read-files/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>

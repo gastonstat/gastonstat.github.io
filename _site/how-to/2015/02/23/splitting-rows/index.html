@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      R question: Splitting rows inside a matrix &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">R question: Splitting rows inside a matrix</h1>
+  <span class="post-date">23 Feb 2015</span>
+  <p>In this post I&#39;ll describe a problem for manipulating data in R, that I think might be useful for those working on genetics and related fields.</p>
+
+<!--more-->
+
+<p><img src="/images/blog/alleles.png" alt=""></p>
+
+<hr/>
+
+<h3>Motivation</h3>
+
+<p>Some days ago I received an email from a student of University of Buenos Aires, Argentina, asking me a question about a problem in R, and requesting some help. Although I usually cannot answer to this type of emails (mostly for lack of time), her question was interesting enough, and worth a blog post.</p>
+
+<p>So here&#39;s the problem. Imagine that you are working with a file containing <a href="http://en.wikipedia.org/wiki/Allele">allele</a> copies for several individuals. Specifically, consider you have a toy matrix like the following one:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># matrix of alleles</span>
+alleles <span class="o">=</span> <span class="kp">rbind</span><span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="s">&quot;B_B&quot;</span><span class="p">,</span> <span class="s">&quot;B_B&quot;</span><span class="p">,</span> <span class="s">&quot;A_A&quot;</span><span class="p">),</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;B_B&quot;</span><span class="p">,</span> <span class="s">&quot;A_B&quot;</span><span class="p">,</span> <span class="s">&quot;A_B&quot;</span><span class="p">),</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;B_B&quot;</span><span class="p">,</span> <span class="s">&quot;B_B&quot;</span><span class="p">,</span> 
+    <span class="s">&quot;A_A&quot;</span><span class="p">),</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;A_B&quot;</span><span class="p">,</span> <span class="s">&quot;A_B&quot;</span><span class="p">,</span> <span class="s">&quot;A_A&quot;</span><span class="p">),</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;B_B&quot;</span><span class="p">,</span> <span class="s">&quot;A_B&quot;</span><span class="p">,</span> <span class="s">&quot;A_A&quot;</span><span class="p">),</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;B_B&quot;</span><span class="p">,</span> <span class="s">&quot;A_B&quot;</span><span class="p">,</span> 
+    <span class="s">&quot;A_A&quot;</span><span class="p">))</span>
+
+<span class="c1"># adding names</span>
+<span class="kp">rownames</span><span class="p">(</span>alleles<span class="p">)</span> <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">160</span><span class="p">,</span> <span class="m">301</span><span class="p">,</span> <span class="m">303</span><span class="p">,</span> <span class="m">311</span><span class="p">,</span> <span class="m">312</span><span class="p">,</span> <span class="m">314</span><span class="p">)</span>
+<span class="kp">colnames</span><span class="p">(</span>alleles<span class="p">)</span> <span class="o">=</span> <span class="kp">paste</span><span class="p">(</span><span class="s">&quot;X&quot;</span><span class="p">,</span> <span class="kt">c</span><span class="p">(</span><span class="m">9718</span><span class="p">,</span> <span class="m">3574</span><span class="p">,</span> <span class="m">3547</span><span class="p">),</span> sep <span class="o">=</span> <span class="s">&quot;_&quot;</span><span class="p">)</span>
+
+<span class="c1"># toy allele&#39;s data</span>
+alleles</code></pre></div>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">##     X_9718 X_3574 X_3547
+## 160 &quot;B_B&quot;  &quot;B_B&quot;  &quot;A_A&quot; 
+## 301 &quot;B_B&quot;  &quot;A_B&quot;  &quot;A_B&quot; 
+## 303 &quot;B_B&quot;  &quot;B_B&quot;  &quot;A_A&quot; 
+## 311 &quot;A_B&quot;  &quot;A_B&quot;  &quot;A_A&quot; 
+## 312 &quot;B_B&quot;  &quot;A_B&quot;  &quot;A_A&quot; 
+## 314 &quot;B_B&quot;  &quot;A_B&quot;  &quot;A_A&quot;</code></pre></div>
+
+<p>but you need to transform the data such that each allele copy appears in a separate column, like this:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># transformed allele&#39;s data</span>
+new_alleles</code></pre></div>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">##     X_9718 X_9718 X_3574 X_3574 X_3547 X_3547
+## 160 &quot;B&quot;    &quot;B&quot;    &quot;B&quot;    &quot;B&quot;    &quot;A&quot;    &quot;A&quot;   
+## 301 &quot;B&quot;    &quot;B&quot;    &quot;A&quot;    &quot;B&quot;    &quot;A&quot;    &quot;B&quot;   
+## 303 &quot;B&quot;    &quot;B&quot;    &quot;B&quot;    &quot;B&quot;    &quot;A&quot;    &quot;A&quot;   
+## 311 &quot;A&quot;    &quot;B&quot;    &quot;A&quot;    &quot;B&quot;    &quot;A&quot;    &quot;A&quot;   
+## 312 &quot;B&quot;    &quot;B&quot;    &quot;A&quot;    &quot;B&quot;    &quot;A&quot;    &quot;A&quot;   
+## 314 &quot;B&quot;    &quot;B&quot;    &quot;A&quot;    &quot;B&quot;    &quot;A&quot;    &quot;A&quot;</code></pre></div>
+
+<p>That is, the transformed data involves splitting each element of the matrix to obtain an unfolded matrix with the same number of rows (i.e. individuals) but with twice the number of columns.</p>
+
+<h3>Solution</h3>
+
+<p>Here&#39;s one possible solution to the previous problem. The idea is to take each row of the matrix, unfold the alleles (i.e. splitting them by removing the underscore symbol &#39;_&#39;), and then store the output in a new matrix which will have the double of columns as the original data.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># how many observations</span>
+num_obs <span class="o">=</span> <span class="kp">nrow</span><span class="p">(</span>alleles<span class="p">)</span>
+
+<span class="c1"># how many columns</span>
+num_col <span class="o">=</span> <span class="kp">ncol</span><span class="p">(</span>alleles<span class="p">)</span>
+
+<span class="c1"># create matrix where unfolded alleles will be placed</span>
+alleles2 <span class="o">=</span> <span class="kt">matrix</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">,</span> num_obs<span class="p">,</span> <span class="m">2</span> <span class="o">*</span> num_col<span class="p">)</span>
+
+<span class="c1"># function to split alleles of one observation (one row)</span>
+split_allele <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>allele<span class="p">)</span> <span class="p">{</span>
+    <span class="kp">unlist</span><span class="p">(</span><span class="kp">strsplit</span><span class="p">(</span>allele<span class="p">,</span> split <span class="o">=</span> <span class="s">&quot;_&quot;</span><span class="p">))</span>
+<span class="p">}</span>
+
+<span class="c1"># unfolding alleles (row by row)</span>
+<span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> <span class="m">1</span><span class="o">:</span>num_obs<span class="p">)</span> <span class="p">{</span>
+    alleles2<span class="p">[</span>i<span class="p">,</span> <span class="p">]</span> <span class="o">=</span> split_allele<span class="p">(</span>alleles<span class="p">[</span>i<span class="p">,</span> <span class="p">])</span>
+<span class="p">}</span>
+
+<span class="c1"># add names (it&#39;s better if you add row and column names later)</span>
+<span class="kp">rownames</span><span class="p">(</span>alleles2<span class="p">)</span> <span class="o">=</span> <span class="kp">rownames</span><span class="p">(</span>alleles<span class="p">)</span>
+<span class="kp">colnames</span><span class="p">(</span>alleles2<span class="p">)</span> <span class="o">=</span> <span class="kp">rep</span><span class="p">(</span><span class="kp">colnames</span><span class="p">(</span>alleles<span class="p">),</span> each <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
+
+alleles2</code></pre></div>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">##     X_9718 X_9718 X_3574 X_3574 X_3547 X_3547
+## 160 &quot;B&quot;    &quot;B&quot;    &quot;B&quot;    &quot;B&quot;    &quot;A&quot;    &quot;A&quot;   
+## 301 &quot;B&quot;    &quot;B&quot;    &quot;A&quot;    &quot;B&quot;    &quot;A&quot;    &quot;B&quot;   
+## 303 &quot;B&quot;    &quot;B&quot;    &quot;B&quot;    &quot;B&quot;    &quot;A&quot;    &quot;A&quot;   
+## 311 &quot;A&quot;    &quot;B&quot;    &quot;A&quot;    &quot;B&quot;    &quot;A&quot;    &quot;A&quot;   
+## 312 &quot;B&quot;    &quot;B&quot;    &quot;A&quot;    &quot;B&quot;    &quot;A&quot;    &quot;A&quot;   
+## 314 &quot;B&quot;    &quot;B&quot;    &quot;A&quot;    &quot;B&quot;    &quot;A&quot;    &quot;A&quot;</code></pre></div>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/opinion/2015/01/14/slides-workflow/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/opinion/2015/03/31/book-for-pls-saga/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>

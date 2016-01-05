@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Density Curves &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Density Curves</h1>
+  <span class="post-date">16 Aug 2014</span>
+  <p>The default graphical display of most plotting functions in R is very limited (and usually not very pretty). But that doesn&#39;t mean that we should conform with those crude figures.</p>
+
+<!--more-->
+
+<p><img src="/images/blog/density-plot-post.png" alt=""></p>
+
+<h3>A Basic Plot Example</h3>
+
+<p>For this post I&#39;ll use a simple example by plotting density curves of some random generated variables. For instance, let&#39;s generate three normal distributions with different parameters, and their corresponding estimated densities:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># setting seed for random numbers</span>
+<span class="kp">set.seed</span><span class="p">(</span><span class="m">1111</span><span class="p">)</span>
+
+<span class="c1"># random normal variables</span>
+var1 <span class="o">=</span> rnorm<span class="p">(</span><span class="m">500</span><span class="p">)</span>
+var2 <span class="o">=</span> rnorm<span class="p">(</span><span class="m">500</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">1.5</span><span class="p">)</span>
+var3 <span class="o">=</span> rnorm<span class="p">(</span><span class="m">500</span><span class="p">,</span> <span class="m">-1</span><span class="p">,</span> <span class="m">1.5</span><span class="p">)</span>
+
+<span class="c1"># densities</span>
+den1 <span class="o">=</span> density<span class="p">(</span>var1<span class="p">)</span>
+den2 <span class="o">=</span> density<span class="p">(</span>var2<span class="p">)</span>
+den3 <span class="o">=</span> density<span class="p">(</span>var3<span class="p">)</span></code></pre></div>
+
+<p>We can plot each of the densities with the function <code>plot()</code> which displays a very raw figure. These displays are good for quick visual inspection, but they are very limited for anything else (especially if we plan to include them in some slides for presentation purposes)</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># individual density plots</span>
+plot<span class="p">(</span>den1<span class="p">)</span>
+plot<span class="p">(</span>den2<span class="p">)</span>
+plot<span class="p">(</span>den3<span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2014-08-16-Density-Curves/plot-density1.png" alt="center"> </p>
+
+<p><img src="/figs/2014-08-16-Density-Curves/plot-density2.png" alt="center"> </p>
+
+<p><img src="/figs/2014-08-16-Density-Curves/plot-density3.png" alt="center"> </p>
+
+<h3>Improved Plots</h3>
+
+<p>Of course, we can write some lines of code to substantially improve our graphics. First, let&#39;s define some colors for each distribution using the function <code>hsv()</code> </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># colors for each distribution</span>
+col1 <span class="o">=</span> hsv<span class="p">(</span>h <span class="o">=</span> <span class="m">0.65</span><span class="p">,</span> s <span class="o">=</span> <span class="m">0.6</span><span class="p">,</span> v <span class="o">=</span> <span class="m">0.8</span><span class="p">,</span> alpha <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span>
+col2 <span class="o">=</span> hsv<span class="p">(</span>h <span class="o">=</span> <span class="m">0.85</span><span class="p">,</span> s <span class="o">=</span> <span class="m">0.6</span><span class="p">,</span> v <span class="o">=</span> <span class="m">0.8</span><span class="p">,</span> alpha <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span>
+col3 <span class="o">=</span> hsv<span class="p">(</span>h <span class="o">=</span> <span class="m">0.55</span><span class="p">,</span> s <span class="o">=</span> <span class="m">0.6</span><span class="p">,</span> v <span class="o">=</span> <span class="m">0.8</span><span class="p">,</span> alpha <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span></code></pre></div>
+
+<p>And now let&#39;s combine them in a single graphic tweaking the right parameters to produce a visually aesthetic plot:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># set graphic margins</span>
+op <span class="o">=</span> par<span class="p">(</span>mar <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">3</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">2</span><span class="p">))</span>
+<span class="c1"># call new plot</span>
+plot.new<span class="p">()</span>
+<span class="c1"># plot window</span>
+plot.window<span class="p">(</span>xlim <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">-6</span><span class="p">,</span> <span class="m">6</span><span class="p">),</span> ylim <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0.4</span><span class="p">))</span>
+<span class="c1"># add axes</span>
+axis<span class="p">(</span>side <span class="o">=</span> <span class="m">1</span><span class="p">,</span> pos <span class="o">=</span> <span class="m">0</span><span class="p">,</span> at <span class="o">=</span> <span class="kp">seq</span><span class="p">(</span>from <span class="o">=</span> <span class="m">-6</span><span class="p">,</span> to <span class="o">=</span> <span class="m">6</span><span class="p">,</span> by <span class="o">=</span> <span class="m">2</span><span class="p">),</span> col <span class="o">=</span> <span class="s">&quot;gray20&quot;</span><span class="p">,</span> 
+    lwd.ticks <span class="o">=</span> <span class="m">0.25</span><span class="p">,</span> cex.axis <span class="o">=</span> <span class="m">1</span><span class="p">,</span> col.axis <span class="o">=</span> <span class="s">&quot;gray20&quot;</span><span class="p">,</span> lwd <span class="o">=</span> <span class="m">1.5</span><span class="p">)</span>
+axis<span class="p">(</span>side <span class="o">=</span> <span class="m">2</span><span class="p">,</span> pos <span class="o">=</span> <span class="m">-6</span><span class="p">,</span> at <span class="o">=</span> <span class="kp">seq</span><span class="p">(</span>from <span class="o">=</span> <span class="m">0</span><span class="p">,</span> to <span class="o">=</span> <span class="m">0.4</span><span class="p">,</span> by <span class="o">=</span> <span class="m">0.1</span><span class="p">),</span> col <span class="o">=</span> <span class="s">&quot;gray20&quot;</span><span class="p">,</span> 
+    las <span class="o">=</span> <span class="m">2</span><span class="p">,</span> lwd.ticks <span class="o">=</span> <span class="m">0.5</span><span class="p">,</span> cex.axis <span class="o">=</span> <span class="m">1</span><span class="p">,</span> col.axis <span class="o">=</span> <span class="s">&quot;gray20&quot;</span><span class="p">,</span> lwd <span class="o">=</span> <span class="m">1.5</span><span class="p">)</span>
+<span class="c1"># density 1</span>
+polygon<span class="p">(</span>den1<span class="o">$</span>x<span class="p">,</span> den1<span class="o">$</span>y<span class="p">,</span> col <span class="o">=</span> col1<span class="p">,</span> border <span class="o">=</span> col1<span class="p">)</span>
+<span class="c1"># density 2</span>
+polygon<span class="p">(</span>den2<span class="o">$</span>x<span class="p">,</span> den2<span class="o">$</span>y<span class="p">,</span> col <span class="o">=</span> col2<span class="p">,</span> border <span class="o">=</span> col2<span class="p">)</span>
+<span class="c1"># density 3</span>
+polygon<span class="p">(</span>den3<span class="o">$</span>x<span class="p">,</span> den3<span class="o">$</span>y<span class="p">,</span> col <span class="o">=</span> col3<span class="p">,</span> border <span class="o">=</span> col3<span class="p">)</span>
+<span class="c1"># add legends</span>
+text<span class="p">(</span><span class="m">1.3</span><span class="p">,</span> <span class="m">0.35</span><span class="p">,</span> labels <span class="o">=</span> <span class="s">&quot;Normal(0, 1)&quot;</span><span class="p">,</span> col <span class="o">=</span> <span class="s">&quot;gray30&quot;</span><span class="p">,</span> cex <span class="o">=</span> <span class="m">0.9</span><span class="p">)</span>
+text<span class="p">(</span><span class="m">3.8</span><span class="p">,</span> <span class="m">0.15</span><span class="p">,</span> labels <span class="o">=</span> <span class="s">&quot;Normal(1, 1.5)&quot;</span><span class="p">,</span> col <span class="o">=</span> <span class="s">&quot;gray30&quot;</span><span class="p">,</span> cex <span class="o">=</span> <span class="m">0.9</span><span class="p">)</span>
+text<span class="p">(</span><span class="m">-3.6</span><span class="p">,</span> <span class="m">0.15</span><span class="p">,</span> labels <span class="o">=</span> <span class="s">&quot;Normal(-1, 1.5)&quot;</span><span class="p">,</span> col <span class="o">=</span> <span class="s">&quot;gray30&quot;</span><span class="p">,</span> cex <span class="o">=</span> <span class="m">0.9</span><span class="p">)</span>
+<span class="c1"># turn off par</span>
+par<span class="p">(</span>op<span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2014-08-16-Density-Curves/density-plot.png" alt="center"> </p>
+
+<h3>Using ggplot2</h3>
+
+<p>We can also use the package <code>&quot;ggplot2&quot;</code> to obtain a similar graphic. Here&#39;s how:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># data frame with normal variables</span>
+distribs <span class="o">=</span> <span class="kt">data.frame</span><span class="p">(</span>
+  values <span class="o">=</span> <span class="kt">c</span><span class="p">(</span>var1<span class="p">,</span> var2<span class="p">,</span> var3<span class="p">),</span>
+  type <span class="o">=</span> <span class="kp">gl</span><span class="p">(</span>n <span class="o">=</span> <span class="m">3</span><span class="p">,</span> k <span class="o">=</span> <span class="m">500</span><span class="p">))</span>
+
+<span class="c1"># load ggplot2</span>
+<span class="kn">library</span><span class="p">(</span>ggplot2<span class="p">)</span>
+
+<span class="c1"># plot</span>
+ggplot<span class="p">(</span>data <span class="o">=</span> distribs<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> values<span class="p">,</span> group <span class="o">=</span> type<span class="p">))</span> <span class="o">+</span>
+  geom_density<span class="p">(</span>aes<span class="p">(</span>fill <span class="o">=</span> type<span class="p">,</span> color <span class="o">=</span> type<span class="p">),</span> alpha <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2014-08-16-Density-Curves/density-ggplot.png" alt="center"> </p>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/resources/2014/07/05/Pretty-tree-graph/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/resources/2014/08/28/PLS-Symposium-2015/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>

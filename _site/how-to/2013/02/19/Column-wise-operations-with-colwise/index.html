@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Column-wise operations with colwise &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Column-wise operations with colwise</h1>
+  <span class="post-date">19 Feb 2013</span>
+  <p><img src="/images/blog/colwise_groups.png" title="colwise_groups" /></p>
+
+<p>In a <a href="/how-to/2012/06/08/Using-tapply-ddply-and-sqldf-for-the-same-task/">previous post</a> 
+I described different options in R to do some calculations using <code>tapply()</code>, 
+<code>ddply()</code>, and <code>sqldf()</code>. </p>
+
+<!--more-->
+
+<p>I used a simple example in which the goal was to apply 
+a function by groups on some data. More specifically: how to calculate the average of a 
+single variable taking into account a grouping variable (eg categorical variable).</p>
+
+<p>This time I wanted to continue the discussion with another interesting task when 
+operating on grouping variables. Say we have some categorical variable (like gender, 
+geographic region, political affiliation) with other quantitative information. More 
+often than not we want to calculate descriptive statistics taking into account the 
+categorical variable. Maybe we want to calculate the average of all the quantitative 
+variables by gender. How do you do that in R?</p>
+
+<p>There are a number of different options to get the answer. One option is to use the 
+function <code>colwise()</code> from the package <code>&quot;plyr&quot;</code> (by Hadley Wickham). The idea of 
+<code>colwise()</code> is to turn a function that operates on a vector into a function that 
+operates column-wise on a <code>data.frame</code>. The trick is to use <code>colwise()</code> inside 
+the function <code>ddply()</code>. Here&#39;s a simple example:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># generate some fake data </span>
+<span class="c1"># (use &#39;set.seed&#39; for replication purposes)</span>
+<span class="kp">set.seed</span><span class="p">(</span><span class="m">80</span><span class="p">)</span>
+some_data <span class="o">=</span> <span class="kt">data.frame</span><span class="p">(</span><span class="kt">matrix</span><span class="p">(</span>rnorm<span class="p">(</span><span class="m">75</span><span class="p">),</span> nrow<span class="o">=</span><span class="m">15</span><span class="p">,</span> ncol<span class="o">=</span><span class="m">5</span><span class="p">))</span>
+
+<span class="c1"># add categorical variable &#39;Group&#39; (there will be 5 groups)</span>
+some_data<span class="o">$</span>Group <span class="o">=</span> <span class="kp">as.factor</span><span class="p">(</span><span class="kp">paste</span><span class="p">(</span><span class="s">&quot;Group&quot;</span><span class="p">,</span> <span class="kp">rep</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">,</span> each<span class="o">=</span><span class="m">3</span><span class="p">),</span> sep<span class="o">=</span><span class="s">&quot;_&quot;</span><span class="p">))</span>
+
+<span class="c1"># load package plyr</span>
+<span class="kn">require</span><span class="p">(</span>plyr<span class="p">)</span>
+
+<span class="c1"># ddply with colwise operation</span>
+group_means_data <span class="o">=</span> ddply<span class="p">(</span>some_data<span class="p">,</span> <span class="m">.</span><span class="p">(</span>Group<span class="p">),</span> colwise<span class="p">(</span><span class="kp">mean</span><span class="p">))</span>
+
+<span class="c1"># get group means</span>
+group_means <span class="o">=</span> <span class="kp">as.matrix</span><span class="p">(</span>group_means_data<span class="p">[,</span><span class="m">-1</span><span class="p">])</span>
+<span class="kp">rownames</span><span class="p">(</span>group_means<span class="p">)</span> <span class="o">=</span> group_means_data<span class="o">$</span>Group
+
+<span class="c1"># inspect the results</span>
+group_means</code></pre></div>
+
+<p>You should get something like this:</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">X1          X2         X3          X4         X5
+Group_1  0.30145430  0.05948726 -0.4638955 -0.08925132  0.1919387
+Group_2  0.10691675 -0.07851064 -0.1248169 -0.32776258  0.5754724
+Group_3 -0.23172617 -0.10895998 -0.5388441  0.21742869  0.1327649
+Group_4 -0.41673809  0.90000430 -0.5448786 -0.16260781  0.3347490
+Group_5 -0.03758755  0.85385634 -0.4445546 -0.01103586 -0.5547903</code></pre></div>
+
+<p>We have the average values of all the variables for each group. Now let&#39;s visualize 
+them to have a better idea of what&#39;s going on:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># load &#39;ggplot2&#39; and &#39;reshape&#39;</span>
+<span class="kn">library</span><span class="p">(</span>ggplot2<span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span>reshape<span class="p">)</span>
+
+<span class="c1"># melt data</span>
+group_means_melt <span class="o">=</span> melt<span class="p">(</span>group_means_data<span class="p">)</span>
+
+<span class="c1"># add auxiliar variable (for plotting purposes)</span>
+group_means_melt<span class="o">$</span>aux <span class="o">=</span> <span class="kp">rep</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="kp">nrow</span><span class="p">(</span>group_means_melt<span class="p">))</span>
+
+<span class="c1"># barplots for each group</span>
+ggplot<span class="p">(</span>group_means_melt<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> aux<span class="p">,</span> y <span class="o">=</span> value<span class="p">,</span> fill <span class="o">=</span> variable<span class="p">))</span> <span class="o">+</span> 
+  geom_bar<span class="p">(</span>stat <span class="o">=</span> <span class="s">&quot;identity&quot;</span><span class="p">,</span> position <span class="o">=</span> <span class="s">&quot;dodge&quot;</span><span class="p">)</span> <span class="o">+</span> 
+  facet_wrap<span class="p">(</span><span class="o">~</span> Group<span class="p">)</span> <span class="o">+</span>
+  xlab<span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">)</span> <span class="o">+</span>
+  theme<span class="p">(</span>axis.text.x <span class="o">=</span> element_blank<span class="p">(),</span>
+        axis.ticks.x <span class="o">=</span> element_blank<span class="p">())</span></code></pre></div>
+
+<p><img src="/images/blog/barplot_colwise.png" alt=""></p>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/got-plot/crunching-data/2013/02/03/Star-Wars-Arc-Diagram/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/opinion/2013/05/22/Holestee-Manifesto/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>

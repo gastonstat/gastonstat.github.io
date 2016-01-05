@@ -1,7 +1,24 @@
-author: Gaston Sanchez
-description: My personal website and blog about data analysis, applied statistics, R
-highlighter: pygments
-permalink: /blog/:categories/:year/:month/:day/:title.html
-markdown: kramdown
-exclude: ["Rmd", ".DS_Store", "README.md"]
-excerpt_separator: <!--more-->
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Gaston Sanchez
+url:              http://gastonsanchez.com
+baseurl:          /
+
+author:
+  name:           'Gaston Sanchez'
+  url:            http://gastonsanchez.com
+
+paginate:         5
+
+# Custom vars
+version:          cc-by-sa
+
+github:
+  repo:           https://github.com/gastonstat

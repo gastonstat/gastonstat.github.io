@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      7+ ways to plot dendrograms in R &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">7+ ways to plot dendrograms in R</h1>
+  <span class="post-date">03 Oct 2012</span>
+  <p>Today we are going to talk about the wide spectrum of functions and methods that we can use to visualize dendrograms in R. You can check an extended version of this post with the complete reproducible code in R in this <a href="href=%22http://rpubs.com/gaston/dendrograms">Rpub</a>.</p>
+
+<!--more-->
+
+<p>A quick reminder: a dendrogram (from Greek <em>dendron</em>=tree, and <em>gramma</em>=drawing) is nothing more than a tree diagram that practitioners use to depict the arrangement of the clusters produced by <a href="http://en.wikipedia.org/wiki/Hierarchical_clustering">hierarchical clustering</a>.</p>
+
+<h3>1) Basic dendrograms</h3>
+
+<p>Let&#39;s start with the most basic type of dendrogram. For that purpose we&#39;ll use the <code>mtcars</code> dataset and we&#39;ll calculate a hierarchical clustering with the function <code>hclust()</code> (with the default options).</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># prepare hierarchical cluster</span>
+hc <span class="o">=</span> hclust<span class="p">(</span>dist<span class="p">(</span>mtcars<span class="p">))</span>
+
+<span class="c1"># very simple dendrogram</span>
+plot<span class="p">(</span>hc<span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig11.png" alt="center"> </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># labels at the same level</span>
+plot<span class="p">(</span>hc<span class="p">,</span> hang <span class="o">=</span> <span class="m">-1</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig12.png" alt="center"> </p>
+
+<h3>2) A less basic dendrogram</h3>
+
+<p>In order to add more format to the dendrograms like the one above, we simply need to tweek the right parameters.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># set background color</span>
+op <span class="o">=</span> par<span class="p">(</span>bg <span class="o">=</span> <span class="s">&quot;#DDE3CA&quot;</span><span class="p">)</span>
+<span class="c1"># plot dendrogram</span>
+plot<span class="p">(</span>hc<span class="p">,</span> col <span class="o">=</span> <span class="s">&quot;#487AA1&quot;</span><span class="p">,</span> col.main <span class="o">=</span> <span class="s">&quot;#45ADA8&quot;</span><span class="p">,</span> col.lab <span class="o">=</span> <span class="s">&quot;#7C8071&quot;</span><span class="p">,</span>
+     col.axis <span class="o">=</span> <span class="s">&quot;#F38630&quot;</span><span class="p">,</span> lwd <span class="o">=</span> <span class="m">3</span><span class="p">,</span> lty <span class="o">=</span> <span class="m">3</span><span class="p">,</span> sub <span class="o">=</span> <span class="s">&#39;&#39;</span><span class="p">,</span> hang <span class="o">=</span> <span class="m">-1</span><span class="p">,</span> axes <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+<span class="c1"># add axis</span>
+axis<span class="p">(</span>side <span class="o">=</span> <span class="m">2</span><span class="p">,</span> at <span class="o">=</span> <span class="kp">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">400</span><span class="p">,</span> <span class="m">100</span><span class="p">),</span> col <span class="o">=</span> <span class="s">&quot;#F38630&quot;</span><span class="p">,</span>
+     labels <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> lwd <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
+<span class="c1"># add text in margin</span>
+mtext<span class="p">(</span><span class="kp">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">400</span><span class="p">,</span> <span class="m">100</span><span class="p">),</span> side <span class="o">=</span> <span class="m">2</span><span class="p">,</span> at <span class="o">=</span> <span class="kp">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">400</span><span class="p">,</span> <span class="m">100</span><span class="p">),</span>
+      line <span class="o">=</span> <span class="m">1</span><span class="p">,</span> col <span class="o">=</span> <span class="s">&quot;#A38630&quot;</span><span class="p">,</span> las <span class="o">=</span> <span class="m">2</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig2.png" alt="center"> </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">par<span class="p">(</span>op<span class="p">)</span></code></pre></div>
+
+<p>An alternative way to produce dendrograms is to specifically convert <code>&quot;hclust&quot;</code> objects into <code>&quot;dendrograms&quot;</code> objects.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># using dendrogram objects</span>
+hcd <span class="o">=</span> as.dendrogram<span class="p">(</span>hc<span class="p">)</span>
+
+<span class="c1"># alternative way to get a dendrogram</span>
+op <span class="o">=</span> par<span class="p">(</span>mfrow <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
+plot<span class="p">(</span>hcd<span class="p">)</span>
+
+<span class="c1"># triangular dendrogram</span>
+plot<span class="p">(</span>hcd<span class="p">,</span> type <span class="o">=</span> <span class="s">&quot;triangle&quot;</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig3.png" alt="center"> </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">par<span class="p">(</span>op<span class="p">)</span></code></pre></div>
+
+<h3>3) Zooming-in on dendrograms</h3>
+
+<p>Another very useful option is the ability to inspect selected parts of a given tree. For instance, if we wanted to examine the top partitions of the dendrogram, we could cut it at a height of 75</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># plot dendrogram with some cuts</span>
+op <span class="o">=</span> par<span class="p">(</span>mfrow <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
+plot<span class="p">(</span><span class="kp">cut</span><span class="p">(</span>hcd<span class="p">,</span> h <span class="o">=</span> <span class="m">75</span><span class="p">)</span><span class="o">$</span>upper<span class="p">,</span> main <span class="o">=</span> <span class="s">&quot;Upper tree of cut at h=75&quot;</span><span class="p">)</span>
+
+plot<span class="p">(</span><span class="kp">cut</span><span class="p">(</span>hcd<span class="p">,</span> h <span class="o">=</span> <span class="m">75</span><span class="p">)</span><span class="o">$</span>lower<span class="p">[[</span><span class="m">2</span><span class="p">]],</span>
+     main <span class="o">=</span> <span class="s">&quot;Second branch of lower tree with cut at h=75&quot;</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig4.png" alt="center"> </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">par<span class="p">(</span>op<span class="p">)</span></code></pre></div>
+
+<h3>4) More customizable dendrograms</h3>
+
+<p>In order to get more customized graphics we need a little bit of more code. A very useful resource is the function <code>dendrapply()</code> that can be used to apply a function to all nodes of a dendrgoram. This comes very handy if we want to add some color to the labels.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># vector of colors</span>
+labelColors <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;#CDB380&quot;</span><span class="p">,</span> <span class="s">&quot;#036564&quot;</span><span class="p">,</span> <span class="s">&quot;#EB6841&quot;</span><span class="p">,</span> <span class="s">&quot;#EDC951&quot;</span><span class="p">)</span>
+
+<span class="c1"># cut dendrogram in 4 clusters</span>
+clusMember <span class="o">=</span> cutree<span class="p">(</span>hc<span class="p">,</span> <span class="m">4</span><span class="p">)</span>
+
+<span class="c1"># function to get color labels</span>
+colLab <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>n<span class="p">)</span> <span class="p">{</span>
+  <span class="kr">if</span> <span class="p">(</span>is.leaf<span class="p">(</span>n<span class="p">))</span> <span class="p">{</span>
+    a <span class="o">&lt;-</span> <span class="kp">attributes</span><span class="p">(</span>n<span class="p">)</span>
+    labCol <span class="o">&lt;-</span> labelColors<span class="p">[</span>clusMember<span class="p">[</span><span class="kp">which</span><span class="p">(</span><span class="kp">names</span><span class="p">(</span>clusMember<span class="p">)</span> <span class="o">==</span> a<span class="o">$</span>label<span class="p">)]]</span>
+    <span class="kp">attr</span><span class="p">(</span>n<span class="p">,</span> <span class="s">&quot;nodePar&quot;</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span>a<span class="o">$</span>nodePar<span class="p">,</span> lab.col <span class="o">=</span> labCol<span class="p">)</span>
+  <span class="p">}</span>
+  n
+<span class="p">}</span>
+
+<span class="c1"># using dendrapply</span>
+clusDendro <span class="o">=</span> dendrapply<span class="p">(</span>hcd<span class="p">,</span> colLab<span class="p">)</span>
+
+<span class="c1"># make plot</span>
+plot<span class="p">(</span>clusDendro<span class="p">,</span> main <span class="o">=</span> <span class="s">&quot;Cool Dendrogram&quot;</span><span class="p">,</span> type <span class="o">=</span> <span class="s">&quot;triangle&quot;</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig5.png" alt="center"> </p>
+
+<h3>5) Phylogenetic trees</h3>
+
+<p>Closely related to dendrograms, <a href="http://en.wikipedia.org/wiki/Phylogenetic_tree">phylogenetic trees</a> are another option to display tree diagrams showing the relationships among observations based upon their similarities.</p>
+
+<p>A very nice tool for displaying more appealing trees is provided by the R package <code>&quot;ape&quot;</code>. In this case, what we need is to convert the <code>&quot;hclust&quot;</code> objects into <code>&quot;phylo&quot;</code> objects with the funtions <code>as.phylo()</code>. The <code>plot.phylo()</code> function has four more different types for plotting a dendrogram. Here they are:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># load package ape;</span>
+<span class="c1"># remember to install it: install.packages(&quot;ape&quot;)</span>
+<span class="kn">library</span><span class="p">(</span>ape<span class="p">)</span>
+<span class="c1"># plot basic tree</span>
+plot<span class="p">(</span>as.phylo<span class="p">(</span>hc<span class="p">),</span> cex <span class="o">=</span> <span class="m">0.9</span><span class="p">,</span> label.offset <span class="o">=</span> <span class="m">1</span><span class="p">)</span>
+<span class="c1"># cladogram</span>
+plot<span class="p">(</span>as.phylo<span class="p">(</span>hc<span class="p">),</span> type<span class="o">=</span><span class="s">&quot;cladogram&quot;</span><span class="p">,</span> cex <span class="o">=</span> <span class="m">0.9</span><span class="p">,</span> label.offset <span class="o">=</span> <span class="m">1</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig61.png" alt="center"> <img src="/figs/2012-10-03-Dendrograms/fig62.png" alt="center"> </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># unrooted</span>
+plot<span class="p">(</span>as.phylo<span class="p">(</span>hc<span class="p">),</span> type <span class="o">=</span> <span class="s">&quot;unrooted&quot;</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig63.png" alt="center"> </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># fan</span>
+plot<span class="p">(</span>as.phylo<span class="p">(</span>hc<span class="p">),</span> type <span class="o">=</span> <span class="s">&quot;fan&quot;</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig64.png" alt="center"> </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># radial</span>
+plot<span class="p">(</span>as.phylo<span class="p">(</span>hc<span class="p">),</span> type <span class="o">=</span> <span class="s">&quot;radial&quot;</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig65.png" alt="center"> </p>
+
+<p>What I really like about the <code>ape</code> package is that we have more control on the appearance of the dendrograms, being able to customize them in different ways. For example, we can tweek some parameters according to our needs</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># vector of colors</span>
+mypal <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;#556270&quot;</span><span class="p">,</span> <span class="s">&quot;#4ECDC4&quot;</span><span class="p">,</span> <span class="s">&quot;#1B676B&quot;</span><span class="p">,</span> <span class="s">&quot;#FF6B6B&quot;</span><span class="p">,</span> <span class="s">&quot;#C44D58&quot;</span><span class="p">)</span>
+<span class="c1"># cutting dendrogram in 5 clusters</span>
+clus5 <span class="o">=</span> cutree<span class="p">(</span>hc<span class="p">,</span> <span class="m">5</span><span class="p">)</span>
+<span class="c1"># plot</span>
+op <span class="o">=</span> par<span class="p">(</span>bg<span class="o">=</span><span class="s">&quot;#E8DDCB&quot;</span><span class="p">)</span>
+<span class="c1"># Size reflects miles per gallon</span>
+plot<span class="p">(</span>as.phylo<span class="p">(</span>hc<span class="p">),</span> type <span class="o">=</span> <span class="s">&quot;fan&quot;</span><span class="p">,</span> tip.color <span class="o">=</span> mypal<span class="p">[</span>clus5<span class="p">],</span> label.offset <span class="o">=</span> <span class="m">1</span><span class="p">,</span>
+cex <span class="o">=</span> <span class="kp">log</span><span class="p">(</span>mtcars<span class="o">$</span>mpg<span class="p">,</span><span class="m">10</span><span class="p">),</span> col <span class="o">=</span> <span class="s">&quot;red&quot;</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig7.png" alt="center"> </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">par<span class="p">(</span>op<span class="p">)</span></code></pre></div>
+
+<h3>6) Dendrograms with ggdendro</h3>
+
+<p>For reasons that are unknown to me, the The R package <code>&quot;ggplot2&quot;</code> have no functions to plot dendrograms. However, the ad-hoc package <code>&quot;ggdendro&quot;</code> offers a decent solution. You would expect to have more customization options, but so far they are rather limited. Anyway, for those of us who are <em>ggploters</em> this is another tool in our toolkit.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># remember to install the package: install.packages(&quot;ggdendro&quot;)</span>
+<span class="kn">library</span><span class="p">(</span>ggplot2<span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span>ggdendro<span class="p">)</span>
+
+<span class="c1"># basic option</span>
+ggdendrogram<span class="p">(</span>hc<span class="p">,</span> theme_dendro <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig81.png" alt="center"> </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># another option</span>
+ggdendrogram<span class="p">(</span>hc<span class="p">,</span> rotate <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> size <span class="o">=</span> <span class="m">4</span><span class="p">,</span> theme_dendro <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig82.png" alt="center"> </p>
+
+<h3>7) Colored dendrogram</h3>
+
+<p>Last but not least, there&#39;s one more resource available from Romain Francois&#39;s <em>addicted to R</em> <a href="http://gallery.r-enthusiasts.com/RGraphGallery.php?graph=79">gallery</a> which I find really interesting. The code in R for generating colored dendrograms, which you can download and modify if wanted so, is available <a href="http://addictedtor.free.fr/packages/A2R/lastVersion/R/code.R">here</a></p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># load code of A2R function</span>
+<span class="kn">source</span><span class="p">(</span><span class="s">&quot;http://addictedtor.free.fr/packages/A2R/lastVersion/R/code.R&quot;</span><span class="p">)</span>
+
+<span class="c1"># colored dendrogram</span>
+op <span class="o">=</span> par<span class="p">(</span>bg <span class="o">=</span> <span class="s">&quot;#EFEFEF&quot;</span><span class="p">)</span>
+A2Rplot<span class="p">(</span>hc<span class="p">,</span> k <span class="o">=</span> <span class="m">3</span><span class="p">,</span> boxes <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> col.up <span class="o">=</span> <span class="s">&quot;gray50&quot;</span><span class="p">,</span>
+        col.down <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;#FF6B6B&quot;</span><span class="p">,</span> <span class="s">&quot;#4ECDC4&quot;</span><span class="p">,</span> <span class="s">&quot;#556270&quot;</span><span class="p">))</span></code></pre></div>
+
+<p><img src="/figs/2012-10-03-Dendrograms/fig9.png" alt="center"> </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">par<span class="p">(</span>op<span class="p">)</span></code></pre></div>
+
+<p>For a more detailed version of the code presented in this post, check this <a href="http://rpubs.com/gaston/dendrograms">Rpub</a>.</p>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/opinion/2012/09/19/Data-analysis-process/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/how-to/2012/10/13/MCA-in-R/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>

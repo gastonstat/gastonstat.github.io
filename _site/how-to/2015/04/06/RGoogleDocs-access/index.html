@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Allow RGoogleDocs to access your Google Account &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Allow RGoogleDocs to access your Google Account</h1>
+  <span class="post-date">06 Apr 2015</span>
+  <p>In this post I&#39;ll talk about how to unblock your Google account so you can have access to your Goolgle docs when using the R package RGoogleDocs.</p>
+
+<!--more-->
+
+<hr>
+
+<h2>R Package RGoogleDocs</h2>
+
+<p>The R package <strong>RGoogleDocs</strong> (by Duncan Temple Lang) is a great tool. Basically, this package is a simple R interface to your google docs. In other words, <code>&quot;RGoogleDocs&quot;</code> allows you to interact with the documents in your google drive from within R.</p>
+
+<h3>Installation</h3>
+
+<p>First you need to install the package. You can install it not from CRAN but from its github repository---via the <code>&quot;devtools&quot;</code> package (which I&#39;m assuming you already have installed). Here&#39;s how to install <code>&quot;RGoogleDocs&quot;</code>:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># installing RGoogleDocs (via devtools)</span>
+<span class="kn">library</span><span class="p">(</span>devtools<span class="p">)</span>
+
+install_github<span class="p">(</span><span class="s">&quot;RGoogleDocs&quot;</span><span class="p">,</span> <span class="s">&quot;duncantl&quot;</span><span class="p">)</span>
+
+<span class="kn">library</span><span class="p">(</span>RGoogleDocs<span class="p">)</span></code></pre></div>
+
+<p>You can learn more about the package from the documentation provided by Duncan in his <em>omegahat</em> website: <br> 
+<a href="http://www.omegahat.org/RGoogleDocs/run.html">http://www.omegahat.org/RGoogleDocs/run.html</a></p>
+
+<p>Or you could also read the marvelous book <a href="http://www.springer.com/us/book/9781461478997">XML and Web Technologies for Data Science with R</a> (by Deb Nolan and Duncan Temple Lang).</p>
+
+<hr>
+
+<h3>Allowing access to your Google account</h3>
+
+<p>To interface with your google docs, you must first specify your login name for Google and your password information in the function <code>getGoogleAuth()</code>. For instance, in my case the login name is <code>gaston.stat@gmail.com</code>, and let&#39;s say I have my password in the object <code>gpasswd</code>. The authentication process would be like this:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">auth <span class="o">=</span> getGoogleAuth<span class="p">(</span><span class="s">&quot;gaston.stat@gmail.com&quot;</span><span class="p">,</span> gpasswd<span class="p">)</span></code></pre></div>
+
+<p>The problem is that Google, by default (and for very good reasons), will deny R accessing your account. According to Deb and Duncan (page 360):</p>
+
+<blockquote>
+<p>On occasions, the attempt to call <code>getGoogleAuth()</code> returns with an error saying that the operation if Forbidden. The Google authorization service has decided that additional vetting is necessary.</p>
+</blockquote>
+
+<p>Moreover, you will likely receive an email in your gmail account with the subject title <strong>&quot;Google Account: sign-in attempt blocked&quot;</strong>. Here&#39;s the content of the email I got:</p>
+
+<p><img src="/images/blog/google_signin_attempt.png" alt=""></p>
+
+<p>So what can we do about it?</p>
+
+<p>To solve the problem click on the link <br>
+<a href="https://www.google.com/settings/security/lesssecureapps">https://www.google.com/settings/security/lesssecureapps</a> which will take you a new window presenting you the option of turning on access to other apps (so that RGoogleDocs can have access to your account)</p>
+
+<p><img src="/images/blog/google_less_secure_apps.png" alt=""></p>
+
+<hr>
+
+<h3>Working with google spreadsheets</h3>
+
+<p>Once you&#39;ve turned on the <em>lesssecureapps</em> option, you can start working with <code>&quot;RgoogleDocs&quot;</code>. First, you have to create a connection for working with spreadsheets. To get access to the spreadsheets (rather than word processing documents), select <code>service = &quot;wise&quot;</code>:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">sheets.con <span class="o">=</span> getGoogleDocsConnection<span class="p">(</span>getGoogleAuth<span class="p">(</span><span class="s">&quot;gaston.stat@gmail.com&quot;</span><span class="p">,</span> <span class="s">&quot;...&quot;</span><span class="p">,</span> service <span class="o">=</span> <span class="s">&quot;wise&quot;</span><span class="p">))</span></code></pre></div>
+
+<p>Then, you can use <code>getDocs()</code> with this connection to get back information about spreadsheets only:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">a <span class="o">=</span> getDocs<span class="p">(</span>sheets.con<span class="p">)</span></code></pre></div>
+
+<p>There&#39;s also the function <code>getWorksheets()</code> which obtains a list of objects that identify each of the worksheets within a spreadsheet. For example, say you have a spreadsheet named <code>&quot;schedule&quot;</code> that contains several worksheets:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">ts <span class="o">=</span> getWorksheets<span class="p">(</span>a<span class="o">$</span>schedule<span class="p">,</span> sheets.con<span class="p">)</span>
+<span class="kp">names</span><span class="p">(</span>ts<span class="p">)</span></code></pre></div>
+
+<p><code>getWorksheets()</code> is smart enough to be able to work from the name of the spreadsheet, e.g.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">ts <span class="o">=</span> getWorksheets<span class="p">(</span><span class="s">&quot;schedule&quot;</span><span class="p">,</span> sheets.con<span class="p">)</span></code></pre></div>
+
+<p>However, it is faster to use the <code>GoogleDocument</code> object returned via <code>getDocs()</code> as it avoids an extra request to the Google Docs server.</p>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/opinion/2015/03/31/book-for-pls-saga/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/resources/2015/04/17/saga-of-pls/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>

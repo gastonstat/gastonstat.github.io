@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Failing to read tables in R &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Failing to read tables in R</h1>
+  <span class="post-date">20 Apr 2014</span>
+  <p>Badly disappointed with R by finding out that <code>read.table()</code> cannot read a file with a very simple structure... that Python is able to read.</p>
+
+<!--more-->
+
+<p><img src="/images/blog/read_table_failure.png" alt=""></p>
+
+<h2>A very simple file structure</h2>
+
+<p>Imagine you have some data in a text file having a very simple structure like the following one:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="m">1</span><span class="o">::</span>Leia<span class="o">::</span>female<span class="o">::</span>princess
+<span class="m">2</span><span class="o">::</span>Luke<span class="o">::</span>male<span class="o">::</span>jedi
+<span class="m">3</span><span class="o">::</span>R2D2<span class="o">::</span>unknown<span class="o">::</span>robot
+<span class="m">4</span><span class="o">::</span>Anakin<span class="o">::</span>male<span class="o">::</span>jedi
+<span class="m">5</span><span class="o">::</span>Amidala<span class="o">::</span>female<span class="o">::</span>queen</code></pre></div>
+
+<p>As you can tell, we only have 5 lines each one containing 4 fields: a number, a name, a gender, and a class. Notice how the fields are separated with 2 colons <code>::</code>. Here&#39;s a question for you: <strong>How would you read this data in R?</strong></p>
+
+<hr/>
+
+<h2>Some background</h2>
+
+<p>Before we start solving the previous question, let me tell you a bit about how I discovered this challenging problem.</p>
+
+<p>It all started when I was reading the book <strong>Python for Data Analysis</strong> by <a href="http://blog.wesmckinney.com/">Wes McKinney</a>. Being an enthusiast <em>useR</em>, I naturally felt tempted to replicate in R some of the case studies described in Wes&#39; book, in particular the introductory case studies described in chapter 2.</p>
+
+<p>One of the python examples required reading data from a text file that uses double colons (<code>::</code>) as a separator. For illustrating purposes I will use the made-up toy dataset already shown above: </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="m">1</span><span class="o">::</span>Leia<span class="o">::</span>female<span class="o">::</span>princess
+<span class="m">2</span><span class="o">::</span>Luke<span class="o">::</span>male<span class="o">::</span>jedi
+<span class="m">3</span><span class="o">::</span>R2D2<span class="o">::</span>unknown<span class="o">::</span>robot
+<span class="m">4</span><span class="o">::</span>Anakin<span class="o">::</span>male<span class="o">::</span>jedi
+<span class="m">5</span><span class="o">::</span>Amidala<span class="o">::</span>female<span class="o">::</span>queen</code></pre></div>
+
+<p>In Python we can use the <strong>pandas</strong> library to import that kind of data without any problems. We just need to use the function <code>read_table()</code> and specify the separator <code>sep=&#39;::&#39;</code>. But what about R?</p>
+
+<h3>Heartbroken by read.table()</h3>
+
+<p>If we try reading the data using one of the standard ways (e.g. <code>read.table()</code>) I&#39;m afraid we will be terribly dissapointed:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># R doesn&#39;t like the separator &#39;::&#39;</span>
+bad_separator <span class="o">=</span> read.table<span class="p">(</span>
+header <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> 
+text <span class="o">=</span> <span class="s">&quot;</span>
+<span class="s">1::Leia::female::princess</span>
+<span class="s">2::Luke::male::jedi</span>
+<span class="s">3::R2D2::unknown::robot</span>
+<span class="s">4::Anakin::male::jedi</span>
+<span class="s">5::Amidala::female::queen</span>
+<span class="s">&quot;</span><span class="p">,</span>
+col.names <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;num&quot;</span><span class="p">,</span> <span class="s">&quot;name&quot;</span><span class="p">,</span> <span class="s">&quot;gender&quot;</span><span class="p">,</span> <span class="s">&quot;class&quot;</span><span class="p">),</span>
+sep <span class="o">=</span> <span class="s">&quot;::&quot;</span><span class="p">)</span></code></pre></div>
+
+<p>If you prefer, you can try reading the file <code>fakedata.dat</code>, which has exactly the same content as the previous example, like so: </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">read.table<span class="p">(</span>file <span class="o">=</span> <span class="s">&quot;http://gastonsanchez.com/data/fakedata.dat&quot;</span><span class="p">,</span>
+           header <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> 
+           col.names <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;num&quot;</span><span class="p">,</span> <span class="s">&quot;name&quot;</span><span class="p">,</span> <span class="s">&quot;gender&quot;</span><span class="p">,</span> <span class="s">&quot;class&quot;</span><span class="p">),</span>
+           sep <span class="o">=</span> <span class="s">&quot;::&quot;</span><span class="p">)</span></code></pre></div>
+
+<p>In both cases, you should get a heartbreaking error like this one:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&quot;Error in scan(file, what = &quot;&quot;, sep = sep, quote = quote, nlines = 1:
+  invalid &#39;sep&#39; value: must be one byte&quot;
+</code></pre></div>
+<h3>One byte separtors</h3>
+
+<p>If we had just one colon <code>:</code> as a separator, then R would not complain whatsoever:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># R is ok with the separator &quot;:&quot;</span>
+good_separator <span class="o">=</span> read.table<span class="p">(</span>
+header <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> 
+text <span class="o">=</span> <span class="s">&quot;</span>
+<span class="s">1:John:26:male</span>
+<span class="s">2:Dan:30:male</span>
+<span class="s">3:Rori:31:female</span>
+<span class="s">4:Tracy:40:female</span>
+<span class="s">5:Luke:30:male</span>
+<span class="s">&quot;</span><span class="p">,</span>
+col.names <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;num&quot;</span><span class="p">,</span> <span class="s">&quot;name&quot;</span><span class="p">,</span> <span class="s">&quot;age&quot;</span><span class="p">,</span> <span class="s">&quot;gender&quot;</span><span class="p">),</span>
+sep <span class="o">=</span> <span class="s">&quot;:&quot;</span><span class="p">)</span>
+
+<span class="c1"># look at the data</span>
+good_separator</code></pre></div>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">##   num  name age gender
+## 1   1  John  26   male
+## 2   2   Dan  30   male
+## 3   3  Rori  31 female
+## 4   4 Tracy  40 female
+## 5   5  Luke  30   male</code></pre></div>
+
+<p>But the problem is that we do have two colons <code>::</code>, and R accepts only one byte separators. Of course, we could use <code>readLines()</code> to read the data as a character vector, do some transformations to get rid of the colons, and then shape the data into a data frame. In some cases this option could be acceptable. But with the type of data like the one described in Wes&#39;s book, using <code>readLines()</code> was not an elegant option for me.</p>
+
+<hr/>
+
+<h2>My solution</h2>
+
+<p>The solution I found was to do the job outside of R. Yes, I know this is kind of dissapointing but it&#39;s part of the data analysis game. Sometimes you just have go outside R to get the job done.</p>
+
+<h3>Using a text editor</h3>
+
+<p>One solution is to use a text editor (e.g. <em>vim</em>, <em>emacs</em>, <em>text wrangler</em>, <em>notepad ++</em>, <em>sublime text</em>, etc). You just need to use the find-replace functionality to substitute all double colons into commas:</p>
+
+<p><img src="/images/blog/replace_colons_by_comma.png" alt=""></p>
+
+<h3>Using <strong>sed</strong></h3>
+
+<p>In my case I work on a mac so I decided to use <strong>sed</strong> (<a href="http://en.wikipedia.org/wiki/Sed">stream editor</a>). The idea is the same as if you were using a text editor: to substitute all the double colons by a comma. </p>
+
+<p>Here&#39;s how: open the <strong>terminal</strong>, go to the directory where the data file is, and simply run the following command:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">sed &#39;s/::/,/g&#39; fakedata.dat &gt; newfakedata.txt
+</code></pre></div>
+<p>Alternatively, you can use the <code>system()</code> function within R to pass it the same command:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># &#39;sed&#39; command from R</span>
+<span class="kp">system</span><span class="p">(</span><span class="s">&quot;sed &#39;s/::/,/g&#39; fakedata.dat &gt; newfakedata.txt&quot;</span><span class="p">)</span></code></pre></div>
+
+<p>What we&#39;re doing is substituting all the <code>::</code> by <code>,</code> in the file <code>fakedata.dat</code> and then saving the results in a new file <code>newfakedata.dat</code>. If we open the new file we should be able to see nice comma-separated fields:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="m">1</span><span class="p">,</span>Leia<span class="p">,</span>female<span class="p">,</span>princess
+<span class="m">2</span><span class="p">,</span>Luke<span class="p">,</span>male<span class="p">,</span>jedi
+<span class="m">3</span><span class="p">,</span>R2D2<span class="p">,</span>unknown<span class="p">,</span>robot
+<span class="m">4</span><span class="p">,</span>Anakin<span class="p">,</span>male<span class="p">,</span>jedi
+<span class="m">5</span><span class="p">,</span>Amidala<span class="p">,</span>female<span class="p">,</span>queen</code></pre></div>
+
+<p>which is perfectly readable in R with <code>read.table()</code> and/or <code>read.csv()</code>.</p>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/resources/2014/04/09/Rstudio-keyboard-shortcut/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/resources/2014/05/11/Making-of-GDWR/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>

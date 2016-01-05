@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      MathJax with Jekyll &middot; Gaston Sanchez
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Gaston Sanchez
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/software/">Software</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/teaching/">Teaching</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/gastonstat" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- <p><small>All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC) BY-NC-SA</a> license, unless otherwise noted</small></p>
+  -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">MathJax with Jekyll</h1>
+  <span class="post-date">16 Feb 2014</span>
+  <p>One of the rewards of switching my website to <a href="http://jekyllrb.com/">Jekyll</a> is the 
+ability to support <strong>MathJax</strong>, which means I can write LaTeX-like equations that get 
+nicely displayed in a web browser, like this one \( \sqrt{\frac{n!}{k!(n-k)!}} \) or 
+this one \( x^2 + y^2 = r^2 \).</p>
+
+<!--more-->
+
+<p><img class="centered" src="/images/blog/mathjax_logo.png" /></p>
+
+<h3>What&#39;s MathJax?</h3>
+
+<p>If you check MathJax website <a href="http://www.mathjax.org/">(www.mathjax.org)</a> you&#39;ll see 
+that it <em>is an open source JavaScript display engine for mathematics that works in all 
+browsers</em>. </p>
+
+<h3>How to implement MathJax with Jekyll</h3>
+
+<p>I followed the instructions described by Dason Kurkiewicz for 
+<a href="http://dasonk.github.io/blog/2012/10/09/Using-Jekyll-and-Mathjax/">using Jekyll and Mathjax</a>. </p>
+
+<p>Here are some important details. I had to modify the Ruby library for Markdown in 
+my <code>_config.yml</code> file. Now I&#39;m using redcarpet so the corresponding line in the 
+configuration file is: <code>markdown: redcarpet</code></p>
+
+<p>To load the MathJax javascript, I added the following lines in my layout <code>page.html</code> 
+(located in my folder <code>_layouts</code>)</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="o">&lt;</span>script type<span class="o">=</span><span class="s">&quot;text/javascript&quot;</span>
+    src<span class="o">=</span><span class="s">&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span>script<span class="o">&gt;</span></code></pre></div>
+
+<p>Of course you can choose a different file location in your jekyll layouts.</p>
+
+<h3>A Couple of Examples</h3>
+
+<p>Here&#39;s a short list of examples. To know more about the details behind MathJax, you can 
+always checked the provided documentation available at 
+<a href="http://docs.mathjax.org/en/latest/">http://docs.mathjax.org/en/latest/</a></p>
+
+<p>I&#39;m assuming you are familiar with LaTeX. However, you should know that MathJax does not 
+have the exactly same behavior as LaTeX. By default, the <strong>tex2jax</strong> preprocessor defines the 
+LaTeX math delimiters, which are <code>\\(...\\)</code> for in-line math, and <code>\\[...\\]</code> for 
+displayed equations. It also defines the TeX delimiters <code>$$...$$</code> for displayed 
+equations, but it does not define <code>$...$</code> as in-line math delimiters. Fortunately, 
+you can change these predefined specifications if you want to do so.</p>
+
+<p>Let&#39;s try a first example. Here&#39;s a dummy equation:</p>
+
+<p>$$a^2 + b^2 = c^2$$</p>
+
+<p>How do you write such expression? Very simple: using <strong>double dollar</strong> signs</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="o">$$</span>a<span class="o">^</span><span class="m">2</span> <span class="o">+</span> b<span class="o">^</span><span class="m">2</span> <span class="o">=</span> <span class="kt">c</span><span class="o">^</span><span class="m">2</span><span class="o">$$</span></code></pre></div>
+
+<p>To display inline math use <code>\\( ... \\)</code> like this <code>\\( sin(x^2) \\)</code> which gets 
+rendered as \( sin(x^2) \)</p>
+
+<p>Here&#39;s another example using type <code>\mathsf</code></p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="o">$$</span> \mathsf<span class="p">{</span>Data <span class="o">=</span> PCs<span class="p">}</span> \times \mathsf<span class="p">{</span>Loadings<span class="p">}</span> <span class="o">$$</span></code></pre></div>
+
+<p>which gets displayed as </p>
+
+<p>$$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$</p>
+
+<p>Or even better:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">\\<span class="p">[</span> \mathbf<span class="p">{</span>X<span class="p">}</span> <span class="o">=</span> \mathbf<span class="p">{</span>Z<span class="p">}</span> \mathbf<span class="p">{</span>P<span class="o">^</span>\mathsf<span class="p">{</span><span class="bp">T</span><span class="p">}}</span> \\<span class="p">]</span></code></pre></div>
+
+<p>is displayed as</p>
+
+<p>\[ \mathbf{X} = \mathbf{Z} \mathbf{P^\mathsf{T}} \]</p>
+
+<p>If you want to use subscripts like this \( \mathbf{X}_{n,p} \) you need to scape the 
+underscores with a backslash like so <code>\mathbf{X}\_{n,p}</code>:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="o">$$</span> \mathbf<span class="p">{</span>X<span class="p">}</span>\_<span class="p">{</span>n<span class="p">,</span>p<span class="p">}</span> <span class="o">=</span> \mathbf<span class="p">{</span>A<span class="p">}</span>\_<span class="p">{</span>n<span class="p">,</span>k<span class="p">}</span> \mathbf<span class="p">{</span>B<span class="p">}</span>\_<span class="p">{</span>k<span class="p">,</span>p<span class="p">}</span> <span class="o">$$</span></code></pre></div>
+
+<p>will be displayed as</p>
+
+<p>\[ \mathbf{X}_{n,p} = \mathbf{A}_{n,k} \mathbf{B}_{k,p} \]</p>
+
+</div>
+
+<hr>
+
+<div class="previous_next">
+  
+    <a href="/how-to/2014/01/15/Center-data-in-R/" title="Previous post">&larr; previous</a>
+  
+  &nbsp;&nbsp;
+  
+    <a href="/opinion/2014/02/26/My-year-in-Oniris-Nantes/" title="Next post">next &rarr;</a>
+  
+  <br>
+  <p>
+  <a class="greenbutton" href="/blog/archive/" title="an archive of all posts">See all posts</a>
+  </p>
+</div>
+    </div>
+
+  </body>
+</html>
