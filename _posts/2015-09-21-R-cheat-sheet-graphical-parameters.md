@@ -17,6 +17,6 @@ Long time ago I stumbled upon a very interesting resource: an [R cheat sheet for
 
 > Imitation is the sincerest form of flattery
 
-For one of the courses I'm teaching, I've decided to imitate and produce a modified version of the graphical parameters cheat sheet which you can find [here](/teaching/stat133/r-graphical-parameters-cheatsheet.pdf).
+For one of the courses I'm teaching, I've decided to imitate and produce a modified version of the graphical parameters cheat sheet which you can find [here](/teaching/r-graphical-parameters-cheatsheet.pdf).
 
 Enjoy and happy plotting!
