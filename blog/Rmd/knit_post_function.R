@@ -70,7 +70,8 @@ blog_post <- function(infile) {
 
 setwd("~/Documents/gastonstat.github.io")
 
-blog_post("code-2015-06-07-area-under-normal-curve.Rmd")
+blog_post("code-2016-01-05-colored-jittery-text.Rmd")
+# blog_post("code-2015-06-07-area-under-normal-curve.Rmd")
 # blog_post("code-2015-05-15-normal-curve.Rmd")
 # blog_post("code-2015-10-19-crocodile-problem.Rmd")
 # blog_post("code-2015-10-19-crocodile-problem.Rmd")
