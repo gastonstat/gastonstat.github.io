@@ -67,7 +67,7 @@ Back in the US I returned to the Nielsen Lab for the Spring of 2014, and then I 
 
 ### Lecturing
 
-In 2015 I became affiliated with the Math Department at Berkeley City College, as well as the Department of Statitics at the University of California Berkeley.`
+In 2015 I became affiliated with the Math Department at Berkeley City College, as well as the Department of Statitics at the University of California Berkeley.
 
 
 ### Overall
@@ -84,7 +84,7 @@ In particular, I've done a lot of programming and development of software for st
 
 I haven't always been interested in statistics and data analysis. My goal in life when I was younger had nothing to do with what I do now. When I was a teenager what I really-truly wanted was to be a professional swimmer. More precisely, I wanted to spend my life swimming long distance races and be paid for that (what an awesome job that would be).
 
-My other great hobby-passion has to do with mountaineering and outdoors activities. I eve wrote a book (in Spanish) about the theoretical fundamentals of rope techniques: [Fundamentos Teoricos de Maniobras con Cuerdas](https://leanpub.com/ftmcebook)
+My other great hobby-passion has to do with mountaineering and outdoors activities. I even wrote a book (in Spanish) about the theory fundamentals of rope techniques: [Fundamentos Teoricos de Maniobras con Cuerdas](https://leanpub.com/ftmcebook)
 
 From time to time, the right hemisphere of my brain rebels over the left one, and my captive poet scribbles some 
 [random poems](http://gastonsanchez.com/poemar) in Spanish, and my inside [Rtist](http://gastonsanchez.com/Rtist) produces weird paintings.
