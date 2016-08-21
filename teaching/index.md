@@ -13,9 +13,12 @@ title: Teaching
     Teaching
 </h3>
 
-- __Math 13__: <a href="http://gastonsanchez.com/math13" target="_blank">Introduction to Statistics</a>
-- __Stat 2__: <a href="http://gastonsanchez.com/stat2" target="_blank">Introduction to Statistics</a>
+- __Math 13__: <a href="http://gastonsanchez.com/math13" target="_blank">Introduction to Statistics</a> (BCC)
+- __Math 203__: <a href="http://gastonsanchez.com/math203" target="_blank">Intermediate Algebra</a>
+- __Stat 2__: <a href="http://gastonsanchez.com/stat2" target="_blank">Introduction to Statistics</a> (UC Berkeley)
 - __Stat 133__: <a href="http://gastonsanchez.com/stat133" target="_blank">Concepts in Computing with Data</a>
+- __Stat 159__: <a href="http://gastonsanchez.com/stat159" target="_blank">Reproducible and Collaborative Statistical Data Science</a>
+- __Stat 243__: <a href="http://gastonsanchez.com/stat243" target="_blank">Introductionto Statistical Computing</a>
 - __Stat 259__: <a href="http://gastonsanchez.com/stat259" target="_blank">Reproducible and Collaborative Statistical Data Science</a>
 
 -----
