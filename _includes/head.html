@@ -1,34 +1,26 @@
 <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal website of Gaston Sanchez">
+  <meta name="author" content="Gaston Sanchez">
 
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
+  <title>Gaston Sanchez</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/hyde.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-144-precomposed.png">
-                                 <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-  <!-- Mathjax -->
-  <script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
+  <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
 
   <!-- Google Analytics -->
   <script>
@@ -41,5 +33,13 @@
       ga('send', 'pageview');
 
   </script>
-  <!-- Google Analytics end -->
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
 </head>
