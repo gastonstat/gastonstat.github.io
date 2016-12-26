@@ -1,23 +1,25 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+# Site settings
+title: Gaston Sanchez
+email:
+description: > # this means to ignore newlines until "baseurl:"
+  Gaston Sanchez website.
+url: http://gastonsanchez.com
+baseurl: /
 
-# Permalinks
-permalink:        pretty
+# User setting
+owner: Gaston Sanchez
+email: "gaston.stat [at] gmail.com"
+github_username: gastonstat
+linkedin_username: sanchezgaston
+address:
+  - line: 309 Evans Hall
+  - line: UC Berkeley, California
+  # Feel free to add more lines here 
+copyright: "Gaston Sanchez"
 
-# Setup
-title:            Gaston Sanchez
-url:              http://gastonsanchez.com
-baseurl:          /
+# API settings
+google_api_key:
 
-author:
-  name:           'Gaston Sanchez'
-  url:            http://gastonsanchez.com
-
-paginate:         5
-
-# Custom vars
-version:          cc-by-sa
-
-github:
-  repo:           https://github.com/gastonstat
+# Build settings
+markdown: kramdown
+highlighter: rouge
