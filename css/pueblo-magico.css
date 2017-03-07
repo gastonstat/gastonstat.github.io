@@ -144,36 +144,14 @@ a.software:active {
     text-decoration: none;
 }
 
-#blog {
-    color: #4B79C6;
-}
-
-a.blog {
-    /* #4B79C6 = rgba(75, 121, 198, 0.45) */
-    border-bottom: 2px solid rgba(75, 121, 198, 0.35);
-}
-
-a.blog:hover {
-    color: #4B79C6;
-    text-decoration: none;
-    border-bottom: 2px solid #4B79C6;
-}
-
-a.blog:visited {
-    text-decoration: none;
-}
-
-a.blog:active {
-    text-decoration: none;
-}
-
 #talks {
     color: #4B79C6;
 }
 
 a.talks {
     /* #4B79C6 = rgba(75, 121, 198, 0.45) */
-    border-bottom: 2px solid rgba(75, 121, 198, 0.35);
+    /* #1E90AD = rgba(30, 144, 173, 0.45) */
+    border-bottom: 2px solid rgba(75, 121, 198, 0.45);
 }
 
 a.talks:hover {
@@ -187,6 +165,30 @@ a.talks:visited {
 }
 
 a.talks:active {
+    text-decoration: none;
+}
+
+#blog {
+    color: #C64B82;
+}
+
+a.blog {
+    /* #4B79C6 = rgba(75, 121, 198, 0.45) */
+    /* #6D84C1 = rgba(93, 109, 214, 0.35) */
+    border-bottom: 2px solid rgba(198, 75, 130, 0.35);
+}
+
+a.blog:hover {
+    color: #C64B82;
+    text-decoration: none;
+    border-bottom: 2px solid #C64B82;
+}
+
+a.blog:visited {
+    text-decoration: none;
+}
+
+a.blog:active {
     text-decoration: none;
 }
 
