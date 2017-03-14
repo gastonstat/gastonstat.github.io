@@ -44,11 +44,7 @@ a:hover {
   text-decoration: none;
 }
 
-a:visited {
-    text-decoration: none;
-}
-
-a:active {
+a:visited, a:active, a:link {
     text-decoration: none;
 }
   
@@ -67,11 +63,7 @@ a.tutorials:hover {
     border-bottom: 2px solid #FF5050;
 }
 
-a.tutorials:visited {
-    text-decoration: none;
-}
-
-a.tutorials:active {
+a.tutorials:visited, a.tutorials:active, a.tutorials:link {
     text-decoration: none;
 }
 
@@ -90,11 +82,7 @@ a.teaching:hover {
     border-bottom: 2px solid #FF842C;
 }
 
-a.teaching:visited {
-    text-decoration: none;
-}
-
-a.teaching:active {
+a.teaching:visited, a.teaching:active, a.teaching:link {
     text-decoration: none;
 }
 
@@ -113,11 +101,7 @@ a.books:hover {
     border-bottom: 2px solid #FFBC44;
 }
 
-a.books:visited {
-    text-decoration: none;
-}
-
-a.books:active {
+a.books:visited, a.books:active, a.books:link {
     text-decoration: none;
 }
 
@@ -136,11 +120,7 @@ a.software:hover {
     border-bottom: 2px solid #1EAD99;
 }
 
-a.software:visited {
-    text-decoration: none;
-}
-
-a.software:active {
+a.software:visited, a.software:active, a.software:link {
     text-decoration: none;
 }
 
@@ -160,11 +140,26 @@ a.talks:hover {
     border-bottom: 2px solid #4B79C6;
 }
 
-a.talks:visited {
+a.talks:visited, a.talks:active, a.talks:link {
     text-decoration: none;
 }
 
-a.talks:active {
+#exps {
+    color: #A365AB;
+}
+
+a.exps {
+    /* #A365AB = rgba(160, 90, 221, 0.45) */
+    border-bottom: 2px solid rgba(163, 101, 171, 0.45);
+}
+
+a.exps:hover {
+    color: #A365AB;
+    text-decoration: none;
+    border-bottom: 2px solid #A365AB;
+}
+
+a.exps:visited, a.exps:active, a.exps:link {
     text-decoration: none;
 }
 
@@ -184,11 +179,7 @@ a.blog:hover {
     border-bottom: 2px solid #C64B82;
 }
 
-a.blog:visited {
-    text-decoration: none;
-}
-
-a.blog:active {
+a.blog:visited, a.blog:active, a.blog:link {
     text-decoration: none;
 }
 
