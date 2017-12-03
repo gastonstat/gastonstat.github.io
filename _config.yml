@@ -3,8 +3,11 @@ title: Gaston Sanchez
 email:
 description: > # this means to ignore newlines until "baseurl:"
   Gaston Sanchez website.
+
+# url of domain
 url: http://gastonsanchez.com
-baseurl: /
+# baseurl: /path/to/blog (leave this empty for user page)
+baseurl: 
 
 # User setting
 owner: Gaston Sanchez
