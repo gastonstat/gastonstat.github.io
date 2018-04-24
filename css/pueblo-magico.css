@@ -48,22 +48,22 @@ a:visited, a:active, a:link {
     text-decoration: none;
 }
   
-#tutorials {
+#books {
     color: #FF5050;
 }
 
-a.tutorials {
-    /* #FF5050 = rgba(255, 80, 80) */
+a.books {
+    /* #FFBC44 = rgba(255, 188, 68) */
     border-bottom: 2px solid rgba(255, 80, 80, 0.35);
 }
 
-a.tutorials:hover {
+a.books:hover {
     color: #FF5050;
     text-decoration: none;
     border-bottom: 2px solid #FF5050;
 }
 
-a.tutorials:visited, a.tutorials:active, a.tutorials:link {
+a.books:visited, a.books:active, a.books:link {
     text-decoration: none;
 }
 
@@ -86,22 +86,22 @@ a.teaching:visited, a.teaching:active, a.teaching:link {
     text-decoration: none;
 }
 
-#books {
+#tutorials {
     color: #FFBC44;
 }
 
-a.books {
-    /* #FFBC44 = rgba(255, 188, 68) */
+a.tutorials {
+    /* #FF5050 = rgba(255, 80, 80) */
     border-bottom: 2px solid rgba(255, 188, 68, 0.35);
 }
 
-a.books:hover {
+a.tutorials:hover {
     color: #FFBC44;
     text-decoration: none;
     border-bottom: 2px solid #FFBC44;
 }
 
-a.books:visited, a.books:active, a.books:link {
+a.tutorials:visited, a.tutorials:active, a.tutorials:link {
     text-decoration: none;
 }
 
@@ -125,19 +125,17 @@ a.software:visited, a.software:active, a.software:link {
 }
 
 #talks {
-    color: #4B79C6;
+    color: #229AAD;
 }
 
 a.talks {
-    /* #4B79C6 = rgba(75, 121, 198, 0.45) */
-    /* #1E90AD = rgba(30, 144, 173, 0.45) */
-    border-bottom: 2px solid rgba(75, 121, 198, 0.45);
+    border-bottom: 2px solid rgba(34, 154, 173, 0.35);
 }
 
 a.talks:hover {
-    color: #4B79C6;
+    color: #229AAD;
     text-decoration: none;
-    border-bottom: 2px solid #4B79C6;
+    border-bottom: 2px solid #229AAD;
 }
 
 a.talks:visited, a.talks:active, a.talks:link {
@@ -145,18 +143,18 @@ a.talks:visited, a.talks:active, a.talks:link {
 }
 
 #exps {
-    color: #A365AB;
+    color: #4B79C6;
 }
 
 a.exps {
     /* #A365AB = rgba(160, 90, 221, 0.45) */
-    border-bottom: 2px solid rgba(163, 101, 171, 0.45);
+    border-bottom: 2px solid rgba(75, 121, 198, 0.35);
 }
 
 a.exps:hover {
-    color: #A365AB;
+    color: #4B79C6;
     text-decoration: none;
-    border-bottom: 2px solid #A365AB;
+    border-bottom: 2px solid #4B79C6;
 }
 
 a.exps:visited, a.exps:active, a.exps:link {
@@ -164,22 +162,42 @@ a.exps:visited, a.exps:active, a.exps:link {
 }
 
 #blog {
-    color: #C64B82;
+    color: #A365AB;
 }
 
 a.blog {
     /* #4B79C6 = rgba(75, 121, 198, 0.45) */
     /* #6D84C1 = rgba(93, 109, 214, 0.35) */
-    border-bottom: 2px solid rgba(198, 75, 130, 0.35);
+    border-bottom: 2px solid rgba(163, 101, 171, 0.45);
 }
 
 a.blog:hover {
+    color: #A365AB;
+    text-decoration: none;
+    border-bottom: 2px solid #A365AB;
+}
+
+a.blog:visited, a.blog:active, a.blog:link {
+    text-decoration: none;
+}
+
+#misc {
+    color: #C64B82;
+}
+
+a.misc {
+    /* #4B79C6 = rgba(75, 121, 198, 0.45) */
+    /* #6D84C1 = rgba(93, 109, 214, 0.35) */
+    border-bottom: 2px solid rgba(198, 75, 130, 0.35);
+}
+
+a.misc:hover {
     color: #C64B82;
     text-decoration: none;
     border-bottom: 2px solid #C64B82;
 }
 
-a.blog:visited, a.blog:active, a.blog:link {
+a.misc:visited, a.misc:active, a.misc:link {
     text-decoration: none;
 }
 
@@ -226,6 +244,13 @@ hr {
 hr.small {
     max-width: 100px;
 }
+
+/* Custom ul li separated */
+ul li.sep { 
+/*  line-height: 1.5em; */
+  margin: 5px;
+}
+
 
 /* Side Menu */
 
