@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Gaston Sanchez website.
 
 # url of domain
-url: http://gastonsanchez.com
+url: https://gastonsanchez.com
 # baseurl: /path/to/blog (leave this empty for user page)
 baseurl: 
 
