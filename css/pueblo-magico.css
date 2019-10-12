@@ -34,6 +34,7 @@ body {
     color: rgba(102, 97, 242, 0.45);
 }
 
+
 a {
   color: #333;
   border-bottom: 2px solid #eee;
@@ -246,9 +247,16 @@ hr.small {
 }
 
 /* Custom ul li separated */
-ul li.sep { 
-/*  line-height: 1.5em; */
-  margin: 5px;
+ul li.sep1 { 
+  /* line-height: 1.5em; */
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+/* Custom ul li separated */
+ul li.sep2 { 
+  /* line-height: 1.5em; */
+  margin-top: 0.5em;
 }
 
 
