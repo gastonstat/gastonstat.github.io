@@ -118,6 +118,24 @@ a.tutorials:visited, a.tutorials:active, a.tutorials:link {
     text-decoration: none;
 }
 
+#souvenirs {
+    color: #8FDB71;
+}
+
+a.souvenirs {
+    border-bottom: 2px solid rgba(143, 219, 113, 0.35);
+}
+
+a.souvenirs:hover {
+    color: #8FDB71;
+    text-decoration: none;
+    border-bottom: 2px solid #8FDB71;
+}
+
+a.souvenirs:visited, a.tutorials:active, a.tutorials:link {
+    text-decoration: none;
+}
+
 #software {
     color: #1EAD99;
 }
