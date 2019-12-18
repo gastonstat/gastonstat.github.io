@@ -48,20 +48,27 @@ a:hover {
 a:visited, a:active, a:link {
     text-decoration: none;
 }
+
+#heart {
+    color: #FF5050;
+}
   
 #books {
-    color: #FF5050;
+    /*c color: #FF842C; */
+    color: #FF842C;
 }
 
 a.books {
     /* #FFBC44 = rgba(255, 188, 68) */
-    border-bottom: 2px solid rgba(255, 80, 80, 0.35);
+    /* border-bottom: 2px solid rgba(255, 80, 80, 0.35); */
+    border-bottom: 2px solid rgba(255, 132, 44, 0.35);
 }
 
 a.books:hover {
-    color: #FF5050;
+    /*c color: #FF842C; */
+    color: #FF842C;
     text-decoration: none;
-    border-bottom: 2px solid #FF5050;
+    border-bottom: 2px solid #FF842C;
 }
 
 a.books:visited, a.books:active, a.books:link {
@@ -69,18 +76,21 @@ a.books:visited, a.books:active, a.books:link {
 }
 
 #teaching {
-    color: #FF842C;
+    /*c color: #FF842C; */
+    color: #FFBC44;
 }
 
 a.teaching {
     /* #FF842C = rgba(255, 132, 44) */
-    border-bottom: 2px solid rgba(255, 132, 44, 0.35);
+    /* border-bottom: 2px solid rgba(255, 132, 44, 0.35); */
+    border-bottom: 2px solid rgba(255, 188, 68, 0.35);
 }
 
 a.teaching:hover {
-    color: #FF842C;
+    /*c color: #FF842C; */
+    color: #FFBC44;
     text-decoration: none;
-    border-bottom: 2px solid #FF842C;
+    border-bottom: 2px solid #FFBC44;
 }
 
 a.teaching:visited, a.teaching:active, a.teaching:link {
@@ -88,18 +98,20 @@ a.teaching:visited, a.teaching:active, a.teaching:link {
 }
 
 #tutorials {
-    color: #FFBC44;
+    /*c olor: #FFBC44; */
+    color: #f6e53d;
 }
 
 a.tutorials {
     /* #FF5050 = rgba(255, 80, 80) */
-    border-bottom: 2px solid rgba(255, 188, 68, 0.35);
+    /* border-bottom: 2px solid rgba(255, 188, 68, 0.35); */
+    border-bottom: 2px solid rgba(246, 229, 61, 0.35);
 }
 
 a.tutorials:hover {
-    color: #FFBC44;
+    color: #f6e53d;
     text-decoration: none;
-    border-bottom: 2px solid #FFBC44;
+    border-bottom: 2px solid #f6e53d;
 }
 
 a.tutorials:visited, a.tutorials:active, a.tutorials:link {
