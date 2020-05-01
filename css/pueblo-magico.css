@@ -14,6 +14,7 @@ body {
 
 body {
     font-family: Helvetica,"Helvetica Neue","Source Sans Pro",Arial,sans-serif;
+    font-size: 16px;
 }
 
 .text-vertical-center {
@@ -49,26 +50,96 @@ a:visited, a:active, a:link {
     text-decoration: none;
 }
 
+
+/* ------------------------------------------------- */
+/* Color Palette: azul, mamey, turquesa
+/* ------------------------------------------------- */
+#azul {
+    color: #3c78d8;
+}
+
+a.azul {
+    /* #3c78d8 = rgba(60, 120, 216) */
+    border-bottom: 2px solid rgba(60, 120, 216, 0.35);
+}
+
+a.azul:hover {
+    color: #3c78d8;
+    text-decoration: none;
+    border-bottom: 2px solid #3c78d8;
+}
+
+a.azul:visited, a.azul:active, a.azul:link {
+    text-decoration: none;
+}
+
+
+#mamey {
+    color: #ff335c;
+}
+
+a.mamey {
+    /* #ff335c = rgba(255, 51, 92) */
+    border-bottom: 2px solid rgba(255, 51, 92, 0.35);
+}
+
+a.mamey:hover {
+    color: #ff335c;
+    text-decoration: none;
+    border-bottom: 2px solid #ff335c;
+}
+
+a.mamey:visited, a.mamey:active, a.mamey:link {
+    text-decoration: none;
+}
+
+
+#turquesa {
+    color: #19a8ba;
+}
+
+a.turquesa {
+    /* #19a8ba = rgba(25, 168, 186) */
+    border-bottom: 2px solid rgba(25, 168, 186, 0.35);
+}
+
+a.turquesa:hover {
+    color: #19a8ba;
+    text-decoration: none;
+    border-bottom: 2px solid #19a8ba;
+}
+
+a.turquesa:visited, a.turquesa:active, a.turquesa:link {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------- */
+
+
+
 #heart {
     color: #FF5050;
 }
   
 #books {
     /*c color: #FF842C; */
-    color: #FF842C;
+    color: #3c78d8;
 }
 
 a.books {
     /* #FFBC44 = rgba(255, 188, 68) */
     /* border-bottom: 2px solid rgba(255, 80, 80, 0.35); */
-    border-bottom: 2px solid rgba(255, 132, 44, 0.35);
+
+    /*c color: #FF842C; */
+    /*border-bottom: 2px solid rgba(255, 132, 44, 0.35); */
+    border-bottom: 2px solid rgba(60, 120, 216, 0.35);
 }
 
 a.books:hover {
     /*c color: #FF842C; */
-    color: #FF842C;
+    color: #3c78d8;
     text-decoration: none;
-    border-bottom: 2px solid #FF842C;
+    border-bottom: 2px solid #3c78d8;
 }
 
 a.books:visited, a.books:active, a.books:link {
@@ -137,18 +208,22 @@ a.souvenirs:visited, a.tutorials:active, a.tutorials:link {
 }
 
 #software {
-    color: #1EAD99;
+    /*color: #1EAD99; */
+    color: #3c78d8;
 }
 
 a.software {
     /* #4B79C6 = rgba(30, 173, 153) */
-    border-bottom: 2px solid rgba(30, 173, 153, 0.35);
+    /* border-bottom: 2px solid rgba(30, 173, 153, 0.35); */
+    border-bottom: 2px solid rgba(60, 120, 216, 0.35);
 }
 
 a.software:hover {
-    color: #1EAD99;
+    /* color: #1EAD99; */
+    color: #3c78d8;
     text-decoration: none;
-    border-bottom: 2px solid #1EAD99;
+    /* border-bottom: 2px solid #1EAD99; */
+    border-bottom: 2px solid #3c78d8;
 }
 
 a.software:visited, a.software:active, a.software:link {
@@ -479,7 +554,7 @@ ul li.sep2 {
 
 @media(min-width:768px) {
     .lead {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
