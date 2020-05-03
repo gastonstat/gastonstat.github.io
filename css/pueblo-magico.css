@@ -51,10 +51,19 @@ a:visited, a:active, a:link {
 }
 
 /* ------------------------------------------------- */
-/* Image rounder corners
+/* Image rounded corners (for photos)
 /* ------------------------------------------------- */
 img.rcorners {
   border-radius: 4px;
+}
+
+/* ------------------------------------------------- */
+/* Image rounded corners (for slides)
+/* ------------------------------------------------- */
+img.slides {
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1.5px solid #999;
 }
 
 
