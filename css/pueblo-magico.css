@@ -50,6 +50,13 @@ a:visited, a:active, a:link {
     text-decoration: none;
 }
 
+/* ------------------------------------------------- */
+/* Image rounder corners
+/* ------------------------------------------------- */
+img.rcorners {
+  border-radius: 4px;
+}
+
 
 /* ------------------------------------------------- */
 /* Color Palette: azul, mamey, turquesa
