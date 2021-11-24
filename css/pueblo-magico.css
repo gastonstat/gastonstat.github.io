@@ -1,5 +1,5 @@
 /*!
- * Pueblo Magico Bootstrap Theme (http://startbootstrap.com)
+ * Pueblo Magico Bootstrap Theme (based on http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
@@ -14,7 +14,7 @@ body {
 
 body {
     font-family: Helvetica,"Helvetica Neue","Source Sans Pro",Arial,sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .text-vertical-center {
@@ -28,21 +28,23 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.8);
+    /* color: rgba(255, 255, 255, 0.7); */
+    color: rgba(229,251,42, 0.9);
 }
 
 .text-vertical-center h3 {
-    color: rgba(102, 97, 242, 0.45);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 
 a {
-  color: #333;
-  border-bottom: 2px solid #eee;
+  color: #2588b3;
+  border-bottom: 1px solid #2588b3;
 }
 
 a:hover {
-  color: #ccc;
+  color: #2588b3;
+  border-bottom: 2px solid #e5fb2a;
   text-decoration: none;
 }
 
@@ -71,18 +73,19 @@ img.slides {
 /* Color Palette: azul, mamey, turquesa
 /* ------------------------------------------------- */
 #azul {
-    color: #3c78d8;
+    /* color: #3c78d8; */
+    color: #2588b3;
 }
 
 a.azul {
     /* #3c78d8 = rgba(60, 120, 216) */
-    border-bottom: 2px solid rgba(60, 120, 216, 0.35);
+    border-bottom: 1px solid rgba(37, 136, 179, 0.35);
 }
 
 a.azul:hover {
     color: #3c78d8;
     text-decoration: none;
-    border-bottom: 2px solid #3c78d8;
+    border-bottom: 2.5px solid #e5fb2a;
 }
 
 a.azul:visited, a.azul:active, a.azul:link {
@@ -139,7 +142,7 @@ a.turquesa:visited, a.turquesa:active, a.turquesa:link {
   
 #books {
     /*c color: #FF842C; */
-    color: #3c78d8;
+    color: #000;
 }
 
 a.books {
@@ -185,8 +188,8 @@ a.teaching:visited, a.teaching:active, a.teaching:link {
 }
 
 #tutorials {
-    /*c olor: #FFBC44; */
-    color: #f6e53d;
+    /* color: #f6e53d; */
+    color: #000;
 }
 
 a.tutorials {
@@ -224,22 +227,22 @@ a.souvenirs:visited, a.tutorials:active, a.tutorials:link {
 }
 
 #software {
-    /*color: #1EAD99; */
-    color: #3c78d8;
+    /*color: #2588b3; */
+    color: #000;
 }
 
 a.software {
     /* #4B79C6 = rgba(30, 173, 153) */
     /* border-bottom: 2px solid rgba(30, 173, 153, 0.35); */
-    border-bottom: 2px solid rgba(60, 120, 216, 0.35);
+    border-bottom: 1px solid rgba(37, 136, 179);
 }
 
 a.software:hover {
     /* color: #1EAD99; */
-    color: #3c78d8;
+    color: #ff8700;
     text-decoration: none;
     /* border-bottom: 2px solid #1EAD99; */
-    border-bottom: 2px solid #3c78d8;
+    border-bottom: 2px solid #e5fb2a;
 }
 
 a.software:visited, a.software:active, a.software:link {
@@ -284,7 +287,8 @@ a.exps:visited, a.exps:active, a.exps:link {
 }
 
 #blog {
-    color: #A365AB;
+    /* color: #A365AB; */
+    color: #000;
 }
 
 a.blog {
@@ -327,18 +331,25 @@ a.misc:visited, a.misc:active, a.misc:link {
     border-bottom: 0px solid #eee;
 }
 
+#icon:hover {
+    color: #e5fb2a;
+}
+
 /* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
-    color: #fff;
+    /* color: #fff; */
+    /* color: rgba(255,255,255,0.8); */
+    color: rgba(229,251,42);
     background-color: rgba(0,0,0,0.4);
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
-    color: #fff;
+    /* color: #fff; */
+    color: rgba(229,251,42);
     background-color: rgba(0,0,0,0.7);
 }
 
@@ -466,7 +477,7 @@ ul li.sep2 {
     margin: 5px 5px 0 0;
 }
 
-/* Header */
+/* Header 
 
 .header {
     display: table;
@@ -479,6 +490,7 @@ ul li.sep2 {
     background-size: cover;
     -o-background-size: cover;
 }
+*/
 
 /* About */
 
@@ -528,8 +540,8 @@ ul li.sep2 {
     opacity: 0.8;
 }
 
-.img-centered {
-  display: inline-block;
+img.img-centered {
+  display: block;
   max-width: 100%;
 
   margin-left: auto;
@@ -600,4 +612,102 @@ footer {
     height:100%;
     width:100%;
     position:absolute;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Strings image background */
+
+.strings {
+    display: table;
+    width: 100%;
+    height: 300px;
+    color: #fff;
+    background: url(../images/full-strings.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Bubbles image background */
+
+.bubbles {
+    display: table;
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    background: url(../images/full-bubbles.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Walks image background */
+
+.walks {
+    display: table;
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    background: url(../images/full-walks.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Bars image background */
+
+.bars {
+    display: table;
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    background: url(../images/full-bars.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Curves image background */
+
+.curves {
+    display: table;
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    background: url(../images/full-curves.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Scatterplot image background */
+
+.scatterplot {
+    display: table;
+    width: 100%;
+    height: 250px;
+    color: #fff;
+    background: url(../images/full-scatterplot.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
