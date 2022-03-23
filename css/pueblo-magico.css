@@ -558,6 +558,14 @@ img.img-centered {
           transition: all .2s ease-in-out;
 }
 
+img.cover-centered {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #999;
+}
+
 /* Call to Action */
 
 .call-to-action {
