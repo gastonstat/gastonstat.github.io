@@ -19,7 +19,7 @@
 
         <br>
         <br>
-        <p><a id="icon" href="https://www.berkeley.edu/map?evans" target="_blank"><i class="fa fa-map-marker fa-fw fa-1x"></i></a>
+        <p><a id="icon" href="https://www.berkeley.edu/map?evans" target="_blank"><i class="fa fa-location-dot fa-fw fa-1x"></i></a>
           {% for address in site.address %}
           {{ address.line }}<br>
           {% endfor %}
@@ -34,13 +34,16 @@
             <a id="icon" href="GastonSanchez_resume.pdf" target="_blank"><i class="fa fa-id-badge fa-fw fa-2x"></i></a>
           </li>
           <li>
-            <a id="icon" href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-fw fa-2x"></i></a>
+            <a id="icon" href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa-brands fa-github fa-fw fa-2x"></i></a>
           </li>
           <li>
-            <a id="icon" href="https://www.youtube.com/channel/{{ site.youtube_username }}" target="_blank"><i class="fa fa-youtube-play fa-fw fa-2x"></i></a>
+            <a id="icon" href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa-brands fa-twitter fa-fw fa-2x"></i></a>
           </li>
           <li>
-            <a id="icon" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-2x"></i></a>
+            <a id="icon" href="https://www.youtube.com/channel/{{ site.youtube_username }}" target="_blank"><i class="fa-brands fa-youtube fa-fw fa-2x"></i></a>
+          </li>
+          <li>
+            <a id="icon" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fa-brands fa-linkedin fa-fw fa-2x"></i></a>
           </li>
         </ul>
         <hr>
