@@ -173,12 +173,12 @@ a.books:visited, a.books:active, a.books:link {
 a.teaching {
     /* #FF842C = rgba(255, 132, 44) */
     /* border-bottom: 2px solid rgba(255, 132, 44, 0.35); */
-    border-bottom: 2px solid rgba(255, 188, 68, 0.35);
+    border-bottom: 2px solid rgba(230, 251, 42);
 }
 
 a.teaching:hover {
     /*c color: #FF842C; */
-    color: #FFBC44;
+    color: #e5fb2a;
     text-decoration: none;
     border-bottom: 2px solid #FFBC44;
 }
