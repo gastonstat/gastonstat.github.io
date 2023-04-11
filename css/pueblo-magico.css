@@ -14,7 +14,7 @@ body {
 
 body {
     font-family: Helvetica,"Helvetica Neue","Source Sans Pro",Arial,sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .text-vertical-center {
@@ -354,9 +354,10 @@ a.misc:visited, a.misc:active, a.misc:link {
 }
 
 .btn-light {
-    border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
+    border-radius: 20;
+    color: #888;
+    background-color: rgb(240,240,240);
+    margin-right: 10;
 }
 
 .btn-light:hover,
@@ -683,7 +684,7 @@ footer {
 .bars {
     display: table;
     width: 100%;
-    height: 200px;
+    height: 300px;
     color: #fff;
     background: url(../images/full-bars.png) no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -697,7 +698,7 @@ footer {
 .curves {
     display: table;
     width: 100%;
-    height: 200px;
+    height: 300px;
     color: #fff;
     background: url(../images/full-curves.png) no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -711,9 +712,23 @@ footer {
 .scatterplot {
     display: table;
     width: 100%;
-    height: 250px;
+    height: 300px;
     color: #fff;
     background: url(../images/full-scatterplot.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Tiles image background */
+
+.tiles {
+    display: table;
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    background: url(../images/full-tiles.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
