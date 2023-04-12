@@ -497,6 +497,7 @@ ul li.sep2 {
 
 .about {
     padding: 50px 0;
+    font-size: 20px;
 }
 
 /* Services */
@@ -547,13 +548,13 @@ img.img-centered {
 
   margin-left: auto;
   margin-right: auto;
-
+  padding: 0px;
   /*height: auto;
   padding: 4px;
   line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #fff;*/
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -565,6 +566,20 @@ img.cover-centered {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #999;
+}
+
+
+div.polaroid {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+  /*text-align: center;*/
+  border-radius: 2px;
+}
+
+div.container-polaroid {
+    padding: 20px;
+    /*border-radius: 4px;*/
+    background-color: #ddd;
 }
 
 /* Call to Action */
@@ -591,7 +606,7 @@ img.cover-centered {
 
 @media(min-width:768px) {
     .lead {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
@@ -684,7 +699,7 @@ footer {
 .bars {
     display: table;
     width: 100%;
-    height: 300px;
+    height: 200px;
     color: #fff;
     background: url(../images/full-bars.png) no-repeat center center scroll;
     -webkit-background-size: cover;
