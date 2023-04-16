@@ -1,5 +1,6 @@
 /*!
- * Pueblo Magico Bootstrap Theme (based on http://startbootstrap.com)
+ * Pueblo Magico Bootstrap Theme (based on Stylish Portfolio)
+ * (https://github.com/StartBootstrap/startbootstrap-stylish-portfoliom)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
@@ -554,7 +555,7 @@ img.img-centered {
   line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #fff;*/
-  /*border-radius: 4px;*/
+  border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -565,22 +566,27 @@ img.cover-centered {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #999;
+  /*border: 1px solid #999;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 
+/* ------------------------------------------------- */
+/* Polaroid-like images 
+/* ------------------------------------------------- */
+/*
 div.polaroid {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
-  /*text-align: center;*/
   border-radius: 2px;
 }
 
 div.container-polaroid {
     padding: 20px;
-    /*border-radius: 4px;*/
     background-color: #ddd;
 }
+*/
+
 
 /* Call to Action */
 
@@ -651,6 +657,12 @@ footer {
     background-size: cover;
     -o-background-size: cover;
 }
+
+
+
+/* ------------------------------------------------- */
+/* Background Images for Web Decoration 
+/* ------------------------------------------------- */
 
 /* Strings image background */
 
