@@ -25,7 +25,18 @@
   <!-- Icons -->
   <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
 
-  <!-- Google Analytics -->
+  <!-- New (Jun-2023) Google Analytics tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VHG18K7YX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7VHG18K7YX');
+  </script>
+
+
+<!-- Old Google Analytics (before Jun-2023)
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,8 +45,8 @@
 
       ga('create', 'UA-46765288-1', 'gastonsanchez.com');
       ga('send', 'pageview');
-
   </script>
+-->
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
