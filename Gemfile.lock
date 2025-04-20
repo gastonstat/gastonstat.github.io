@@ -34,7 +34,6 @@ GEM
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
-      rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
