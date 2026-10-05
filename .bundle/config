@@ -1,0 +1,3 @@
+---
+BUNDLE_PATH: "/Users/gaston/.gem"
+BUNDLE_BUILD__HTTP_PARSER__RB: "--with-cflags=-Wno-error=implicit-function-declaration"
